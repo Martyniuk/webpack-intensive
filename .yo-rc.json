@@ -1,0 +1,9 @@
+{
+  "@lectrum/generator-ui": {
+    "initialized": true,
+    "educational": true,
+    "webpack": true,
+    "repositoryOwner": "Lectrum",
+    "repositoryName": "webpack-intensive"
+  }
+}
