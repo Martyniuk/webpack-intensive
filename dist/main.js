@@ -94,7 +94,12 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ \"./src/simple-components/dom.js\");\n\n\ndocument.body.appendChild(Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ "./src/simple-components/dom.js");
+
+
+document.body.appendChild(Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__["default"])());
+
 
 /***/ }),
 
@@ -106,7 +111,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sim
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((text = 'Hello world') => {\n    const element = document.createElement('div');\n\n    element.innerHTML = text;\n\n    return element;\n});\n\n\n//# sourceURL=webpack:///./src/simple-components/dom.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ((text = 'Hello world') => {
+    const element = document.createElement('div');
+
+    element.innerHTML = text;
+
+    return element;
+});
+
 
 /***/ })
 
