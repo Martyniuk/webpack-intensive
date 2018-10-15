@@ -6,7 +6,8 @@ module.exports = {
     devtool: 'false',
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Learn Webpack very well'
+            title: 'Learn Webpack very well',
+            mobile: true
         })
     ]
 };
