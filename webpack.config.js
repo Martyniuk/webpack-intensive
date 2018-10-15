@@ -8,7 +8,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Learn Webpack very well',
             template: './static/template.html',
-            favicon: './static/favicon.ico'
+            favicon: './static/favicon.ico',
         }),
     ],
 };
