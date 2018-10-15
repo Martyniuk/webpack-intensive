@@ -2,6 +2,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
+    console.log('→ env', env);
     return {
         mode: env,
         devtool: 'false',
