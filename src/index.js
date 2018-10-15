@@ -1,3 +1,3 @@
-import component from './simple-components/dom';
+const component = require('./simple-components/dom');
 
 document.body.appendChild(component());
