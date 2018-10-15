@@ -7,6 +7,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Learn Webpack very well',
+            template: './static/template.html',
         }),
     ],
 };
