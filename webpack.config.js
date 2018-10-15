@@ -1,7 +1,7 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = () => {
+module.exports = Promise.resolve({
     return {
         mode: 'development',
         devtool: 'false',
@@ -13,4 +13,4 @@ module.exports = () => {
             }),
         ],
     };
-};
+});
