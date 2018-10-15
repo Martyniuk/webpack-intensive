@@ -22,5 +22,9 @@
         "nodegit": "0.22.2",
         "webpack": "4.20.2",
         "webpack-cli": "3.1.2"
+    },
+    "dependencies": {
+        "global": "4.3.2",
+        "serve": "10.0.2"
     }
 }
