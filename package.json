@@ -16,6 +16,8 @@
         "babel-plugin-dynamic-import-node": "2.1.0",
         "cross-env": "5.2.0",
         "moment": "2.22.2",
-        "nodegit": "0.22.2"
+        "nodegit": "0.22.2",
+        "webpack": "4.20.2",
+        "webpack-cli": "3.1.2"
     }
 }
