@@ -17,6 +17,7 @@
         "@babel/register": "7.0.0",
         "@lectrum/eslint-config-core": "1.1.6",
         "app-root-path": "2.1.0",
+        "babel-eslint": "10.0.1",
         "babel-plugin-dynamic-import-node": "2.1.0",
         "cross-env": "5.2.0",
         "eslint": "5.7.0",
