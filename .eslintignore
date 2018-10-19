@@ -1,5 +1,2 @@
-node_modules/
-build/
-coverage/
-source/theme/assets/fonts/antd
-lib/
+/node_modules
+/build
