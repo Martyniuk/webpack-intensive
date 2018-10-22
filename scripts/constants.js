@@ -1,2 +1,3 @@
-const HOST = 'localhost';
-const PORT = 3000;
+// Network
+exports.HOST = 'localhost';
+exports.PORT = 3000;
