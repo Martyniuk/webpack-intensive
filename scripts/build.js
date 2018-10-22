@@ -1,5 +1,6 @@
 // Core
 const webpack = require('webpack');
+const chalk = require('chalk');
 
 const getConfig = require('./webpack.config');
 
