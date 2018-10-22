@@ -7,7 +7,6 @@ const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
 
-
 compiler.run((error, stats) => {
     if (error) {
         console.error(error.stack || error);
