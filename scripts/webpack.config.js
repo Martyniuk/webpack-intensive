@@ -7,7 +7,8 @@ module.exports = () => {
         mode:   'development',
         entry:  resolve(__dirname, '../source'),
         output: {
-            path: resolve(__dirname, '../build'),
+            path:     resolve(__dirname, '../build'),
+            filename: 'bundle.js',
         },
         devtool: 'false',
         module:  {
