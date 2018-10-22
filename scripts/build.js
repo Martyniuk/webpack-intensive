@@ -1,11 +1,15 @@
 // Core
 const webpack = require('webpack');
+const MemFs = require('memory-fs');
 const chalk = require('chalk');
 
 // Config
 const getConfig = require('./webpack.config');
+const fs = new MemFs();
 
 const compiler = webpack(getConfig());
+
+compiler.outputFileSystem = fs;
 
 compiler.run((error, stats) => {
     if (error) {
