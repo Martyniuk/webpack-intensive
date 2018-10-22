@@ -17,7 +17,17 @@ compiler.run((error, stats) => {
     }
 
     const info = stats.toString({
-        colors: true,
+        colors:     true,
+        hash:       true,
+        version:    true,
+        timings:    true,
+        env:        true,
+        chunks:     false,
+        modules:    false,
+        children:   false,
+        publicPath: true,
+        reasons:    true,
+        source:     false,
     });
 
     console.log(info);
