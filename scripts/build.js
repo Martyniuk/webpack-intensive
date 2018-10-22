@@ -5,11 +5,11 @@ const chalk = require('chalk');
 
 // Config
 const getConfig = require('./webpack.config');
-const fs = new MemFs();
+const memFs = new MemFs();
 
 const compiler = webpack(getConfig());
 
-compiler.outputFileSystem = fs;
+compiler.outputFileSystem = memFs;
 
 compiler.run((error, stats) => {
     if (error) {
