@@ -7,7 +7,7 @@ const chalk = require('chalk');
 // Config
 const getConfig = require('./webpack.config');
 
-// Contsants
+// Constants
 const { HOST, PORT } = require('./constants');
 
 const compiler = webpack(getConfig());
