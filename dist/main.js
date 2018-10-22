@@ -81,21 +81,21 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./source/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./source/index.js":
+/*!*************************!*\
+  !*** ./source/index.js ***!
+  \*************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ "./src/simple-components/dom.js");
+/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ "./source/simple-components/dom.js");
 
 
 document.body.appendChild(Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__["default"])());
@@ -103,10 +103,10 @@ document.body.appendChild(Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE
 
 /***/ }),
 
-/***/ "./src/simple-components/dom.js":
-/*!**************************************!*\
-  !*** ./src/simple-components/dom.js ***!
-  \**************************************/
+/***/ "./source/simple-components/dom.js":
+/*!*****************************************!*\
+  !*** ./source/simple-components/dom.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
