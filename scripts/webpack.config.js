@@ -1,9 +1,9 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = (env) => {
+module.exports = () => {
     return {
-        mode:    env,
+        mode:    'development',
         devtool: 'false',
         plugins: [
             new HtmlWebpackPlugin({
