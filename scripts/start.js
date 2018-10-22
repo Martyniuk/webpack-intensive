@@ -36,3 +36,7 @@ const watcher = compiler.watch(
         }
     },
 );
+
+setTimeout(() => {
+    watcher.close();
+}, 4000);
