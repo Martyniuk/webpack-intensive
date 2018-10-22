@@ -9,6 +9,8 @@ const memFs = new MemFs();
 
 const compiler = webpack(getConfig());
 
+compiler.outputFileSystem = memFs;
+
 compiler.watch({ ignored: [ 'node_modules' ] }, (error, stats) => {
     console.log(chalk.greenBright('✓ webpack is watching...'));
     if (error) {
