@@ -8,8 +8,6 @@ document.body.appendChild(element);
 
 if (module.hot) {
     module.hot.accept('./simple-components/dom', function() {
-        console.log('Accepting the updated printMe module!');
-        printMe();
         document.body.removeChild(element);
         element = component(); // Re-render the "component" to update the click handler
         document.body.appendChild(element);
