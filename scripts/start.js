@@ -22,7 +22,11 @@ const server = new devServer(compiler, {
     clientLogLevel:     'none',
     noInfo:             true,
     after:              (app) => {
-        app.use(hot(compiler, {}));
+        app.use(
+            hot(compiler, {
+                log: false,
+            }),
+        );
     },
 });
 
