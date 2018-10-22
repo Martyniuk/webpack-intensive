@@ -1,15 +1,15 @@
 // Core
 const webpack = require('webpack');
-const MemFs = require('memory-fs');
+// const MemFs = require('memory-fs');
 const chalk = require('chalk');
 
 // Config
 const getConfig = require('./webpack.config');
-const memFs = new MemFs();
+// const memFs = new MemFs();
 
 const compiler = webpack(getConfig());
 
-compiler.outputFileSystem = memFs;
+// compiler.outputFileSystem = memFs;
 
 compiler.watch({ ignored: [ 'node_modules' ] }, (error, stats) => {
     console.log(chalk.greenBright('✓ webpack is watching...'));
