@@ -12,7 +12,9 @@ compiler.run((error, stats) => {
         if (error.details) {
             console.error(error.details);
         }
+
+        return;
     }
     // ...
     console.log('→ message');
-})
+});
