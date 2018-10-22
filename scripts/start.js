@@ -20,6 +20,7 @@ const server = new devServer(compiler, {
     quiet:              true,
     clientLogLevel:     'none',
     noInfo:             true,
+    open:               true,
     after:              (app) => {
         app.use(
             hot(compiler, {
