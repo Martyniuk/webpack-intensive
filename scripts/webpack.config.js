@@ -1,5 +1,6 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { resolve } = require('path');
 
 module.exports = () => {
@@ -24,6 +25,9 @@ module.exports = () => {
                 title:    'Learn Webpack very well',
                 template: './static/template.html',
                 favicon:  './static/favicon.ico',
+            }),
+            new CleanWebpackPlugin([ 'build' ], {
+                root: resolve(__dirname, '../'),
             }),
         ],
     };
