@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = () => {
     return {
         mode:    'development',
+        entry:   '../source',
         devtool: 'false',
         plugins: [
             new HtmlWebpackPlugin({
