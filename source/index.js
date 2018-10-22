@@ -7,7 +7,7 @@ let element = component(); // Store the element to re-render on print.js changes
 document.body.appendChild(element);
 
 if (module.hot) {
-    module.hot.accept('./print.js', function() {
+    module.hot.accept('./simple-components/dom', function() {
         console.log('Accepting the updated printMe module!');
         printMe();
         document.body.removeChild(element);
