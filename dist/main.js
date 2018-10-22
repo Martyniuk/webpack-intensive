@@ -112,7 +112,7 @@ document.body.appendChild(Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ((text = 'Привет!!!') => {
+/* harmony default export */ __webpack_exports__["default"] = ((text = 'Привет!') => {
     const element = document.createElement('div');
 
     element.innerHTML = text;
