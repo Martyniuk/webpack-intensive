@@ -15,6 +15,11 @@ compiler.run((error, stats) => {
 
         return;
     }
+
+    const info = stats.toString();
+
+    console.log(info);
+
     // ...
     console.log('→ message');
 });
