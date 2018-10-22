@@ -21,7 +21,7 @@ const server = new devServer(compiler, {
     quiet:              true,
     clientLogLevel:     'none',
     noInfo:             true,
-    after: (app) => {
+    after:              (app) => {
         app.use(hot(compiler, {}));
     },
 });
