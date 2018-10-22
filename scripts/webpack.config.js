@@ -5,8 +5,11 @@ const { resolve } = require('path');
 
 module.exports = () => {
     return {
-        mode:   'development',
-        entry:  resolve(__dirname, '../source'),
+        mode:  'development',
+        entry: [
+            'webpack-hot-middleware/client',
+            resolve(__dirname, '../source'),
+        ],
         output: {
             path:     resolve(__dirname, '../build'),
             filename: 'bundle.js',
