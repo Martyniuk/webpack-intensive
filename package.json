@@ -4,7 +4,7 @@
     "author": "Dima Vakatsiienko <dvakatsiienko@lectrum.io>",
     "private": true,
     "scripts": {
-        "start": "webpack --env=development",
+        "start": "node \"./scripts/start.js\"",
         "build": "node \"./scripts/build.js\"",
         "serve": "serve ./dist --single",
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
