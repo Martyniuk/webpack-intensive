@@ -16,7 +16,9 @@ compiler.run((error, stats) => {
         return;
     }
 
-    const info = stats.toString();
+    const info = stats.toString({
+        colors: true,
+    });
 
     console.log(info);
 
