@@ -2,6 +2,7 @@
 const webpack = require('webpack');
 const chalk = require('chalk');
 
+// Config
 const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
