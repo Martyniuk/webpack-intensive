@@ -21,22 +21,9 @@ const watcher = compiler.watch(
             return;
         }
 
-        const info = stats.toString({
-            colors:     true,
-            hash:       true,
-            version:    true,
-            timings:    true,
-            env:        true,
-            chunks:     false,
-            modules:    false,
-            children:   false,
-            publicPath: true,
-            reasons:    true,
-            source:     false,
-        });
+        const info = stats.toString('errors-only');
 
         console.log(info);
-        console.log(chalk.greenBright('✓ Build completed.'));
 
         if (stats.hasErrors()) {
             console.log(chalk.redBright('→ Error!'));
