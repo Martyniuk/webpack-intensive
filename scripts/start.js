@@ -5,6 +5,7 @@ const chalk = require('chalk');
 
 // Config
 const getConfig = require('./webpack.config');
+const memFs = new MemFs();
 
 const compiler = webpack(getConfig());
 
