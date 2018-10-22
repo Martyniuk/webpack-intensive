@@ -1,10 +1,11 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = () => {
     return {
         mode:    'development',
-        entry:   '../source',
+        entry:   path.resolve(__dirname, '../source'),
         devtool: 'false',
         plugins: [
             new HtmlWebpackPlugin({
