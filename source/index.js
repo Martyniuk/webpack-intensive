@@ -2,6 +2,7 @@ import './theme/init.css';
 import component from './simple-components/dom';
 
 let element = component(); // Store the element to re-render on print.js changes
+
 document.body.appendChild(element);
 
 if (module.hot) {
