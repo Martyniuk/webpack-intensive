@@ -7,7 +7,7 @@ module.exports = () => {
     return {
         mode:  'development',
         entry: [
-            'webpack-hot-middleware/client',
+            'webpack-hot-middleware/client?reload=true&quiet=true',
             resolve(__dirname, '../source'),
         ],
         output: {
