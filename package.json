@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "start": "webpack --env=development",
-        "build": "webpack --env=production",
+        "build": "node \"./scripts/build.js\"",
         "serve": "serve ./dist --single",
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
