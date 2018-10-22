@@ -7,36 +7,29 @@ const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
 
-const watcher = compiler.watch(
-    { ignored: [ 'node_modules' ] },
-    (error, stats) => {
-        console.log(chalk.greenBright('✓ webpack is watching...'));
-        if (error) {
-            console.error(error.stack || error);
+compiler.watch({ ignored: [ 'node_modules' ] }, (error, stats) => {
+    console.log(chalk.greenBright('✓ webpack is watching...'));
+    if (error) {
+        console.error(error.stack || error);
 
-            if (error.details) {
-                console.error(error.details);
-            }
-
-            return;
+        if (error.details) {
+            console.error(error.details);
         }
 
-        const info = stats.toString('errors-only');
+        return;
+    }
 
-        console.log(info);
+    const info = stats.toString('errors-only');
 
-        if (stats.hasErrors()) {
-            console.log(chalk.redBright('→ Error!'));
-            console.error(info);
-        }
+    console.log(info);
 
-        if (stats.hasWarnings()) {
-            console.log(chalk.yellowBright('→ Warning!'));
-            console.warn(info);
-        }
-    },
-);
+    if (stats.hasErrors()) {
+        console.log(chalk.redBright('→ Error!'));
+        console.error(info);
+    }
 
-setTimeout(() => {
-    watcher.close();
-}, 4000);
+    if (stats.hasWarnings()) {
+        console.log(chalk.yellowBright('→ Warning!'));
+        console.warn(info);
+    }
+});
