@@ -10,6 +10,7 @@ const compiler = webpack(getConfig());
 const watcher = compiler.watch(
     { ignored: [ 'node_modules' ] },
     (error, stats) => {
+        console.log(chalk.greenBright('✓ webpack is watching...'));
         if (error) {
             console.error(error.stack || error);
 
