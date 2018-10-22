@@ -34,4 +34,14 @@ compiler.run((error, stats) => {
 
     console.log(info);
     console.log(chalk.greenBright('✓ Build completed.'));
+
+    if (stats.hasErrors()) {
+        console.log(chalk.redBright('→ Error!'));
+        console.error(info);
+    }
+
+    if (stats.hasWarnings()) {
+        console.log(chalk.yellowBright('→ Warning!'));
+        console.warn(info);
+    }
 });
