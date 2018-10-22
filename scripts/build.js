@@ -1,6 +1,5 @@
 // Core
 const webpack = require('webpack');
-const MemFs = require('memory-fs');
 const chalk = require('chalk');
 
 // Config
