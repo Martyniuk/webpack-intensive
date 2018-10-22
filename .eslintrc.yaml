@@ -3,5 +3,3 @@ extends:
 
 rules:
     no-console: 0
-    no-sync: 0
-    babel/no-invalid-this: 0
