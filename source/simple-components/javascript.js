@@ -16,10 +16,8 @@ class Human {
 const gendalf = new Human('Gendalf', 666);
 
 gendalf.sayAge();
-gendalf.sayKind();
 
 export const a = 1;
 export const b = 5;
 const c = a + b;
 console.log(c);
-
