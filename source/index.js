@@ -1,6 +1,6 @@
 import './theme/init.css';
 
-import './components';
+// import './components';
 
 /* javascript */
 // import './simple-components/javascript';
