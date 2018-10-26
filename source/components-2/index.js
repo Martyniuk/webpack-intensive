@@ -10,7 +10,6 @@ export class Test2 extends Component {
         return (
             <>
                 <h1 className = { Styles.hello }>Хелоу!</h1>
-                <h1 className = { Styles.hello }>Хелоу!</h1>
             </>
         );
     }
