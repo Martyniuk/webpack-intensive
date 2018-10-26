@@ -11,10 +11,6 @@ class Human {
     sayAge() {
         console.log('Age', this.age);
     }
-
-    sayKind = () => {
-        console.log('Kind', this.KIND);
-    };
 }
 
 const gendalf = new Human('Gendalf', 666);
