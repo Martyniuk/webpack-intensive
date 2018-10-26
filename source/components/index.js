@@ -9,7 +9,12 @@ const Test = hot(module)(
         render() {
             console.log('→ приветик');
 
-            return <h1 className = { Styles.hello }>Хелоу!</h1>;
+            return (
+                <>
+                    <h1 className = { Styles.hello }>Хелоу!</h1>
+                    <h1 className = { Styles.hello }>Хелоу!</h1>
+                </>
+            );
         }
     },
 );
