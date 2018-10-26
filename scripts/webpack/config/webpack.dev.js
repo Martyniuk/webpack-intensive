@@ -18,7 +18,7 @@ module.exports = async () => {
                 host: HOST,
                 port: suggestedPort
             }
-        }
+        },
         plugins: [ new HotModuleReplacementPlugin() ],
     });
 };
