@@ -5,7 +5,7 @@ const hot = require('webpack-hot-middleware');
 const chalk = require('chalk');
 
 // Config
-const getConfig = require('./config/webpack.config');
+const getConfig = require('./config/webpack.common');
 
 // Constants
 const { HOST, PORT } = require('./constants');
