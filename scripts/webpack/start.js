@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const devServer = require('webpack-dev-server');
 const hot = require('webpack-hot-middleware');
 const chalk = require('chalk');
+const openBrowser = require('react-dev-utils/openBrowser');
 
 // Config
 const getDevConfig = require('./config/webpack.dev');
@@ -38,5 +39,7 @@ const getDevConfig = require('./config/webpack.dev');
                 `http://${host}:${port}`,
             )}`,
         );
+
+        openBrowser(`http://${host}:${port}`);
     });
 })();
