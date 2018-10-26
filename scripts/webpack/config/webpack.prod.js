@@ -8,6 +8,7 @@ const getCommonConfig = require('./webpack.common');
 
 module.exports = () => {
     return merge(getCommonConfig(), {
+        mode:    'development',
         entry:   SOURCE,
         plugins: [
             new CleanWebpackPlugin([ 'build' ], {
