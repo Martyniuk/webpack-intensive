@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Instruments
-const { SOURCE, BUILD } = require('./constants');
+const { SOURCE, BUILD, PROJECT_ROOT } = require('./constants');
 
 module.exports = () => {
     return {
@@ -30,7 +30,7 @@ module.exports = () => {
                 favicon:  './static/favicon.ico',
             }),
             new CleanWebpackPlugin([ 'build' ], {
-                root: resolve(__dirname, '../'),
+                root: PROJECT_ROOT,
             }),
             new HotModuleReplacementPlugin(),
         ],
