@@ -1,6 +1,8 @@
 // import './theme/init.css';
 
-import './simple-components/javascript';
+/* javascript */
+// import './simple-components/javascript';
+/* javascript */
 
 /* dom */
 // import component from './simple-components/dom';
