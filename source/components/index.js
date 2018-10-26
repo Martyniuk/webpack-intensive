@@ -7,7 +7,7 @@ const Test = hot(module)(
         render() {
             console.log('→ приветик');
 
-            return <h1>Хелоу!</h1>;
+            return <h1 className = 'hello'>Хелоу!</h1>;
         }
     },
 );
