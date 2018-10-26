@@ -1,6 +1,6 @@
 // Core
 const { HotModuleReplacementPlugin } = require('webpack');
-import merge from 'webpack-merge';
+const merge = require('webpack-merge');
 
 // Instruments
 const { SOURCE } = require('../constants');
