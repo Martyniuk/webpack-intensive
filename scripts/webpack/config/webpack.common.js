@@ -40,9 +40,12 @@ module.exports = () => {
                             loader:  'postcss-loader',
                             options: {
                                 plugins: [
-                                    env({
+                                    env({ // plguin 1
                                         stage: 0,
                                     }),
+                                    // plugin 2
+                                    // plugin 3
+                                    // plugin n
                                 ],
                             },
                         },
