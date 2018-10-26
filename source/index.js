@@ -1,4 +1,4 @@
-import './theme/init.css';
+// import './theme/init.css';
 import component from './simple-components/dom';
 
 let element = component();
