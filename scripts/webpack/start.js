@@ -10,29 +10,36 @@ const getDevConfig = require('./config/webpack.dev');
 // Constants
 const { HOST, PORT } = require('./constants');
 
-const compiler = webpack(getDevConfig());
+(async () => {
+    const config = await getDevConfig();
 
-const server = new devServer(compiler, {
-    host:               HOST,
-    port:               PORT,
-    historyApiFallback: true,
-    overlay:            true,
-    quiet:              true,
-    clientLogLevel:     'none',
-    noInfo:             true,
-    after:              (app) => {
-        app.use(
-            hot(compiler, {
-                log: false,
-            }),
+    const {
+        devServer: { host, port },
+    } = config;
+
+    const compiler = webpack(config);
+    const server = new devServer(compiler, {
+        host:               HOST,
+        port:               PORT,
+        historyApiFallback: true,
+        overlay:            true,
+        quiet:              true,
+        clientLogLevel:     'none',
+        noInfo:             true,
+        after:              (app) => {
+            app.use(
+                hot(compiler, {
+                    log: false,
+                }),
+            );
+        },
+    });
+
+    server.listen(PORT, HOST, () => {
+        console.log(
+            `${chalk.greenBright('→ Server listening on')} ${chalk.blueBright(
+                `http://${HOST}:${PORT}`,
+            )}`,
         );
-    },
-});
-
-server.listen(PORT, HOST, () => {
-    console.log(
-        `${chalk.greenBright('→ Server listening on')} ${chalk.blueBright(
-            `http://${HOST}:${PORT}`,
-        )}`,
-    );
-});
+    });
+})();
