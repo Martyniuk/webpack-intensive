@@ -4,8 +4,6 @@ module.exports = (api) => {
 
     api.cache.never();
 
-    api.cache.();
-
     return {
         presets: [
             [
