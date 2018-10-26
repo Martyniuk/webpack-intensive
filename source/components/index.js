@@ -7,5 +7,4 @@ export class Test extends Component {
     }
 }
 
-
-render()
+render(<Test />, document.getElementById('app'));
