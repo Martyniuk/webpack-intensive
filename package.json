@@ -4,8 +4,8 @@
     "author": "Dima Vakatsiienko <dvakatsiienko@lectrum.io>",
     "private": true,
     "scripts": {
-        "start": "node \"./scripts/webpack/start.js\"",
-        "build": "node \"./scripts/webpack/build.js\"",
+        "start": "cross-env-shell NODE_ENV=development node \"./scripts/webpack/start.js\"",
+        "build": "cross-env-shell NODE_ENV=production node \"./scripts/webpack/build.js\"",
         "serve": "serve ./build --single",
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
