@@ -11,13 +11,11 @@ module.exports = async () => {
     const suggestedPort = await choosePort(HOST, PORT);
 
     return merge(getCommonConfig(), {
-        mode:    'development',
-        entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true', SOURCE ],
-        {
-            devServer: {
-                host: HOST,
-                port: suggestedPort
-            }
+        mode:      'development',
+        entry:     [ 'webpack-hot-middleware/client?reload=true&quiet=true', SOURCE ],
+        devServer: {
+            host: HOST,
+            port: suggestedPort,
         },
         plugins: [ new HotModuleReplacementPlugin() ],
     });
