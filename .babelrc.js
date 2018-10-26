@@ -1,8 +1,14 @@
 module.exports = api => {
-    // const env = api.env();
+    const env = api.env();
     //  api.cache.using(() => env === 'development');
 
     api.cache.never();
+
+    const plugins = ['@babel/plugin-proposal-class-properties'];
+
+    if (env === 'development') {
+        plugins.push('react-hot-loader/babel');
+    }
 
     return {
         presets: [
@@ -15,10 +21,7 @@ module.exports = api => {
                     debug: false,
                 },
             ],
-        ],
-        plugins: [
-            'react-hot-loader/babel',
-            '@babel/plugin-proposal-class-properties',
+            plugins,
         ],
     };
 };
