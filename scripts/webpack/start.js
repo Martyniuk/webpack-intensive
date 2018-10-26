@@ -19,8 +19,8 @@ const { HOST, PORT } = require('./constants');
 
     const compiler = webpack(config);
     const server = new devServer(compiler, {
-        host:               HOST,
-        port:               PORT,
+        host,
+        port,
         historyApiFallback: true,
         overlay:            true,
         quiet:              true,
