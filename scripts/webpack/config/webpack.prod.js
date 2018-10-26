@@ -6,11 +6,13 @@ const merge = require('webpack-merge');
 const { SOURCE, PROJECT_ROOT } = require('../constants');
 const getCommonConfig = require('./webpack.common');
 
-module.exports = () => merge(getCommonConfig(), {
-    entry:   SOURCE,
-    plugins: [
-        new CleanWebpackPlugin([ 'build' ], {
-            root: PROJECT_ROOT,
-        }),
-    ],
-});
+module.exports = () => {
+    return merge(getCommonConfig(), {
+        entry:   SOURCE,
+        plugins: [
+            new CleanWebpackPlugin([ 'build' ], {
+                root: PROJECT_ROOT,
+            }),
+        ],
+    });
+};
