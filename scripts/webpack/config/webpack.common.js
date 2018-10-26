@@ -46,6 +46,7 @@ module.exports = () => {
                                     // plugin 2
                                     // plugin 3
                                     // plugin n
+                                    // last plugin cssnano → minify
                                 ],
                             },
                         },
