@@ -16,10 +16,10 @@ module.exports = () => {
                 {
                     test: /\.js$/,
                     use:  {
-                        loader: 'babel-loader',
-                        // options: {
-                        //     compact: false,
-                        // },
+                        loader:  'babel-loader',
+                        options: {
+                            compact: false,
+                        },
                     },
                 },
                 {
