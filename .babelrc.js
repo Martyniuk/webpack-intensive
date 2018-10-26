@@ -1,4 +1,12 @@
 module.exports = (api) => {
-    api.cache.never();
+    // const env = api.env();
+    //  api.cache.using(() => env === 'development');
 
+    // api.cache.never();
+
+    api.cache.();
+
+    return {
+        // config
+    }
 }
