@@ -4,6 +4,8 @@ import { hot } from 'react-hot-loader';
 
 import Styles from './styles.css';
 
+import { Test2 } from '../components-2';
+
 const Test = hot(module)(
     class extends Component {
         render() {
@@ -12,7 +14,7 @@ const Test = hot(module)(
             return (
                 <>
                     <h1 className = { Styles.hello }>Хелоу!</h1>
-                    <h1 className = { Styles.hello }>Хелоу!</h1>
+                    <Test2 />
                 </>
             );
         }
