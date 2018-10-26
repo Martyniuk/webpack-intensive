@@ -11,14 +11,14 @@ module.exports = () => {
             filename: 'bundle.js',
         },
         devtool: false,
-        module:  {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
-            ],
-        },
+        // module:  {
+        //     rules: [
+        //         {
+        //             test: /\.css$/,
+        //             use:  [ 'style-loader', 'css-loader' ],
+        //         },
+        //     ],
+        // },
         plugins: [
             new HtmlWebpackPlugin({
                 title:    'Learn Webpack very well',
