@@ -1,5 +1,4 @@
 // Core
-const { HotModuleReplacementPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -32,7 +31,6 @@ module.exports = () => {
             new CleanWebpackPlugin([ 'build' ], {
                 root: PROJECT_ROOT,
             }),
-            new HotModuleReplacementPlugin(),
         ],
     };
 };
