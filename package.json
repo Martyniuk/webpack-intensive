@@ -30,6 +30,7 @@
         "nodegit": "0.22.2",
         "postcss-loader": "3.0.0",
         "postcss-preset-env": "6.2.0",
+        "react-dev-utils": "6.0.5",
         "react-hot-loader": "4.3.11",
         "webpack": "4.20.2",
         "webpack-cli": "3.1.2",
