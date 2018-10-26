@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Instruments
-const { SOURCE, BUILD, PROJECT_ROOT } = require('./constants');
+const { SOURCE, BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return {
