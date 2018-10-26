@@ -9,10 +9,11 @@ module.exports = api => {
             [
                 '@babel/preset-env',
                 {
-                    spec: true,   // медленней, более строго
+                    spec: true, // медленней, более строго
                     loose: false, // быстрей, менее строго
                 },
             ],
         ],
+        plugins: ['@babel/plugin-proposal-class-properties'],
     };
 };
