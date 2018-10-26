@@ -12,4 +12,4 @@ const Test = hot(module)(
     },
 );
 
-render(<Test />, document.getElementById('app'));
+render(React.createElement(Test), document.getElementById('app'));
