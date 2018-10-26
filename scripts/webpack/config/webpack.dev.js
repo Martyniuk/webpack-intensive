@@ -1,7 +1,7 @@
 // Core
 const { HotModuleReplacementPlugin } = require('webpack');
 const merge = require('webpack-merge');
-const choosePort = require('react-dev-utils/WebpackDevServerUtils');
+const { choosePort } = require('react-dev-utils/WebpackDevServerUtils');
 
 // Instruments
 const { SOURCE, HOST, PORT } = require('../constants');
