@@ -25,9 +25,6 @@ module.exports = () => {
                 template: './static/template.html',
                 favicon:  './static/favicon.ico',
             }),
-            new CleanWebpackPlugin([ 'build' ], {
-                root: PROJECT_ROOT,
-            }),
         ],
     };
 };
