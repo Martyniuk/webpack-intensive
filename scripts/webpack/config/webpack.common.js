@@ -17,9 +17,9 @@ module.exports = () => {
                     test: /\.js$/,
                     use:  {
                         loader:  'babel-loader',
-                        options: {
-                            compact: false,
-                        },
+                        // options: {
+                        //     compact: false,
+                        // },
                     },
                 },
                 {
