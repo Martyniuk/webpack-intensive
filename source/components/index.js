@@ -5,8 +5,6 @@ import { hot } from 'react-hot-loader';
 const Test = hot(module)(
     class extends Component {
         render() {
-            console.log('→ приветик');
-
             return <h1>Хелоу!</h1>;
         }
     },
