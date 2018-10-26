@@ -7,9 +7,6 @@ const chalk = require('chalk');
 // Config
 const getDevConfig = require('./config/webpack.dev');
 
-// Constants
-const { HOST, PORT } = require('./constants');
-
 (async () => {
     const config = await getDevConfig();
 
@@ -35,10 +32,10 @@ const { HOST, PORT } = require('./constants');
         },
     });
 
-    server.listen(PORT, HOST, () => {
+    server.listen(port, host, () => {
         console.log(
             `${chalk.greenBright('→ Server listening on')} ${chalk.blueBright(
-                `http://${HOST}:${PORT}`,
+                `http://${host}:${port}`,
             )}`,
         );
     });
