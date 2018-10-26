@@ -1,1 +1,5 @@
-Chrome > 47
+[development]
+last 1 Chrome version
+
+[production]
+Chrome > 48
