@@ -6,7 +6,6 @@ module.exports = api => {
 
     return {
         presets: [
-            '@babel/preset-react',
             'react-hot-loader/babel',
             [
                 '@babel/preset-env',
@@ -17,6 +16,9 @@ module.exports = api => {
                 },
             ],
         ],
-        plugins: ['@babel/plugin-proposal-class-properties'],
+        plugins: [
+            '@babel/preset-react',
+            '@babel/plugin-proposal-class-properties',
+        ],
     };
 };
