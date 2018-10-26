@@ -7,6 +7,7 @@ const { SOURCE, BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return {
+        entry:  SOURCE,
         output: {
             path:     BUILD,
             filename: 'bundle.js',
