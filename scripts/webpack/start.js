@@ -4,6 +4,7 @@ const devServer = require('webpack-dev-server');
 const hot = require('webpack-hot-middleware');
 const chalk = require('chalk');
 const openBrowser = require('react-dev-utils/openBrowser');
+const waitpage = require('webpack-dev-server-waitpage');
 
 // Config
 const getDevConfig = require('./config/webpack.dev');
@@ -24,7 +25,14 @@ const getDevConfig = require('./config/webpack.dev');
         quiet:              true,
         clientLogLevel:     'none',
         noInfo:             true,
-        after:              (app) => {
+        before:             (app, server) => {
+            app.use(
+                waitpage(server, {
+                    theme: 'material',
+                }),
+            );
+        },
+        after: (app) => {
             app.use(
                 hot(compiler, {
                     log: false,
