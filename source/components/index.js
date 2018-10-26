@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 export class Test extends Component {
     render() {
-        return <h1>Приветик! 😊</h1>;
+        return <h1>Приветик!</h1>;
     }
 }
 
