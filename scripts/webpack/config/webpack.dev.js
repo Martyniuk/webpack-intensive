@@ -1,10 +1,8 @@
 // Core
 const { HotModuleReplacementPlugin } = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Instruments
-const { SOURCE, BUILD, PROJECT_ROOT } = require('../constants');
+const { SOURCE, BUILD } = require('../constants');
 
 module.exports = () => {
     return {
@@ -23,16 +21,6 @@ module.exports = () => {
                 },
             ],
         },
-        plugins: [
-            new HtmlWebpackPlugin({
-                title:    'Learn Webpack very well',
-                template: './static/template.html',
-                favicon:  './static/favicon.ico',
-            }),
-            new CleanWebpackPlugin([ 'build' ], {
-                root: PROJECT_ROOT,
-            }),
-            new HotModuleReplacementPlugin(),
-        ],
+        plugins: [ new HotModuleReplacementPlugin() ],
     };
 };
