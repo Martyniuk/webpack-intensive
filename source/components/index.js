@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 
 export class Test extends Component {
     render() {
+        console.log('→ приветик');
         return <h1>Приветик!</h1>;
     }
 }
