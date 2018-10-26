@@ -11,7 +11,7 @@ module.exports = () => {
         mode:   'development',
         entry:  [ 'webpack-hot-middleware/client?reload=true&quiet=true', SOURCE ],
         output: {
-            path:     resolve(__dirname, '../build'),
+            path:     BUILD,
             filename: 'bundle.js',
         },
         devtool: 'false',
