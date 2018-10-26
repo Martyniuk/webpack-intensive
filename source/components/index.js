@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createElement } from 'react';
 import { render } from 'react-dom';
 import { hot } from 'react-hot-loader';
 
@@ -7,9 +7,9 @@ const Test = hot(module)(
         render() {
             console.log('→ приветик');
 
-            return React.createElement('h1', null, 'Хелоу!');
+            return createElement('h1', null, 'Хелоу!');
         }
     },
 );
 
-render(React.createElement(Test), document.getElementById('app'));
+render(createElement(Test), document.getElementById('app'));
