@@ -1,5 +1,4 @@
 // Core
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Instruments
@@ -22,11 +21,6 @@ module.exports = () => {
             ],
         },
         plugins: [
-            new HtmlWebpackPlugin({
-                title:    'Learn Webpack very well',
-                template: './static/template.html',
-                favicon:  './static/favicon.ico',
-            }),
             new CleanWebpackPlugin([ 'build' ], {
                 root: PROJECT_ROOT,
             }),
