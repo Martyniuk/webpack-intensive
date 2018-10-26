@@ -12,7 +12,7 @@ module.exports = () => {
             path:     BUILD,
             filename: 'bundle.js',
         },
-        devtool: 'false',
+        devtool: false,
         module:  {
             rules: [
                 {
