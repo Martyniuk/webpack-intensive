@@ -7,6 +7,7 @@ module.exports = api => {
     return {
         presets: [
             '@babel/preset-react',
+            'react-hot-loader/babel',
             [
                 '@babel/preset-env',
                 {
