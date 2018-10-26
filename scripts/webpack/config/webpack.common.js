@@ -7,7 +7,6 @@ const { SOURCE, BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return {
-        entry:  [ 'webpack-hot-middleware/client?reload=true&quiet=true', SOURCE ],
         output: {
             path:     BUILD,
             filename: 'bundle.js',
