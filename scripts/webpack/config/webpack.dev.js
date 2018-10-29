@@ -1,13 +1,13 @@
 // Core
-const { HotModuleReplacementPlugin } = require('webpack');
-const merge = require('webpack-merge');
-const { choosePort } = require('react-dev-utils/WebpackDevServerUtils');
+import { HotModuleReplacementPlugin } from 'webpack';
+import merge from 'webpack-merge';
+import { choosePort } from 'react-dev-utils/WebpackDevServerUtils';
 
 // Instruments
-const { SOURCE, HOST, PORT } = require('../constants');
-const getCommonConfig = require('./webpack.common');
+import { SOURCE, HOST, PORT } from '../constants';
+import getCommonConfig from './webpack.common';
 
-module.exports = async () => {
+export default async () => {
     const suggestedPort = await choosePort(HOST, PORT);
 
     return merge(getCommonConfig(), {
