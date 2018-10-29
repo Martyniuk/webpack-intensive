@@ -19,6 +19,7 @@ module.exports = api => {
                     spec: true, // медленней, более строго
                     loose: false, // быстрей, менее строго
                     debug: false,
+                    modules: 'commonjs', // default
                 },
             ],
         ],
