@@ -1,6 +1,6 @@
 import './theme/init.css';
 
-// import './components/Clicker';
+import './components/Clicker';
 
 /* javascript */
 // import './simple-components/javascript';
