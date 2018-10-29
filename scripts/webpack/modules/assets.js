@@ -13,7 +13,9 @@ export const loadImages = () => ({
                     {
                         loader:  'file-loader',
                         options: {
+                            // input: резовл webpack'a — инфа о файлах, о путях...
                             name: `./images/[name].[ext]`,
+                            // input: резовл webpack'a
                         },
                     },
                 ],
