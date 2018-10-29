@@ -1,7 +1,7 @@
 body {
     display: flex;
     min-height: 100vh;
-    background-color: var(--color1);
+    background-color: var(--color2);
     background-size: 100%;
     color: var(--color2);
     font-size: 33px;
