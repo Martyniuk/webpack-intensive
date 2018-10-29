@@ -4,7 +4,7 @@ const merge = require('webpack-merge');
 
 // Instruments
 const { SOURCE, PROJECT_ROOT } = require('../constants');
-const getCommonConfig = require('./webpack.common');
+const getCommonConfig = require('./webpack.common').default;
 
 module.exports = () => {
     return merge(getCommonConfig(), {
