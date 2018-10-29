@@ -6,6 +6,7 @@ import { hot } from 'react-hot-loader';
 // Styles
 import Styles from './postcss.css';
 import kitty from '../../theme/images/kitty.jpg';
+import React from '../../theme/images/react.svg';
 
 const Clicker = hot(module)(
     class extends Component {
@@ -28,6 +29,7 @@ const Clicker = hot(module)(
                 <section className = { Styles.clicker }>
                     <h1>Count: {count}</h1>
                     <img src = { kitty } />
+                    <React />
                     <div>
                         <button onClick = { this.inc }>Increment</button>
                         <button onClick = { this.dec }>Decrement</button>
