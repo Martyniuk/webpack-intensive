@@ -10,7 +10,7 @@ export const loadFonts = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./fonts/${CHUNK_NAME_ASSET}`,
+                            name: `./fonts/[name].[ext]`,
                         },
                     },
                 ],
