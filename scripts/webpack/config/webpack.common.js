@@ -9,6 +9,7 @@ import {
     loadFonts,
     connectHtml,
     loadImages,
+    loadSvg,
 } from '../modules';
 
 export default () => {
@@ -24,5 +25,6 @@ export default () => {
         loadCss(),
         loadFonts(),
         loadImages(),
+        loadSvg(),
     );
 };
