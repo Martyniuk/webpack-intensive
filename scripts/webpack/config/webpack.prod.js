@@ -10,8 +10,9 @@ export default () => {
     return merge(
         getCommonConfig(),
         {
-            mode:  'development', // временно
-            entry: SOURCE,
+            mode:    'development', // временно
+            entry:   SOURCE,
+            devtool: false,
         },
         cleanBuildDirectory(),
     );
