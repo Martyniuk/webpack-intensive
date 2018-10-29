@@ -13,26 +13,24 @@ const Clicker = hot(module)(
             count: 0,
         };
 
-        inc = () =>
-            this.setState(({ count }) => ({
-                count: count + 1,
-            }));
+        inc = () => this.setState(({ count }) => ({
+            count: count + 1,
+        }));
 
-        dec = () =>
-            this.setState(({ count }) => ({
-                count: count - 1,
-            }));
+        dec = () => this.setState(({ count }) => ({
+            count: count - 1,
+        }));
 
         render() {
             const { count } = this.state;
 
             return (
-                <section className={Styles.clicker}>
+                <section className = { Styles.clicker }>
                     <h1>Count: {count}</h1>
-                    <img src={kitty} />
+                    <img src = { kitty } />
                     <div>
-                        <button onClick={this.inc}>Increment</button>
-                        <button onClick={this.dec}>Decrement</button>
+                        <button onClick = { this.inc }>Increment</button>
+                        <button onClick = { this.dec }>Decrement</button>
                     </div>
                 </section>
             );
