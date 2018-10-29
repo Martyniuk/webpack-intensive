@@ -1,13 +1,13 @@
 // Core
-const webpack = require('webpack');
-const devServer = require('webpack-dev-server');
-const hot = require('webpack-hot-middleware');
-const chalk = require('chalk');
-const openBrowser = require('react-dev-utils/openBrowser');
-const waitpage = require('webpack-dev-server-waitpage');
+import webpack from 'webpack';
+import devServer from 'webpack-dev-server';
+import hot from 'webpack-hot-middleware';
+import chalk from 'chalk';
+import openBrowser from 'react-dev-utils/openBrowser';
+import waitpage from 'webpack-dev-server-waitpage';
 
 // Config
-const getDevConfig = require('./config/webpack.dev');
+import getDevConfig from './config/webpack.dev';
 
 (async () => {
     const config = await getDevConfig();
