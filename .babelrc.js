@@ -1,5 +1,4 @@
 module.exports = api => {
-    console.log('→ top babelrc');
     const env = api.env();
     //  api.cache.using(() => env === 'development');
 
