@@ -13,7 +13,6 @@ export default () => {
                 path:     BUILD,
                 filename: 'bundle.js',
             },
-            devtool: false,
             plugins: [
                 new HtmlWebpackPlugin({
                     title:    'Learn Webpack very well',
