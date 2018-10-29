@@ -1,11 +1,11 @@
 // Core
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const env = require('postcss-preset-env');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import env from 'postcss-preset-env';
 
 // Instruments
-const { BUILD } = require('../constants');
+import { BUILD } from '../constants';
 
-module.exports = () => {
+export default () => {
     return {
         output: {
             path:     BUILD,
@@ -40,7 +40,8 @@ module.exports = () => {
                             loader:  'postcss-loader',
                             options: {
                                 plugins: [
-                                    env({ // plugin 1
+                                    env({
+                                        // plugin 1
                                         stage: 0,
                                     }),
                                     // plugin 2
