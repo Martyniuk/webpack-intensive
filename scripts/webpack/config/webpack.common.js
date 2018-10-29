@@ -3,7 +3,13 @@ import merge from 'webpack-merge';
 
 // Instruments
 import { BUILD } from '../constants';
-import { loadJavaScript, loadCss, loadFonts, connectHtml } from '../modules';
+import {
+    loadJavaScript,
+    loadCss,
+    loadFonts,
+    connectHtml,
+    loadImages,
+} from '../modules';
 
 export default () => {
     return merge(
@@ -17,5 +23,6 @@ export default () => {
         loadJavaScript(),
         loadCss(),
         loadFonts(),
+        loadImages(),
     );
 };
