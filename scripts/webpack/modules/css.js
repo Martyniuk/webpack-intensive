@@ -1,3 +1,6 @@
+// Core
+import env from 'postcss-preset-env';
+
 export const loadCss = () => {
     return {
         module: {
