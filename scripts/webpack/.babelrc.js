@@ -1,5 +1,4 @@
 module.exports = api => {
-    console.log('→ bottom babelrc');
     api.cache.never();
 
     return {
