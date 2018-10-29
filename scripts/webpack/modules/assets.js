@@ -51,7 +51,6 @@ export const loadSvg = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            // limit: 0,
                             name: `./images/[name].[ext]`,
                         },
                     },
