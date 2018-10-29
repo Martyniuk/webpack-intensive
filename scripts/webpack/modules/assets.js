@@ -2,7 +2,7 @@ export const loadFonts = () => ({
     module: {
         rules: [
             {
-                test: /\.woff2$/,
+                test: /\.(woff2|eot)$/,
                 use:  [
                     {
                         loader:  'file-loader',
