@@ -12,7 +12,7 @@ export default () => {
         {
             mode:    'development', // временно
             entry:   SOURCE,
-            devtool: 'source-map',
+            devtool: false,
         },
         cleanBuildDirectory(),
     );
