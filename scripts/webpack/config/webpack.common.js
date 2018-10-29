@@ -16,15 +16,6 @@ export default () => {
         module:  {
             rules: [
                 {
-                    test: /\.js$/,
-                    use:  {
-                        loader:  'babel-loader',
-                        options: {
-                            compact: false,
-                        },
-                    },
-                },
-                {
                     test: /\.css$/,
                     use:  [
                         'style-loader',
