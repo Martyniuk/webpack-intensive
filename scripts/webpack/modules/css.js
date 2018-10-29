@@ -1,5 +1,6 @@
 // Core
 import env from 'postcss-preset-env';
+import fontMagician from 'postcss-font-magician';
 
 export const loadCss = () => {
     return {
@@ -25,6 +26,9 @@ export const loadCss = () => {
                                     env({
                                         // plugin 1
                                         stage: 0,
+                                    }),
+                                    fontMagician({
+                                        protocol: 'https:',
                                     }),
                                     // plugin 2
                                     // plugin 3
