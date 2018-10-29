@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--mainColor);
+    background-image: url('../../theme/images/react.png');
 
     & img {
         border-radius: 50%;
