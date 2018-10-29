@@ -1,12 +1,12 @@
 // Core
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const merge = require('webpack-merge');
+import CleanWebpackPlugin from 'clean-webpack-plugin';
+import merge from 'webpack-merge';
 
 // Instruments
-const { SOURCE, PROJECT_ROOT } = require('../constants');
-const getCommonConfig = require('./webpack.common').default;
+import { SOURCE, PROJECT_ROOT } from '../constants';
+import getCommonConfig from './webpack.common';
 
-module.exports = () => {
+export default () => {
     return merge(getCommonConfig(), {
         mode:    'development', // временно
         entry:   SOURCE,
