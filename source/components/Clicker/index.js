@@ -24,6 +24,8 @@ const Clicker = hot(module)(
         render() {
             const { count } = this.state;
 
+            console.log('→ message', count);
+
             return (
                 <section className = { Styles.clicker }>
                     <h1>Count: {count}</h1>
