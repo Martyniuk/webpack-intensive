@@ -31,6 +31,7 @@ const Clicker = hot(module)(
                 <section className = { Styles.clicker }>
                     <h1>Count: {count}</h1>
                     <img src = { kitty } />
+                    <img src = { ReactLink } />
                     <ReactLogo />
                     <div>
                         <button onClick = { this.inc }>Increment</button>
