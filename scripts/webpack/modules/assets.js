@@ -1,6 +1,9 @@
 // Core
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
+// Instruments
+import { STATIC } from '../constants';
+
 export const loadFonts = () => ({
     module: {
         rules: [
