@@ -29,7 +29,7 @@ export const loadSvg = () => ({
         rules: [
             {
                 test:   /\.svg$/,
-                issuer: {
+                issuer: { // тот, кто заимпортил .svg
                     test: /\.js$/,
                 },
                 use: [
@@ -44,7 +44,7 @@ export const loadSvg = () => ({
             },
             {
                 test:   /\.svg$/,
-                issuer: {
+                issuer: { // тот, кто заимпортил .svg
                     test: /\.css$/,
                 },
                 use: [
