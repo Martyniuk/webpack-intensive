@@ -1,6 +1,5 @@
 // Core
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import env from 'postcss-preset-env';
 import merge from 'webpack-merge';
 
 // Instruments
