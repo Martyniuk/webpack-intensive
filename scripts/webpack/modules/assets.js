@@ -11,7 +11,7 @@ export const loadImages = () => ({
                 test: /\.(png|jpg|jpeg)$/,
                 use:  [
                     {
-                        loader:  'file-loader',
+                        loader:  'url-loader',
                         options: {
                             name: `./images/[name].[ext]`,
                         },
