@@ -4,7 +4,7 @@ import merge from 'webpack-merge';
 
 // Instruments
 import { BUILD } from '../constants';
-import { loadJavaScript, loadCss } from '../modules';
+import { loadJavaScript, loadCss, loadFonts, connectHtml } from '../modules';
 
 export default () => {
     return merge(
@@ -13,15 +13,10 @@ export default () => {
                 path:     BUILD,
                 filename: 'bundle.js',
             },
-            plugins: [
-                new HtmlWebpackPlugin({
-                    title:    'Learn Webpack very well',
-                    template: './static/template.html',
-                    favicon:  './static/favicon.ico',
-                }),
-            ],
         },
+        connectHtml(),
         loadJavaScript(),
         loadCss(),
+        loadFonts(),
     );
 };
