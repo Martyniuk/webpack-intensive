@@ -5,7 +5,7 @@ import { hot } from 'react-hot-loader';
 
 // Styles
 import Styles from './postcss.css';
-import kitty from '../theme/images/kitty.jpg';
+import kitty from '../../theme/images/kitty.jpg';
 
 const Clicker = hot(module)(
     class extends Component {
