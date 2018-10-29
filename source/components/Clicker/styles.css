@@ -1,0 +1,14 @@
+.clicker {
+    composes: main from './main.css'
+}
+
+.clicker button {
+    height: 30px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: wheat;
+    font-size: 20px;
+    cursor: pointer;
+    outline: 0;
+}

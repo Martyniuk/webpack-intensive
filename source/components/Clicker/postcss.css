@@ -1,0 +1,33 @@
+.clicker {
+    --mainColor: #070a13;
+    --secondColor: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--mainColor);
+
+    & img {
+        border-radius: 50%;
+        border: 2px solid var(--mainColor);
+        width: 150px;
+        height: 150px;
+        margin-bottom: 25px;
+    }
+
+    & button {
+        height: 50px;
+        width: 180px;
+        margin-right: 5px;
+        border: 1px solid black;
+        border-radius: 7px;
+        background-color: var(--secondColor);
+        background-image: url('../theme/assets/images/pointer-icon.png');
+        background-size: 30px;
+        background-position: 5px 50%;
+        background-repeat: no-repeat;
+        color: var(--mainColor);
+        font-size: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
+}
