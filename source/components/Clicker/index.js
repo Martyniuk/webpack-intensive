@@ -24,7 +24,7 @@ const Clicker = hot(module)(
         render() {
             const { count } = this.state;
 
-            console.log('→ message', count);
+            throw new Error('boom')
 
             return (
                 <section className = { Styles.clicker }>
