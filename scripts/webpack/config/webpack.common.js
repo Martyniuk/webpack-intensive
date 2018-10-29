@@ -1,5 +1,4 @@
 // Core
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import merge from 'webpack-merge';
 
 // Instruments
