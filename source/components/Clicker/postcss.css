@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: center;
     color: var(--mainColor);
-    background-image: url('../../theme/images/react.svg');
 
     & img {
         border-radius: 50%;
@@ -22,7 +21,8 @@
         border: 1px solid black;
         border-radius: 7px;
         background-color: var(--secondColor);
-        background-image: url('../../theme/images/pointer-icon.png');
+        /* background-image: url('../../theme/images/pointer-icon.png'); */
+        background-image: url('../../theme/images/react.svg');
         background-size: 30px;
         background-position: 5px 50%;
         background-repeat: no-repeat;
