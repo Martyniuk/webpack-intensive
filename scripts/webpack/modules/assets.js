@@ -15,7 +15,7 @@ export const loadImages = () => ({
                         options: {
                             // input: резовл webpack'a — инфа о файлах, о путях...
                             name: `./images/[name].[ext]`,
-                            // ouput: ↑
+                            // output: ↑
                         },
                     },
                 ],
