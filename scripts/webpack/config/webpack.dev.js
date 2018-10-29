@@ -17,6 +17,7 @@ export default async () => {
             host: HOST,
             port: suggestedPort,
         },
+        devtool: 'cheap-module-eval-source-map',
         plugins: [ new HotModuleReplacementPlugin() ],
     });
 };
