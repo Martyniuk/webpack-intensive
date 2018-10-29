@@ -1,12 +1,13 @@
 // Core
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import env from 'postcss-preset-env';
+import merge from 'webpack-merge';
 
 // Instruments
 import { BUILD } from '../constants';
 
 export default () => {
-    return {
+    return merge({
         output: {
             path:     BUILD,
             filename: 'bundle.js',
@@ -62,5 +63,5 @@ export default () => {
                 favicon:  './static/favicon.ico',
             }),
         ],
-    };
+    });
 };
