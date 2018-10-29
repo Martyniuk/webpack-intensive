@@ -10,7 +10,7 @@ module.exports = api => {
                     modules: false,
                     spec: true,
                     loose: false,
-                    modules: 'commonjs',
+                    modules: 'commonjs', // default
                 },
             ],
         ],
