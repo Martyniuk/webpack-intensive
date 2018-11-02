@@ -4,3 +4,5 @@ export const optimizeModules = () => ({
         minimize: true,
     },
 });
+
+// mangle — увечья
