@@ -4,7 +4,11 @@ import merge from 'webpack-merge';
 // Instruments
 import { SOURCE } from '../constants';
 import getCommonConfig from './webpack.common';
-import { cleanBuildDirectory, connectBuildAnalysis } from '../modules';
+import {
+    cleanBuildDirectory,
+    connectBuildAnalysis,
+    optimizeModules,
+} from '../modules';
 
 export default () => {
     return merge(
@@ -16,5 +20,6 @@ export default () => {
         },
         cleanBuildDirectory(),
         connectBuildAnalysis(),
+        optimizeModules(),
     );
 };
