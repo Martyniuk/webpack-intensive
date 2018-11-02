@@ -29,4 +29,4 @@ if (dev) {
     // logging
 }
 
-console.log(TWO);
+console.log('TWO', TWO);
