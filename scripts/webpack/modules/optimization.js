@@ -26,4 +26,8 @@ export const optimizeModules = () => ({
     },
 });
 
+// parent
+// ↓
+// chunk1
+
 // mangle — увечья
