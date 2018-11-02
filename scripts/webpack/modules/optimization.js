@@ -10,6 +10,8 @@ export const optimizeModules = () => ({
                 cache: true,
             }),
         ],
+        // Останавливает эмит сборки при возникновении ошибки во время компиляции
+        noEmitOnErrors: true,
     },
 });
 
