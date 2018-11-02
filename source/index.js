@@ -7,7 +7,6 @@
 import _ from 'lodash-es';
 
 
-
 /* javascript */
 // import './simple-components/javascript';
 /* javascript */
