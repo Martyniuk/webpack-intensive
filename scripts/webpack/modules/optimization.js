@@ -14,7 +14,9 @@ export const optimizeModules = () => ({
         noEmitOnErrors: true,
 
         // ✓ Не добавляет в сборку пустые чанки
-        removeEmptyChunks: true,
+        removeEmptyChunks:    true,
+        // ✓ Объединяет идентичные чанки (которые содержат одинаковые модули)
+        mergeDuplicateChunks: true,
     },
 });
 
