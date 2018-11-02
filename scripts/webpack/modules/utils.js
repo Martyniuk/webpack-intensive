@@ -19,5 +19,11 @@ export const defineEnvVariables = (variables = {}) => ({
 });
 
 export const connectBuildAnalysis = () => ({
-    plugins: [ new BundleAnalyzerPlugin() ],
+    plugins: [
+        new BundleAnalyzerPlugin({
+            analyzerMode:      'disabled',
+            openAnalyzer:      false,
+            generateStatsFile: true,
+        }),
+    ],
 });
