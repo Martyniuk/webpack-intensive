@@ -3,7 +3,7 @@
 // import './components/Clicker';
 
 /* javascript */
-import './simple-components/javascript';
+// import './simple-components/javascript';
 /* javascript */
 
 /* dom */
