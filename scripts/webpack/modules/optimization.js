@@ -1,8 +1,6 @@
 // Core
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 
-import a from 'acron'
-
 export const optimizeModules = () => ({
     optimization: {
         // Минификация JavaScript
