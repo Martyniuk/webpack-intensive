@@ -28,6 +28,10 @@ export const optimizeModules = () => ({
         occurrenceOrder:    true,
         // анализирует dependency graph и пытается найти доступные для объединения модули.
         concatenateModules: true,
+
+        // ✓ Инструкция вебпаку определить экспорты для каждого модуля,
+        // и в результате сгенерировать более эффективный код
+        providedExports: true,
     },
 });
 
