@@ -28,3 +28,5 @@ if (dev) {
     // hot
     // logging
 }
+
+console.log(TWO);
