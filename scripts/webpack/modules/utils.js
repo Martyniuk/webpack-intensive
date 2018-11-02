@@ -1,4 +1,5 @@
 // Core
+import { DefinePlugin } from 'webpack';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 // Instruments
@@ -10,4 +11,8 @@ export const cleanBuildDirectory = () => ({
             root: PROJECT_ROOT,
         }),
     ],
+});
+
+export const defineEnvVariables = (variables = {}) => ({
+    plugins: [ new DefinePlugin(variables) ],
 });
