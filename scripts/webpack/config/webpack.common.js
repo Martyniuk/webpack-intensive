@@ -14,6 +14,8 @@ import {
 } from '../modules';
 
 export default () => {
+    const { NODE_ENV } = process.env;
+
     return merge(
         {
             output: {
