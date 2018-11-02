@@ -23,6 +23,7 @@ import './simple-components/javascript';
 /* dom */
 
 if (__DEV__) {
+    2 + 2;
     // hot
     // logging
 }
