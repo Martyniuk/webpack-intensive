@@ -24,7 +24,6 @@ export const loadCss = () => {
                             options: {
                                 plugins: [
                                     env({
-                                        // plugin 1
                                         stage: 0,
                                     }),
                                     fontMagician({
