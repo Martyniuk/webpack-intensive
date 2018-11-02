@@ -29,5 +29,7 @@ export const optimizeModules = () => ({
 // parent
 // ↓
 // chunk1
+// ↓
+// chunk2
 
 // mangle — увечья
