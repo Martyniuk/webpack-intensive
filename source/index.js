@@ -2,6 +2,12 @@
 
 // import './components/Clicker';
 
+
+/* tree shaking */
+import _ from 'lodash-es';
+
+
+
 /* javascript */
 // import './simple-components/javascript';
 /* javascript */
