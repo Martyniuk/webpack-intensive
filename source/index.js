@@ -6,6 +6,8 @@
 /* tree shaking */
 import _ from 'lodash-es';
 
+console.log('→ _', _);
+
 
 /* javascript */
 // import './simple-components/javascript';
