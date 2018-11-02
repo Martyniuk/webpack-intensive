@@ -21,3 +21,10 @@ import './simple-components/javascript';
 //     });
 // }
 /* dom */
+
+const dev = process.env.NODE_ENV;
+
+if (dev) {
+    // hot
+    // logging
+}
