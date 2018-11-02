@@ -7,7 +7,7 @@
 /* javascript */
 
 /* siri */
-import './siri';
+// import './siri';
 /* siri */
 
 /* dom */
