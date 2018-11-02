@@ -10,7 +10,7 @@ export default () => {
     return merge(
         getCommonConfig(),
         {
-            mode:    'production', // временно
+            mode:    'none',
             entry:   SOURCE,
             devtool: false,
         },
