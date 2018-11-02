@@ -30,10 +30,9 @@ export default () => {
         loadImages(),
         loadSvg(),
         defineEnvVariables({
-            __ENV__:          JSON.stringify(NODE_ENV),
-            __DEV__:          NODE_ENV === 'development',
-            __PROD__:         NODE_ENV === 'production',
-            __NEXT_FEATURE__: true,
+            __ENV__:  JSON.stringify(NODE_ENV),
+            __DEV__:  NODE_ENV === 'development',
+            __PROD__: NODE_ENV === 'production',
         }),
     );
 };
