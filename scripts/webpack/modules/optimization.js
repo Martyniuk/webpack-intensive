@@ -19,6 +19,10 @@ export const optimizeModules = () => ({
         mergeDuplicateChunks:   true,
         // ✓ Удаляет модуль из чанка, если этот модуль присутствует в родительском чанке
         removeAvailableModules: true,
+
+        // Определяет дочерние чанки у родительских чанков таким образом, что дочерний чанк
+        // не грузится, если родительский уже загрузился
+        flagIncludedChunks: true,
     },
 });
 
