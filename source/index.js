@@ -22,13 +22,14 @@ import './simple-components/javascript';
 // }
 /* dom */
 
-if (__DEV__) {
-    const a = 2 + 2;
-    console.log('→ a', a);
-    // hot
-    // logging
-}
+/* Env variables */
+// if (__DEV__) {
+//     const a = 2 + 2;
+//     console.log('→ a', a);
+//     // hot
+//     // logging
+// }
 
-console.log('→ __ENV__', __ENV__);
-console.log('→ __DEV__', __DEV__);
-console.log('→ __PROD__', __PROD__);
+// console.log('→ __ENV__', __ENV__);
+// console.log('→ __DEV__', __DEV__);
+// console.log('→ __PROD__', __PROD__);
