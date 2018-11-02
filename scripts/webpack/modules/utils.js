@@ -16,3 +16,7 @@ export const cleanBuildDirectory = () => ({
 export const defineEnvVariables = (variables = {}) => ({
     plugins: [ new DefinePlugin(variables) ],
 });
+
+export const connectBuildAnalysis = () => ({
+    plugins: [ new BundleAnalyzerPlugin() ],
+});
