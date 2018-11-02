@@ -10,6 +10,7 @@ import {
     connectHtml,
     loadImages,
     loadSvg,
+    defineEnvVariables,
 } from '../modules';
 
 export default () => {
@@ -26,5 +27,8 @@ export default () => {
         loadFonts(),
         loadImages(),
         loadSvg(),
+        defineEnvVariables({
+            TWO: '1 + 1',
+        }),
     );
 };
