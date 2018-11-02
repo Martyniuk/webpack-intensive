@@ -4,9 +4,9 @@
 
 
 /* tree shaking */
-import _ from 'lodash-es';
+import { first } from 'lodash-es';
 
-console.log('→ _', _);
+console.log('→ _', first);
 
 
 /* javascript */
