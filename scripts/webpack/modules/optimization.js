@@ -12,6 +12,9 @@ export const optimizeModules = () => ({
         ],
         // Останавливает эмит сборки при возникновении ошибки во время компиляции
         noEmitOnErrors: true,
+
+        // ✓ Не добавляет в сборку пустые чанки
+        removeEmptyChunks: true,
     },
 });
 
