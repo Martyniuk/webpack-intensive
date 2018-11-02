@@ -6,6 +6,10 @@
 // import './simple-components/javascript';
 /* javascript */
 
+/* siri */
+import './siri';
+/* siri */
+
 /* dom */
 // import component from './simple-components/dom';
 
