@@ -22,9 +22,7 @@ import './simple-components/javascript';
 // }
 /* dom */
 
-const dev = process.env.NODE_ENV;
-
-if (dev) {
+if (__DEV__) {
     // hot
     // logging
 }
