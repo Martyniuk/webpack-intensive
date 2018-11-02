@@ -23,7 +23,8 @@ import './simple-components/javascript';
 /* dom */
 
 if (__DEV__) {
-    2 + 2;
+    const a = 2 + 2;
+    console.log('→ a', a);
     // hot
     // logging
 }
