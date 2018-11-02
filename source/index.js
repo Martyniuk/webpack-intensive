@@ -29,6 +29,6 @@ if (dev) {
     // logging
 }
 
-console.log('TWO', TWO);
-console.log('API', API_URL);
-
+console.log('→ __ENV__', __ENV__);
+console.log('→ __DEV__', __DEV__);
+console.log('→ __PROD__', __PROD__);
