@@ -30,3 +30,5 @@ if (dev) {
 }
 
 console.log('TWO', TWO);
+console.log('API', API_URL);
+
