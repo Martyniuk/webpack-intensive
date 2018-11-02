@@ -28,9 +28,8 @@ export default () => {
         loadImages(),
         loadSvg(),
         defineEnvVariables({
-            TWO: '1 + 1',
-            API_URL: 'https://ww....',
-
+            TWO:     '1 + 1',
+            API_URL: JSON.stringify('https://ww....'),
         }),
     );
 };
