@@ -6,6 +6,7 @@ import { SOURCE } from '../constants';
 import getCommonConfig from './webpack.common';
 import { cleanBuildDirectory } from '../modules';
 
+
 export default () => {
     return merge(
         getCommonConfig(),
