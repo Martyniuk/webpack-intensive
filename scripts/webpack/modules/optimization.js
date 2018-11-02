@@ -31,7 +31,7 @@ export const optimizeModules = () => ({
 // chunk1
 // ↓           ↓
 // chunk2      chunk3
-//             ↓
-//             chunk2
+//    ↓        ↓
+//    →→→→→→   chunk2
 
 // mangle — увечья
