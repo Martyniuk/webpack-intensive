@@ -1,6 +1,4 @@
-import lazyText from './lazyLoadedText';
-
-export default (text = lazyText) => {
+export default (text = 'Hello!') => {
     const element = document.createElement('div');
 
     element.innerHTML = text;
