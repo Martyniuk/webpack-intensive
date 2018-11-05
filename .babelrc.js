@@ -4,7 +4,10 @@ module.exports = api => {
 
     api.cache.never();
 
-    const plugins = ['@babel/plugin-proposal-class-properties'];
+    const plugins = [
+        '@babel/plugin-proposal-class-properties',
+        '@babel/plugin-syntax-dynamic-import',
+    ];
 
     if (env === 'development') {
         plugins.push('react-hot-loader/babel');
