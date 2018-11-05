@@ -1,6 +1,5 @@
-import './theme/init.css';
-
-import './components/SkillMeter';
+// import './theme/init.css';
+// import './components/SkillMeter';
 
 /* tree shaking */
 // import { first } from 'lodash-es';
