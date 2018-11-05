@@ -19,10 +19,8 @@ export default () => {
     return merge(
         {
             output: {
-                path:     BUILD,
-                filename: IS_DEVELOPMENT
-                    ? '[name].js'
-                    : `./js/${CHUNK_NAME_JS}`,
+                path:          BUILD,
+                filename:      IS_DEVELOPMENT ? '[name].js' : `./js/${CHUNK_NAME_JS}`,
                 chunkFilename: IS_DEVELOPMENT
                     ? '[name].js'
                     : `./js/${CHUNK_NAME_JS}`,
