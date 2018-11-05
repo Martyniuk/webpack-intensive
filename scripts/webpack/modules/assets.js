@@ -14,7 +14,7 @@ export const loadImages = () => ({
                         loader:  'file-loader',
                         options: {
                             // input: резовл webpack'a — инфа о файлах, о путях...
-                            name: `./images/${CHUNK_NAME_ASSET}`,
+                            name: `images/${CHUNK_NAME_ASSET}`,
                             // output: ↑
                         },
                     },
@@ -38,7 +38,7 @@ export const loadSvg = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./images/${CHUNK_NAME_ASSET}`,
+                            name: `images/${CHUNK_NAME_ASSET}`,
                         },
                     },
                 ],
@@ -53,7 +53,7 @@ export const loadSvg = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./images/${CHUNK_NAME_ASSET}`,
+                            name: `images/${CHUNK_NAME_ASSET}`,
                         },
                     },
                 ],
@@ -71,7 +71,7 @@ export const loadFonts = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./fonts/${CHUNK_NAME_ASSET}`,
+                            name: `fonts/${CHUNK_NAME_ASSET}`,
                         },
                     },
                 ],
