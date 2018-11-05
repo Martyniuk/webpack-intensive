@@ -8,6 +8,7 @@ import {
     cleanBuildDirectory,
     connectBuildAnalysis,
     optimizeModules,
+    loadProdCss,
 } from '../modules';
 
 export default () => {
@@ -21,5 +22,6 @@ export default () => {
         cleanBuildDirectory(),
         connectBuildAnalysis(),
         optimizeModules(),
+        loadProdCss(),
     );
 };
