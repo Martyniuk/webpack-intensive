@@ -4,8 +4,8 @@
 
 
 /* tree shaking */
-import { first } from 'lodash-es';
-console.log('→ _', first);
+// import { first } from 'lodash-es';
+// console.log('→ _', first);
 /* tree shaking */
 
 
