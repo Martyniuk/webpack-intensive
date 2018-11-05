@@ -1,13 +1,11 @@
-// import './theme/init.css';
+import './theme/init.css';
 
-// import './components/Clicker';
-
+import './components/SkillMeter';
 
 /* tree shaking */
 // import { first } from 'lodash-es';
 // console.log('→ _', first);
 /* tree shaking */
-
 
 /* javascript */
 // import './simple-components/javascript';
