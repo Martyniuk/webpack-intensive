@@ -44,7 +44,21 @@ export const loadCss = () => {
     };
 };
 
-// loadDevCss
+export const loadDevCss = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use:  [
+                    'style-loader',
+                    loadCss({ sourceMap: true }),
+                    loadPostCss({ sourceMap: true, minimize: false }),
+                ],
+            },
+        ],
+    },
+});
+
 export const loadProdCss = () => ({
     module: {
         rules: [
