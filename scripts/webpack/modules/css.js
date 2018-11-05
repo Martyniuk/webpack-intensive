@@ -43,3 +43,25 @@ export const loadCss = () => {
         },
     };
 };
+
+export const loadProdCss = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use:  [
+                    MiniCssExtractPlugin.loader,
+                    'cache-loader',
+                    loadCss({ sourceMap: false }),
+                    loadPostCss({ sourceMap: false, minimize: true }),
+                ],
+            },
+        ],
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename:      'css/style.css',
+            chunkFilename: 'css/style.css',
+        }),
+    ],
+});
