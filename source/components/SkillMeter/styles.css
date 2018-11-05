@@ -1,4 +1,4 @@
-/* @import '../../theme/breakpoints.css'; */
+@import '../../theme/breakpoints.css';
 
 .skillMeter {
     display: flex;
@@ -24,9 +24,9 @@
         width: max-content;
     }
 
-    /* @media (--phonePortrait) {
+    @media (--phonePortrait) {
         & h1 {
             color: rebeccapurple;
         }
-    } */
+    }
 }
