@@ -4,6 +4,9 @@ import env from 'postcss-preset-env';
 import fontMagician from 'postcss-font-magician';
 import cssnano from 'cssnano';
 
+// Instruments
+import { CHUNK_NAME_CSS } from '../constants';
+
 const loadPostCss = (
     { sourceMap, minimize } = { sourceMap: false, minimize: false },
 ) => {
@@ -70,8 +73,8 @@ export const loadProdCss = () => ({
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename:      './css/[name].[chunkhash:5].css',
-            chunkFilename: './css/[name].[contenthash:5].css',
+            filename:      `css/${CHUNK_NAME_CSS}`,
+            chunkFilename: `css/${CHUNK_NAME_CSS}`,
         }),
     ],
 });
