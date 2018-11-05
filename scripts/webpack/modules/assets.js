@@ -53,7 +53,7 @@ export const loadSvg = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: './images/[name].[ext]',
+                            name: `./images/${CHUNK_NAME_ASSET}`,
                         },
                     },
                 ],
@@ -71,7 +71,7 @@ export const loadFonts = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: './fonts/[name].[ext]',
+                            name: `./images/${CHUNK_NAME_ASSET}`,
                         },
                     },
                 ],
