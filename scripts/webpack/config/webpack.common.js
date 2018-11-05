@@ -2,7 +2,7 @@
 import merge from 'webpack-merge';
 
 // Instruments
-import { BUILD } from '../constants';
+import { BUILD, CHUNK_NAME_JS } from '../constants';
 import {
     loadJavaScript,
     loadFonts,
@@ -14,12 +14,17 @@ import {
 
 export default () => {
     const { NODE_ENV } = process.env;
+    const IS_DEVELOPMENT = NODE_ENV === 'development';
 
     return merge(
         {
             output: {
-                path:     BUILD,
-                filename: './js/[name].[chunkhash:5].js',
+                path:          BUILD,
+                filename:      IS_DEVELOPMENT ? '[name].js' : `js/${CHUNK_NAME_JS}`,
+                chunkFilename: IS_DEVELOPMENT
+                    ? '[name].js'
+                    : `js/${CHUNK_NAME_JS}`,
+                hashDigestLength: 5,
             },
         },
         connectHtml(),
