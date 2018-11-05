@@ -2,6 +2,7 @@ import './theme/init.css';
 import(/* webpackChunkName: "dynamic" */ './theme/dynamic.css');
 // import './components/SkillMeter';
 
+
 /* tree shaking */
 // import { first } from 'lodash-es';
 // console.log('→ _', first);
