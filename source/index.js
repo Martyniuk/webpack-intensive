@@ -1,8 +1,6 @@
 import './theme/init.css';
 import(/* webpackChunkName: "dynamic" */ './theme/dynamic.css');
-// import './components/SkillMeter';
-
-console.log('→ message');
+import './components/SkillMeter';
 
 /* tree shaking */
 // import { first } from 'lodash-es';
@@ -18,19 +16,19 @@ console.log('→ message');
 /* siri */
 
 /* dom */
-import component from './simple-components/dom';
+// import component from './simple-components/dom';
 
-let element = component();
+// let element = component();
 
-document.body.appendChild(element);
+// document.body.appendChild(element);
 
-if (module.hot) {
-    module.hot.accept('./simple-components/dom', function() {
-        document.body.removeChild(element);
-        element = component();
-        document.body.appendChild(element);
-    });
-}
+// if (module.hot) {
+//     module.hot.accept('./simple-components/dom', function() {
+//         document.body.removeChild(element);
+//         element = component();
+//         document.body.appendChild(element);
+//     });
+// }
 /* dom */
 
 /* Env variables */
