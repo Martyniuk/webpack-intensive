@@ -10,13 +10,7 @@ export default (text = 'Hello!') => {
 
         element.textContent = 'fetching...';
 
-        // const { default: text } = await import('./lazyText');
-
-        /*
-        ** prefetch: отмечает ресурс как возможно пригодившийся в будущем (browser downloads while idle state)
-        ** preload: отмечает ресурс как необходимый ближайшее время (browser downloads immediately)
-         */
-        const { default: text } = await import('./lazyLoadedText');
+        const { default: text } = await import('./lazyText');
 
         element.textContent = text;
     });
