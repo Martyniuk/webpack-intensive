@@ -14,7 +14,7 @@ export const loadImages = () => ({
                         loader:  'file-loader',
                         options: {
                             // input: резовл webpack'a — инфа о файлах, о путях...
-                            name: `./images/[name].[ext]`,
+                            name: './images/[name].[ext]',
                             // output: ↑
                         },
                     },
@@ -29,7 +29,8 @@ export const loadSvg = () => ({
         rules: [
             {
                 test:   /\.svg$/,
-                issuer: { // тот, кто заимпортил .svg
+                issuer: {
+                    // тот, кто заимпортил .svg
                     test: /\.js$/,
                 },
                 use: [
@@ -37,21 +38,22 @@ export const loadSvg = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./images/[name].[ext]`,
+                            name: './images/[name].[ext]',
                         },
                     },
                 ],
             },
             {
                 test:   /\.svg$/,
-                issuer: { // тот, кто заимпортил .svg
+                issuer: {
+                    // тот, кто заимпортил .svg
                     test: /\.css$/,
                 },
                 use: [
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./images/[name].[ext]`,
+                            name: './images/[name].[ext]',
                         },
                     },
                 ],
@@ -69,7 +71,7 @@ export const loadFonts = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./fonts/[name].[ext]`,
+                            name: './fonts/[name].[ext]',
                         },
                     },
                 ],
