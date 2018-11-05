@@ -19,7 +19,7 @@ export default () => {
         {
             output: {
                 path:     BUILD,
-                filename: './js/bundle.js',
+                filename: './js/[name].js',
             },
         },
         connectHtml(),
