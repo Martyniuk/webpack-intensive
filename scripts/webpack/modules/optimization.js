@@ -61,7 +61,7 @@ export const optimizeImages = () => ({
                 plugins: [
                     imageminMozjpeg({
                         progressive: true,
-                        quality:     60,
+                        quality:     10,
                     }),
                     imageminPngquant({
                         quality: 60,
