@@ -39,7 +39,7 @@ export const loadDevCss = () => ({
                 test: /\.css$/,
                 use:  [
                     'style-loader',
-                    loadCss({ sourceMap: true }),
+                    loadCss({ sourceMap: false }),
                     loadPostCss({ sourceMap: true }),
                 ],
             },
