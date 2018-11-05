@@ -71,7 +71,7 @@ export const loadFonts = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: `./fonts/[hash].[ext]`,
+                            name: `./fonts/${CHUNK_NAME_ASSET}`,
                         },
                     },
                 ],
