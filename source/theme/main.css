@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     background-color: var(--color2);
+    background-image: url('./images/alien.jpg');
     background-size: 100%;
     color: var(--color2);
     font-size: 33px;
