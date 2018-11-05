@@ -9,6 +9,7 @@ import {
     connectBuildAnalysis,
     optimizeModules,
     loadProdCss,
+    optimizeImages,
 } from '../modules';
 
 export default () => {
@@ -23,5 +24,6 @@ export default () => {
         connectBuildAnalysis(),
         optimizeModules(),
         loadProdCss(),
+        optimizeImages(),
     );
 };
