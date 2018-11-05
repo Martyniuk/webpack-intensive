@@ -7,10 +7,10 @@ const loadPostCss = ({ sourceMap } = { sourceMap: false }) => {
     const plugins = [
         env({
             stage: 0,
-        }),
+        }), // первый
         fontMagician({
             protocol: 'https:',
-        }),
+        }), // второй
     ];
 
     return {
