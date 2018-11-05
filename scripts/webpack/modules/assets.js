@@ -2,7 +2,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 // Instruments
-import { STATIC } from '../constants';
+import { STATIC, CHUNK_NAME_ASSET } from '../constants';
 
 export const loadImages = () => ({
     module: {
@@ -14,7 +14,7 @@ export const loadImages = () => ({
                         loader:  'file-loader',
                         options: {
                             // input: резовл webpack'a — инфа о файлах, о путях...
-                            name: './images/[name].[ext]',
+                            name: `./images/${CHUNK_NAME_ASSET}`,
                             // output: ↑
                         },
                     },
