@@ -5,7 +5,7 @@ import { hot } from 'react-hot-loader';
 
 // Styles
 import Styles from './styles.css';
-import cat from '../../theme/images/cat.jpg';
+import cat from '../../theme/images/kitty.jpg';
 
 // Components
 import { Button } from '../Button';
