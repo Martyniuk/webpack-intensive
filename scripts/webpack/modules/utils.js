@@ -3,7 +3,6 @@ import { DefinePlugin, HotModuleReplacementPlugin } from 'webpack';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
-
 // Instruments
 import { PROJECT_ROOT } from '../constants';
 
