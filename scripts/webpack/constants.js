@@ -11,3 +11,8 @@ export { PROJECT_ROOT };
 export const SOURCE = resolve(PROJECT_ROOT, './source');
 export const BUILD = resolve(PROJECT_ROOT, './build');
 export const STATIC = resolve(PROJECT_ROOT, './static');
+
+// Formatting
+export const CHUNK_NAME_JS = '[name].[chunkhash].[id].js';
+export const CHUNK_NAME_CSS = '[name].[contenthash].[id].css';
+export const CHUNK_NAME_ASSET = '[name].[hash:5].[ext]';
