@@ -1,4 +1,4 @@
-/* @import '../../theme/breakpoints.css'; */
+@import '../../theme/breakpoints.css';
 
 .button {
     height: 50px;
@@ -16,8 +16,8 @@
     cursor: pointer;
     outline: 0;
 
-    /* @media (--phonePortrait) {
+    @media (--phonePortrait) {
         background-color: var(--color1);
         color: var(--color2);
-    } */
+    }
 }
