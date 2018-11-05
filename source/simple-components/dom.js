@@ -10,6 +10,8 @@ export default (text = 'Hello!') => {
 
         element.textContent = 'fetching...';
 
+        await (() => new Promise((resolve) => setTimeout(resolve, 2000)))();
+
         const { default: text } = await import('./lazyLoadedText');
 
         element.textContent = text;
