@@ -48,7 +48,7 @@ export const loadDevCss = () => ({
                 use:  [
                     'style-loader',
                     loadCss({ sourceMap: true }),
-                    loadPostCss({ sourceMap: true }),
+                    loadPostCss({ sourceMap: true, minimize: false }),
                 ],
             },
         ],
@@ -63,7 +63,7 @@ export const loadProdCss = () => ({
                 use:  [
                     MiniCssExtractPlugin.loader, // mini-css-loader
                     loadCss({ sourceMap: false }), // css-loader
-                    loadPostCss({ sourceMap: false }), // postcss-loader
+                    loadPostCss({ sourceMap: false, minimize: true }), // postcss-loader
                 ],
             },
         ],
