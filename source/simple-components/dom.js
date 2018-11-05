@@ -4,10 +4,6 @@ export default (text = 'Hello!') => {
     element.innerHTML = text;
 
     element.addEventListener('click', async () => {
-        element.textContent = 'preparing...';
-
-        await (() => new Promise((resolve) => setTimeout(resolve, 2000)))();
-
         element.textContent = 'fetching...';
 
         await (() => new Promise((resolve) => setTimeout(resolve, 2000)))();
