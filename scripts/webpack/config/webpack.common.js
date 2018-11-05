@@ -5,7 +5,6 @@ import merge from 'webpack-merge';
 import { BUILD } from '../constants';
 import {
     loadJavaScript,
-    loadCss,
     loadFonts,
     connectHtml,
     loadImages,
@@ -25,7 +24,6 @@ export default () => {
         },
         connectHtml(),
         loadJavaScript(),
-        loadCss(),
         loadFonts(),
         loadImages(),
         loadSvg(),
