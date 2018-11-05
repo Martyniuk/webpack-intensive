@@ -27,3 +27,7 @@ export const connectBuildAnalysis = () => ({
         }),
     ],
 });
+
+export const connectHotModuleReplacement = () => ({
+    plugins: [ new HotModuleReplacementPlugin() ],
+});
