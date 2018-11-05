@@ -10,8 +10,8 @@ export class Button extends Component {
 
         return (
             <button
-                onClick = { onClick }
-                className = { Styles.button }>
+                className = { Styles.button }
+                onClick = { onClick }>
                 {text}
             </button>
         );
