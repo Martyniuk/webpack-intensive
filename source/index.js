@@ -1,5 +1,5 @@
 import './theme/init.css';
-import('./theme/dynamic.css');
+import(/* webpackChunkName: "dynamic" */ './theme/dynamic.css');
 // import './components/SkillMeter';
 
 /* tree shaking */
