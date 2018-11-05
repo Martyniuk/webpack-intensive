@@ -3,9 +3,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import env from 'postcss-preset-env';
 import fontMagician from 'postcss-font-magician';
 
-const loadPostCss = (
-    { sourceMap } = { sourceMap: false },
-) => {
+const loadPostCss = ({ sourceMap } = { sourceMap: false }) => {
     const plugins = [
         env({
             stage: 0,
@@ -42,7 +40,7 @@ export const loadDevCss = () => ({
                 use:  [
                     'style-loader',
                     loadCss({ sourceMap: true }),
-                    loadPostCss({ sourceMap: true, minimize: false }),
+                    loadPostCss({ sourceMap: true }),
                 ],
             },
         ],
@@ -57,7 +55,7 @@ export const loadProdCss = () => ({
                 use:  [
                     MiniCssExtractPlugin.loader, // mini-css-loader
                     loadCss({ sourceMap: false }), // css-loader
-                    loadPostCss({ sourceMap: false, minimize: true }), // postcss-loader
+                    loadPostCss({ sourceMap: false }), // postcss-loader
                 ],
             },
         ],
