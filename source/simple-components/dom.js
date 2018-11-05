@@ -10,7 +10,7 @@ export default (text = 'Hello!') => {
 
         element.textContent = 'fetching...';
 
-        const { default: text } = await import('./lazyText');
+        const { default: text } = await import('./lazyLoadedText');
 
         element.textContent = text;
     });
