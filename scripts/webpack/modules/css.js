@@ -44,6 +44,7 @@ export const loadCss = () => {
     };
 };
 
+// loadDevCss
 export const loadProdCss = () => ({
     module: {
         rules: [
@@ -51,9 +52,8 @@ export const loadProdCss = () => ({
                 test: /\.css$/,
                 use:  [
                     MiniCssExtractPlugin.loader,
-                    'cache-loader',
-                    loadCss({ sourceMap: false }),
-                    loadPostCss({ sourceMap: false, minimize: true }),
+                    loadCss({ sourceMap: false }), // css-loader
+                    loadPostCss({ sourceMap: false, minimize: true }), // postcss-loader
                 ],
             },
         ],
