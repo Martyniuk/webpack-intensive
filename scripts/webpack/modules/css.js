@@ -2,16 +2,23 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import env from 'postcss-preset-env';
 import fontMagician from 'postcss-font-magician';
+import cssnano from 'cssnano';
 
-const loadPostCss = ({ sourceMap } = { sourceMap: false }) => {
+const loadPostCss = (
+    { sourceMap, minimize } = { sourceMap: false, minimize: false },
+) => {
     const plugins = [
         env({
             stage: 0,
         }), // первый
         fontMagician({
-            protocol: 'https:',
-        }), // второй
+            protocol: 'https:', // второй
+        }),
     ];
+
+    if (minimize) {
+        plugins.push(cssnano({ preset: [ 'default', { normalizeUrl: false }] })); // третий
+    }
 
     return {
         loader:  'postcss-loader',
