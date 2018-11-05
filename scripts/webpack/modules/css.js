@@ -17,8 +17,8 @@ const loadPostCss = (
     ];
 
     if (minimize) {
-        plugins.push(cssnano()); // третий
-        // plugins.push(cssnano({ preset: [ 'default', { normalizeUrl: false }] })); // третий
+        // plugins.push(cssnano()); // третий
+        plugins.push(cssnano({ preset: [ 'default', { normalizeUrl: false }] })); // третий
     }
 
     return {
