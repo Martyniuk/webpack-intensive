@@ -24,6 +24,6 @@ export default () => {
         connectBuildAnalysis(),
         optimizeModules(),
         loadProdCss(),
-        // optimizeImages(),
+        optimizeImages(),
     );
 };
