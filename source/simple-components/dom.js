@@ -8,7 +8,14 @@ export default (text = 'Hello!') => {
 
         await (() => new Promise((resolve) => setTimeout(resolve, 2000)))();
 
-        const { default: text } = await import('./lazyLoadedText');
+        /*
+        ** prefetch: отмечает ресурс как возможно пригодившийся в будущем (browser downloads while idle state)
+        ** preload: отмечает ресурс как необходимый ближайшее время (browser downloads immediately)
+         */
+        const { default: text } = await import(/* webpackPrefetch: true */
+        /* webpackChunkName: "lazyLoadedText" */
+            './lazyLoadedText',
+        );
 
         element.textContent = text;
     });
