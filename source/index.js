@@ -7,7 +7,7 @@
 /* tree shaking */
 
 /* javascript */
-import './simple-components/javascript';
+import './simple-components/dom';
 /* javascript */
 
 /* siri */
