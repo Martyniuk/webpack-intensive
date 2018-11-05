@@ -19,7 +19,7 @@ export default () => {
         {
             output: {
                 path:     BUILD,
-                filename: './js/[name].js',
+                filename: './js/[name].[chunkhash].js',
             },
         },
         connectHtml(),
