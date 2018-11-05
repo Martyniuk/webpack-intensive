@@ -3,46 +3,36 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import env from 'postcss-preset-env';
 import fontMagician from 'postcss-font-magician';
 
-export const loadCss = () => {
+const loadPostCss = (
+    { sourceMap } = { sourceMap: false },
+) => {
+    const plugins = [
+        env({
+            stage: 0,
+        }),
+        fontMagician({
+            protocol: 'https:',
+        }),
+    ];
+
     return {
-        module: {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [
-                        'style-loader', // ←
-                        {
-                            loader:  'css-loader',
-                            options: {
-                                importLoaders:  1,
-                                modules:        true,
-                                localIdentName:
-                                    '[path][name]__[local]--[hash:base64:5]',
-                            },
-                        },
-                        {
-                            loader:  'postcss-loader',
-                            options: {
-                                plugins: [
-                                    env({
-                                        stage: 0,
-                                    }),
-                                    fontMagician({
-                                        protocol: 'https:',
-                                    }),
-                                    // plugin 2
-                                    // plugin 3
-                                    // plugin n
-                                    // last plugin cssnano → minify
-                                ],
-                            },
-                        },
-                    ],
-                },
-            ],
+        loader:  'postcss-loader',
+        options: {
+            plugins,
+            sourceMap,
         },
     };
 };
+
+const loadCss = ({ sourceMap = false } = { sourceMap: false }) => ({
+    loader:  'css-loader',
+    options: {
+        modules:        true,
+        importLoaders:  1,
+        localIdentName: '[path][name]__[local]--[hash:base64:5]',
+        sourceMap,
+    },
+});
 
 export const loadDevCss = () => ({
     module: {
