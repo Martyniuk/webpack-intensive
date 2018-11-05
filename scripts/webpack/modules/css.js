@@ -1,4 +1,5 @@
 // Core
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import env from 'postcss-preset-env';
 import fontMagician from 'postcss-font-magician';
 
@@ -9,7 +10,7 @@ export const loadCss = () => {
                 {
                     test: /\.css$/,
                     use:  [
-                        'style-loader',
+                        'style-loader', // ←
                         {
                             loader:  'css-loader',
                             options: {
