@@ -26,7 +26,7 @@ export default () => {
                     : `js/${CHUNK_NAME_JS}`,
                 hashDigestLength: 5,
                 // Фикс ссылок изобржений из 6-го урока ↓
-                publicPath:       '/',
+                // publicPath:       '/',
             },
         },
         connectHtml(),
