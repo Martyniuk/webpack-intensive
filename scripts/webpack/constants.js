@@ -16,3 +16,9 @@ export const STATIC = resolve(PROJECT_ROOT, './static');
 export const CHUNK_NAME_JS = '[name].[chunkhash].[id].js';
 export const CHUNK_NAME_CSS = '[name].[contenthash].[id].css';
 export const CHUNK_NAME_ASSET = '[name].[hash:5].[ext]';
+
+// О внутренних плейсхолдерах webpack:
+// https://webpack.js.org/configuration/output/#output-filename
+
+// О плейсхолдерах file-loader:
+// https://github.com/webpack-contrib/file-loader#placeholders
