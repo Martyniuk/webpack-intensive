@@ -20,11 +20,13 @@ export default () => {
         {
             output: {
                 path:          BUILD,
-                filename:      IS_DEVELOPMENT ? '[name].js' : `./js/${CHUNK_NAME_JS}`,
+                filename:      IS_DEVELOPMENT ? '[name].js' : `js/${CHUNK_NAME_JS}`,
                 chunkFilename: IS_DEVELOPMENT
                     ? '[name].js'
-                    : `./js/${CHUNK_NAME_JS}`,
+                    : `js/${CHUNK_NAME_JS}`,
                 hashDigestLength: 5,
+                // Фикс ссылок изобржений из 6-го урока ↓
+                publicPath:       '/',
             },
         },
         connectHtml(),

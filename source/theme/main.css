@@ -1,17 +1,13 @@
 body {
     display: flex;
+    justify-content: center;
     min-height: 100vh;
     background-color: var(--color2);
-    background-image: url('./images/alien.jpg');
-    background-size: 100%;
+    background-image: url('./images/leaves-pattern.png');
     color: var(--color2);
     font-size: 33px;
     font-weight: 600;
     text-align: center;
     font-family: 'Pacifico', cursive;
     /* font-family: Caveat; */
-
-    & h1 {
-        color: rebeccapurple;
-    }
 }

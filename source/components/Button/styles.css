@@ -1,12 +1,10 @@
-@import '../../theme/breakpoints.css';
-
 .button {
     height: 50px;
     width: 180px;
     margin-right: 5px;
-    border: 1px solid red;
+    border: 2px solid currentColor;
     border-radius: 7px;
-    background-color: var(--color2);
+    background-color: transparent;
     background-image: url('../../theme/images/pointer-icon.png');
     background-size: 30px;
     background-position: 5px 50%;
@@ -15,9 +13,13 @@
     font-size: 20px;
     cursor: pointer;
     outline: 0;
+    transition: color 0.3s ease;
 
-    @media (--phonePortrait) {
-        background-color: var(--color1);
-        color: var(--color2);
+    &:hover {
+        color: navy;
+    }
+
+    @media (--phonePortrait), (--phoneLandscape) {
+        color: cornflowerblue;
     }
 }
