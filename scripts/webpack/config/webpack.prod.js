@@ -10,6 +10,7 @@ import {
     optimizeModules,
     loadProdCss,
     optimizeImages,
+    connectStaticServing,
 } from '../modules';
 
 export default () => {
@@ -26,6 +27,7 @@ export default () => {
         optimizeModules(),
         loadProdCss(),
         optimizeImages(),
+        connectStaticServing(),
         ANALYZE && connectBuildAnalysis(),
     );
 };
