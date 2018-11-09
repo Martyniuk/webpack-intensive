@@ -74,10 +74,11 @@ export const optimizeModules = () => ({
                 // Дефолтная кеш-группа. Выносит все зависимости из node_nodules в чанк vendors.
                 vendors: {
                     // Перезаписанная опция
-                    chunks:   'initial',
+                    chunks:    'initial',
+                    minChunks: 5,
                     // Выбирает модули, внесённые в данную кеш-группу. Если не указать будут выбраны все модули.
-                    test:     /[\\/]node_modules[\\/]/,
-                    priority: -10,
+                    test:      /[\\/]node_modules[\\/]/,
+                    priority:  -10,
                 },
                 default: {
                     // Дефолтная кеш-группа. Выносит любой модуль-зависимость в отдельный чанк default
