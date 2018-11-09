@@ -1,0 +1,9 @@
+{
+    "name": "learn-webpack",
+    "scripts": {
+      "start": "serve --single"
+    },
+    "dependencies": {
+      "serve": "latest"
+    }
+  }
