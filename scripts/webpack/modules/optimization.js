@@ -44,7 +44,7 @@ export const optimizeModules = () => ({
 
         // Конфигурация SplitChunksPlugin
         splitChunks: {
-            chunks:    'async',
+            chunks: 'async',
 
             // Минимальное количество чанков, которые зависят от модуля
             // перед отделением этого модуля в отдельный чанк
@@ -74,10 +74,6 @@ export const optimizeModules = () => ({
                     priority:           -20,
                     // Если чанк содержит уже существующий отделённый чанк,
                     // то используется этот уже существующий отделённый чанк вместо создания нового
-                    reuseExistingChunk: true,
-                },
-                custom: {
-                    priority:           -20,
                     reuseExistingChunk: true,
                 },
             },
