@@ -3,6 +3,7 @@ import { DefinePlugin, HotModuleReplacementPlugin } from 'webpack';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import FriendlyErrorsWebpackPlugin from 'friendly-errors-webpack-plugin';
 
 // Instruments
 import { PROJECT_ROOT, STATIC, BUILD } from '../constants';
@@ -42,4 +43,8 @@ export const connectStaticServing = () => ({
             },
         ]),
     ],
+});
+
+export const connectFriendlyErrors = () => ({
+    plugins: [ new FriendlyErrorsWebpackPlugin() ],
 });
