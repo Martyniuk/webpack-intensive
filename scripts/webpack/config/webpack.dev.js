@@ -5,7 +5,11 @@ import { choosePort } from 'react-dev-utils/WebpackDevServerUtils';
 // Instruments
 import { SOURCE, HOST, PORT } from '../constants';
 import getCommonConfig from './webpack.common';
-import { connectHotModuleReplacement, loadDevCss } from '../modules';
+import {
+    connectHotModuleReplacement,
+    loadDevCss,
+    connectFriendlyErrors,
+} from '../modules';
 
 export default async () => {
     const suggestedPort = await choosePort(HOST, PORT);
@@ -26,5 +30,6 @@ export default async () => {
         },
         connectHotModuleReplacement(),
         loadDevCss(),
+        connectFriendlyErrors(),
     );
 };
