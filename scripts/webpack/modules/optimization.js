@@ -43,9 +43,9 @@ export const optimizeModules = () => ({
         sideEffects:     true,
 
         // Конфигурация SplitChunksPlugin
-        // splitChunks: {
-        //     chunks: 'initial',
-        // },
+        splitChunks: {
+            chunks: 'initial',
+        },
         // Выносит webpack runtime каждого entrypoint в отдельный чанк.
         runtimeChunk: true,
     },
