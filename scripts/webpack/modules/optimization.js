@@ -42,6 +42,7 @@ export const optimizeModules = () => ({
         // собирает зависимости более эффективно, если в package.json зависимости тоже стоит этот флаг
         sideEffects:     true,
 
+        // Выносит webpack runtime каждого entrypoint в отдельный чанк.
         runtimeChunk: true,
     },
 });
