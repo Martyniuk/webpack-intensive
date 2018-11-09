@@ -3,10 +3,8 @@ export const loadJavaScript = () => {
         module: {
             rules: [
                 {
-                    test:    /\.js$/,
-                    include: [ 'node_modules/react' ],
-                    exclude: [ 'node_modules' ],
-                    use:     {
+                    test: /\.js$/,
+                    use:  {
                         loader:  'babel-loader',
                         options: {
                             compact: false,
