@@ -41,6 +41,8 @@ export const optimizeModules = () => ({
         usedExports:     true,
         // собирает зависимости более эффективно, если в package.json зависимости тоже стоит этот флаг
         sideEffects:     true,
+
+        runtimeChunk: true,
     },
 });
 
