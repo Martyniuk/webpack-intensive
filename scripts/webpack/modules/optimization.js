@@ -76,6 +76,10 @@ export const optimizeModules = () => ({
                     // то используется этот уже существующий отделённый чанк вместо создания нового
                     reuseExistingChunk: true,
                 },
+                custom: {
+                    priority:           -20,
+                    reuseExistingChunk: true,
+                },
             },
         },
         // Выносит webpack runtime каждого entrypoint в отдельный чанк.
