@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 // Styles
 import Styles from './styles.css';
-import alien from '../../../theme/images/alien.jpg';
+import alien from 'theme/images/alien.jpg';
 
 // Components
 import { Image } from '../Image';
