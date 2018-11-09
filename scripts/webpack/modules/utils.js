@@ -2,9 +2,10 @@
 import { DefinePlugin, HotModuleReplacementPlugin } from 'webpack';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 // Instruments
-import { PROJECT_ROOT } from '../constants';
+import { PROJECT_ROOT, STATIC, BUILD } from '../constants';
 
 export const cleanBuildDirectory = () => ({
     plugins: [
@@ -30,4 +31,15 @@ export const connectBuildAnalysis = () => ({
 
 export const connectHotModuleReplacement = () => ({
     plugins: [ new HotModuleReplacementPlugin() ],
+});
+
+export const connectStaticServing = () => ({
+    plugins: [
+        new CopyWebpackPlugin([
+            {
+                from: `${STATIC}/CI/package.json`,
+                to:   `${BUILD}/package.json`,
+            },
+        ]),
+    ],
 });
