@@ -12,10 +12,11 @@ export default (text = 'Hello!') => {
         ** prefetch: отмечает ресурс как возможно пригодившийся в будущем (browser downloads while idle state)
         ** preload: отмечает ресурс как необходимый ближайшее время (browser downloads immediately)
          */
-        const { default: text } = await import(/* webpackPrefetch: true */
-        /* webpackChunkName: "lazyLoadedText" */
-            './lazyLoadedText',
-        );
+        // const { default: text } = await import(/* webpackPrefetch: true */
+        // /* webpackChunkName: "lazyLoadedText" */
+        //     './lazyLoadedText',
+        // );
+        const { default: text } = await import('./lazyLoadedText');
 
         element.textContent = text;
     });
