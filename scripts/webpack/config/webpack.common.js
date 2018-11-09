@@ -25,7 +25,7 @@ export default () => {
                     ? '[name].js'
                     : `js/chunk~${CHUNK_NAME_JS}`,
                 hashDigestLength: 5,
-                // Фикс ссылок изобржений из 6-го урока ↓
+                // Фикс ссылок изображений
                 // publicPath:       '/',
             },
         },

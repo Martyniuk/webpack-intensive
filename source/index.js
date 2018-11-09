@@ -1,5 +1,5 @@
 import './theme/init.css';
-// import './components/SkillMeter';
+import './components/Carousel';
 
 /* tree shaking */
 // import { first } from 'lodash-es';
@@ -15,11 +15,11 @@ import './theme/init.css';
 /* siri */
 
 /* dom */
-import component from './simple-components/dom';
+// import component from './simple-components/dom';
 
-let element = component();
+// let element = component();
 
-document.body.appendChild(element);
+// document.body.appendChild(element);
 
 // if (module.hot) {
 //     module.hot.accept('./simple-components/dom', function() {
