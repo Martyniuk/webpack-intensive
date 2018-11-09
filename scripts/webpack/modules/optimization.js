@@ -44,7 +44,11 @@ export const optimizeModules = () => ({
 
         // Конфигурация SplitChunksPlugin
         splitChunks: {
-            chunks: 'async',
+            chunks:    'async',
+
+            // Минимальное количество чанков, которые зависят от модуля
+            // перед отделением этого модуля в отдельный чанк
+            minChunks: 1,
 
             // Мо-умолчанию cacheGroups наследует от остальных опций splitChunks ↑.
             // Уникальные для cacheGroups только test, priority и reuseExistingChunk.
