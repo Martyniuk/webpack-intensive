@@ -6,12 +6,12 @@
     "scripts": {
         "start": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/webpack/start.js\"",
         "build": "cross-env-shell NODE_ENV=production node --require @babel/register \"./scripts/webpack/build.js\"",
-        "build:debug": "cross-env-shell NODE_ENV=production node --inspect-brk --require @babel/register \"./scripts/webpack/build.js\"",
+        "build:prod:debug": "cross-env-shell NODE_ENV=production node --inspect-brk --require @babel/register \"./scripts/webpack/build.js\"",
+        "build:prod:debug:ndb": "NODE_ENV=production ndb node --require @babel/register \"./scripts/webpack/build.js\"",
         "analyze": "webpack-bundle-analyzer \"./build/stats.json\"",
         "build:analyze": "cross-env-shell ANALYZE=true run-s build analyze",
         "serve": "serve ./build --single",
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
-        "debug-prod": "NODE_ENV=production ndb node --require @babel/register \"./scripts/webpack/build.js\"",
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
     },
     "dependencies": {
