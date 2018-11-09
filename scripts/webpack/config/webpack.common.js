@@ -2,7 +2,7 @@
 import merge from 'webpack-merge';
 
 // Instruments
-import { BUILD, CHUNK_NAME_JS } from '../constants';
+import { BUILD, CHUNK_NAME_JS, SOURCE } from '../constants';
 import {
     loadJavaScript,
     loadFonts,
@@ -28,6 +28,7 @@ export default () => {
                     : `js/chunk~${CHUNK_NAME_JS}`,
                 hashDigestLength: 5,
                 publicPath:       '/',
+                resolve:          [ SOURCE, 'node_modules' ],
             },
         },
         connectHtml(),
