@@ -62,7 +62,6 @@ export const optimizeModules = () => ({
             // Всегда предпочитаются чанки большего размера.
             maxInitialRequests:     3,
             // Символ-разделитель имени сплит-чанка (напр. vendors~main.js);
-            // Символ-разделитель имени сплит-чанка (напр. vendors~main.js);
             automaticNameDelimiter: '~',
             // Определяет имя нового чанка
             name:                   true,
