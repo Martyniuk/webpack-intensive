@@ -42,6 +42,10 @@ export const optimizeModules = () => ({
         // собирает зависимости более эффективно, если в package.json зависимости тоже стоит этот флаг
         sideEffects:     true,
 
+        // Конфигурация SplitChunksPlugin
+        splitChunks: {
+            chunks: 'async',
+        },
         // Выносит webpack runtime каждого entrypoint в отдельный чанк.
         runtimeChunk: true,
     },
