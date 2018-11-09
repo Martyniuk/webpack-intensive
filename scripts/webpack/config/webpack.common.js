@@ -28,9 +28,9 @@ export default () => {
                     : `js/chunk~${CHUNK_NAME_JS}`,
                 hashDigestLength: 5,
                 publicPath:       '/',
-                resolve:          {
-                    modules: [ SOURCE, 'node_modules' ],
-                },
+            },
+            resolve: {
+                modules: [ SOURCE, 'node_modules' ],
             },
         },
         connectHtml(),
