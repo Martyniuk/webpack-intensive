@@ -16,6 +16,8 @@ import {
 export default () => {
     const { ANALYZE } = process.env;
 
+    debugger;
+
     return merge(
         getCommonConfig(),
         {
