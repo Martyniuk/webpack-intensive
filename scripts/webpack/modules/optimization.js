@@ -75,7 +75,7 @@ export const optimizeModules = () => ({
                 vendors: {
                     // Перезаписанная опция
                     chunks:    'initial',
-                    minChunks: 2,
+                    // minChunks: 2,
                     // Выбирает модули, внесённые в данную кеш-группу. Если не указать будут выбраны все модули.
                     test:      /[\\/]node_modules[\\/]/,
                     priority:  -10,
