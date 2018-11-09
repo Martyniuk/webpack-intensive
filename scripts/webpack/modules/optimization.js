@@ -64,7 +64,7 @@ export const optimizeModules = () => ({
             // Символ-разделитель имени сплит-чанка (напр. vendors~main.js);
             automaticNameDelimiter: '~',
             // Определяет имя нового чанка
-            name:                   true,
+            name:                   false,
 
             // Мо-умолчанию cacheGroups наследует от остальных опций splitChunks ↑.
             // Уникальные для cacheGroups только test, priority и reuseExistingChunk.
