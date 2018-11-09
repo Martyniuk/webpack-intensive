@@ -44,7 +44,22 @@ export const optimizeModules = () => ({
 
         // Конфигурация SplitChunksPlugin
         splitChunks: {
-            chunks: 'initial',
+            chunks: 'async',
+
+            // Мо-умолчанию cacheGroups наследует от остальных опций splitChunks ↑.
+            // Уникальные для cacheGroups только test, priority и reuseExistingChunk.
+            // Ключ каждой кеш-группы определяет её имя.
+            // По-умолчанию вебпак устанавливает две кеш-группы:
+            cacheGroups: {
+                // Дефолтная кеш-группа. Выносит все зависимости из node_nodules в чанк vendors.
+                vendors: {
+                    // Перезаписанная опция
+                    chunks:   'initial',
+                    // Выбирает модули, внесённые в данную кеш-группу. Если не указать будут выбраны все модули.
+                    test:     /[\\/]node_modules[\\/]/,
+                    priority: -10,
+                },
+            },
         },
         // Выносит webpack runtime каждого entrypoint в отдельный чанк.
         runtimeChunk: true,
