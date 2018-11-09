@@ -19,14 +19,15 @@ export default () => {
     return merge(
         {
             output: {
-                path:          BUILD,
-                filename:      IS_DEVELOPMENT ? '[name].js' : `js/entry~${CHUNK_NAME_JS}`,
+                path:     BUILD,
+                filename: IS_DEVELOPMENT
+                    ? '[name].js'
+                    : `js/entry~${CHUNK_NAME_JS}`,
                 chunkFilename: IS_DEVELOPMENT
                     ? '[name].js'
                     : `js/chunk~${CHUNK_NAME_JS}`,
                 hashDigestLength: 5,
-                // Фикс ссылок изображений
-                // publicPath:       '/',
+                publicPath:       '/',
             },
         },
         connectHtml(),
