@@ -57,11 +57,15 @@ export const optimizeModules = () => ({
 
             // Максимальное количество одновременных параллельных запросов чанков для асинхронного сплит-поинта (динамический импорт)
             // Всегда предпочитаются чанки большего размера.
-            maxAsyncRequests:   5,
+            maxAsyncRequests:       5,
             // Максимальное количество одновременных параллельных запросов чанков на один entrypoint
             // Всегда предпочитаются чанки большего размера.
-            maxInitialRequests: 3,
+            maxInitialRequests:     3,
             // Символ-разделитель имени сплит-чанка (напр. vendors~main.js);
+            // Символ-разделитель имени сплит-чанка (напр. vendors~main.js);
+            automaticNameDelimiter: '~',
+            // Определяет имя нового чанка
+            name:                   true,
 
             // Мо-умолчанию cacheGroups наследует от остальных опций splitChunks ↑.
             // Уникальные для cacheGroups только test, priority и reuseExistingChunk.
