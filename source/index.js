@@ -1,5 +1,5 @@
 import './theme/init.css';
-import './components/SkillMeter';
+import './components/Carousel';
 
 /* tree shaking */
 // import { first } from 'lodash-es';
