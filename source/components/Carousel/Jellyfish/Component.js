@@ -12,7 +12,7 @@ export default class extends Component {
     render() {
         return (
             <section className = { Styles.jellyfish }>
-                <h1>jellyfish</h1>
+                <h1>JELLYFISH</h1>
                 <Image link = { jellyfish } />
             </section>
         );
