@@ -10,6 +10,8 @@ import cat from '../../theme/images/kitty.jpg';
 // Components
 import { Button } from '../Button';
 
+// import { log } from '../helpers'
+
 const SkillMeter = hot(module)(
     class extends Component {
         state = {
