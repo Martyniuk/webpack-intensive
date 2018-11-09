@@ -37,7 +37,7 @@ export const connectStaticServing = () => ({
     plugins: [
         new CopyWebpackPlugin([
             {
-                from: `${STATIC}/CI/package.json`,
+                from: `${STATIC}/CD/package.json`,
                 to:   `${BUILD}/package.json`,
             },
         ]),
