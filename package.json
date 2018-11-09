@@ -13,6 +13,7 @@
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
     },
     "dependencies": {
+        "copy-webpack-plugin": "4.6.0",
         "lodash-es": "4.17.11",
         "react": "16.6.0",
         "react-dom": "16.6.0",
