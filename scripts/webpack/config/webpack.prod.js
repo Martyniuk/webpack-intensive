@@ -16,8 +16,6 @@ import {
 export default () => {
     const { ANALYZE } = process.env;
 
-    console.log('→ ANALYZE', process.env);
-
     return merge(
         getCommonConfig(),
         {
