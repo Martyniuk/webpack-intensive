@@ -77,7 +77,6 @@ export const optimizeModules = () => ({
                     chunks:   'initial',
                     // Выбирает модули, внесённые в данную кеш-группу. Если не указать будут выбраны все модули.
                     test:     /[\\/]node_modules[\\/]/,
-                    name:     'test',
                     priority: -10,
                 },
                 default: {
