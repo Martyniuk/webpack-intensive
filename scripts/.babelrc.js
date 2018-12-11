@@ -3,10 +3,7 @@ module.exports = api => {
 
     api.cache.using(() => env === 'development');
 
-    const plugins = [
-        '@babel/plugin-proposal-class-properties',
-        'dynamic-import-node',
-    ];
+    const plugins = ['dynamic-import-node'];
 
     return {
         presets: [
