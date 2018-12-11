@@ -8,14 +8,14 @@
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
     },
     "devDependencies": {
-        "@babel/core": "7.1.2",
-        "@babel/plugin-syntax-async-generators": "7.0.0",
-        "@babel/preset-env": "7.1.0",
+        "@babel/core": "7.2.0",
+        "@babel/plugin-syntax-async-generators": "7.2.0",
+        "@babel/preset-env": "7.2.0",
         "@babel/register": "7.0.0",
         "app-root-path": "2.1.0",
-        "babel-plugin-dynamic-import-node": "2.1.0",
+        "babel-plugin-dynamic-import-node": "2.2.0",
         "cross-env": "5.2.0",
         "moment": "2.22.2",
-        "nodegit": "0.22.2"
+        "nodegit": "0.23.0"
     }
 }
