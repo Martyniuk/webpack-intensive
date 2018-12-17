@@ -1,3 +1,5 @@
 import component from './simple-components/dom';
 
-component()
+const element = component()
+
+document.body.appendChild(element)
