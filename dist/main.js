@@ -90,10 +90,33 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-console.log('hello webpack');
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ "./src/simple-components/dom.js");
+
+
+/***/ }),
+
+/***/ "./src/simple-components/dom.js":
+/*!**************************************!*\
+  !*** ./src/simple-components/dom.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ((text = 'Привет!') => {
+    const element = document.createElement('div');
+
+    element.innerHTML = text;
+
+    return element;
+});
+
 
 /***/ })
 
