@@ -1,4 +1,5 @@
 // Core
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // object
 // function
