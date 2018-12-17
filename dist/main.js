@@ -93,7 +93,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 
-Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__["default"])()
+const element = Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__["default"])()
+
+document.body.appendChild(element)
 
 /***/ }),
 /* 1 */
