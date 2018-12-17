@@ -4,13 +4,10 @@
 // function
 // Promise
 
-module.exports = Promise.resolve({
-    mode: env,
-});
-//  (env) => {
-//     console.log('→ env', env);
+module.exports = (env) => {
+    console.log('→ env', env);
 
-//     return {
-//         mode: env,
-//     };
-// };
+    return {
+        mode: env,
+    };
+};
