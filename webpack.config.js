@@ -4,8 +4,8 @@
 // function
 // Promise
 
-module.exports = () => {
-    console.log('→ hello');
+module.exports = (env) => {
+    console.log('→ env', env);
 
     return {
         mode: 'development',
