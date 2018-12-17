@@ -1,1 +1,1 @@
-console.log('hello webpack');
+import './simple-components/dom';
