@@ -5,15 +5,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // function
 // Promise
 
-module.exports = (env) => {
-
+module.exports = env => {
     return {
         mode: 'none',
+        devtool: false,
         plugins: [
             new HtmlWebpackPlugin({
                 template: './static/template.html',
-                title: 'Learn webpack'
-            })
-        ]
+                title: 'Learn webpack',
+            }),
+        ],
     };
 };
