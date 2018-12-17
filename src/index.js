@@ -1,1 +1,3 @@
-import './simple-components/dom';
+import component from './simple-components/dom';
+
+component()
