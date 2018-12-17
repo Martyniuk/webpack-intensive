@@ -6,7 +6,8 @@
     "scripts": {
         "build": "webpack --devtool=false --env.data=bigData",
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
-        "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
+        "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\"",
+        "serve": "serve ./dist --single"
     },
     "devDependencies": {
         "@babel/core": "7.2.0",
