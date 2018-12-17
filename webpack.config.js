@@ -4,6 +4,8 @@
 // function
 // Promise
 
-module.exports = {
-    mode: 'development',
+module.exports = () => {
+    return {
+        mode: 'development',
+    };
 };
