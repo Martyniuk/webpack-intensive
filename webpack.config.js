@@ -11,8 +11,9 @@ module.exports = () => {
         devtool: false,
         plugins: [
             new HtmlWebpackPlugin({
-                template: './static/template.html',
                 title: 'Learn webpack',
+                template: './static/template.html',
+                favicon: './static/favicon.ico',
             }),
         ],
     };
