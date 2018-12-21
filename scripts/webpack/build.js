@@ -7,7 +7,7 @@ const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
 
-compiler.run((error, stats) => {
+compiler.un((error, stats) => {
     if (error) {
         // ошибка конфигурации
         console.error(error.stack || error);
@@ -47,4 +47,6 @@ compiler.run((error, stats) => {
     }
 })
 
-// compiler.hooks
+compiler.hooks.done.tap(() => {
+    console.log('→ done');
+})
