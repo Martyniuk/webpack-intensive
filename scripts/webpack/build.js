@@ -36,6 +36,15 @@ compiler.run((error, stats) => {
     console.log(chalk.greenBright('✓ Build completed.'));
     console.log(info);
 
+    if (stats.hasErrors()) { // ошибка во время компляции  (битый импорт, ошибка синтаксиса, etc)
+        console.log(chalk.redBright('→ Error!'));
+        console.error(info);
+    }
+
+    if (stats.hasWarnings()) { // ворнинг во время компляции
+        console.log(chalk.yellowBright('→ Warning!'));
+        console.warn(info);
+    }
 
 })
 
