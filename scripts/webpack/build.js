@@ -7,6 +7,8 @@ const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
 
+compiler.hooks.done.tap({ name: 'tap1' }, () => console.log('tapped'));
+
 compiler.run((error, stats) => {
     if (error) {
         // ошибка конфигурации
