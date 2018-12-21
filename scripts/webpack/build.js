@@ -19,9 +19,9 @@ compiler.un((error, stats) => {
         return;
     }
 
-compiler.hooks.done.tap(() => {
-    console.log('→ done');
-})
+    compiler.hooks.done.tap(() => {
+        console.log('→ done');
+    });
 
     const info = stats.toString({
         colors: true,
@@ -40,13 +40,15 @@ compiler.hooks.done.tap(() => {
     console.log(chalk.greenBright('✓ Build completed.'));
     console.log(info);
 
-    if (stats.hasErrors()) { // ошибка во время компляции  (битый импорт, ошибка синтаксиса, etc)
+    if (stats.hasErrors()) {
+        // ошибка во время компляции  (битый импорт, ошибка синтаксиса, etc)
         console.log(chalk.redBright('→ Error!'));
         console.error(info);
     }
 
-    if (stats.hasWarnings()) { // ворнинг во время компляции
+    if (stats.hasWarnings()) {
+        // ворнинг во время компляции
         console.log(chalk.yellowBright('→ Warning!'));
         console.warn(info);
     }
-})
+});
