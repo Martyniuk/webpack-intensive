@@ -5,10 +5,13 @@ const { resolve } = require('path');
 
 module.exports = () => {
     return {
-        entry: resolve(__dirname, '../../source'),
+        entry: [
+            'webpack-hot-middleware/client?reload=true&quiet=true',
+            resolve(__dirname, '../../source'),
+        ],
         output: {
             path: resolve(__dirname, '../../build'),
-            filename: 'bundle.js'
+            filename: 'bundle.js',
         },
         mode: 'none',
         devtool: false,
