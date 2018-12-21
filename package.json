@@ -4,10 +4,10 @@
     "author": "Dima Vakatsiienko <dvakatsiienko@lectrum.io>",
     "private": true,
     "scripts": {
-        "build": "webpack",
+        "build": "node \"./scripts/webpack/webpack.config.js\"",
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\"",
-        "start": "serve ./dist --single"
+        "start": "serve \"./dist\" --single"
     },
     "devDependencies": {
         "@babel/core": "7.2.0",
