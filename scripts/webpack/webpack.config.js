@@ -1,5 +1,6 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { HotModuleReplacementPlugin } = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { resolve } = require('path');
 
@@ -32,6 +33,7 @@ module.exports = () => {
                 template: './static/template.html',
                 favicon: './static/favicon.ico',
             }),
+            new HotModuleReplacementPlugin(),
         ],
     };
 };
