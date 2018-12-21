@@ -33,6 +33,9 @@ compiler.run((error, stats) => {
         source: false,
     });
 
+    console.log(chalk.greenBright('✓ Build completed.'));
+    console.log(info);
+
 
 })
 
