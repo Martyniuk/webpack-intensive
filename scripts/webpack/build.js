@@ -45,7 +45,6 @@ compiler.run((error, stats) => {
         console.log(chalk.yellowBright('→ Warning!'));
         console.warn(info);
     }
-
 })
 
 // compiler.hooks
