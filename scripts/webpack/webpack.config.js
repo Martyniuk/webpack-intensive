@@ -3,10 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { resolve } = require('path');
 
-// object
-// function
-// Promise
-
 module.exports = () => {
     return {
         entry: resolve(__dirname, '../../source'),
