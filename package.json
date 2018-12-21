@@ -7,7 +7,6 @@
         "start": "node \"./scripts/webpack/start.js\"",
         "build": "node \"./scripts/webpack/build.js\"",
         "serve": "serve \"./build\" --single",
-
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\""
     },
@@ -30,7 +29,6 @@
         "serve": "10.1.1",
         "style-loader": "0.23.1",
         "webpack": "4.27.1",
-        "webpack-cli": "3.1.2",
         "webpack-dev-server": "3.1.11",
         "webpack-hot-middleware": "2.24.3"
     }
