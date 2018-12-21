@@ -16,6 +16,14 @@ module.exports = () => {
         },
         mode: 'none',
         devtool: false,
+        module: {
+            rules: [
+                {
+                    test: /\.css$/,
+                    use: ['style-loader', 'css-loader'],
+                },
+            ],
+        },
         plugins: [
             new CleanWebpackPlugin(['build'], {
                 root: resolve(__dirname, '../../'),
