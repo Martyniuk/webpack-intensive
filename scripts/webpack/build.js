@@ -19,10 +19,6 @@ compiler.run((error, stats) => {
         return;
     }
 
-    compiler.hooks.done.tap({ name: 'done' }, () => {
-        console.log('→ done');
-    });
-
     const info = stats.toString({
         colors: true,
         hash: true,
