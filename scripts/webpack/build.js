@@ -19,7 +19,7 @@ compiler.run((error, stats) => {
         return;
     }
 
-    compiler.hooks.done.tap(() => {
+    compiler.hooks.done.tap({}, () => {
         console.log('→ done');
     });
 
