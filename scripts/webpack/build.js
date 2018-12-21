@@ -19,6 +19,10 @@ compiler.un((error, stats) => {
         return;
     }
 
+compiler.hooks.done.tap(() => {
+    console.log('→ done');
+})
+
     const info = stats.toString({
         colors: true,
         hash: true,
@@ -45,8 +49,4 @@ compiler.un((error, stats) => {
         console.log(chalk.yellowBright('→ Warning!'));
         console.warn(info);
     }
-})
-
-compiler.hooks.done.tap(() => {
-    console.log('→ done');
 })
