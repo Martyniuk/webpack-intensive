@@ -6,9 +6,10 @@
     "scripts": {
         "start": "node \"./scripts/webpack/start.js\"",
         "build": "node \"./scripts/webpack/build.js\"",
+        "serve": "serve \"./build\" --single"
+
         "checkpoint": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/checkpoint.js\"",
         "sync": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/git/sync.js\"",
-        "serve": "serve \"./build\" --single"
     },
     "devDependencies": {
         "@babel/core": "7.2.0",
