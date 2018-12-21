@@ -11,6 +11,7 @@ module.exports = () => {
         entry: resolve(__dirname, '../../source'),
         output: {
             path: resolve(__dirname, '../../build'),
+            filename: 'bundle.js',
         },
         mode: 'none',
         devtool: false,
