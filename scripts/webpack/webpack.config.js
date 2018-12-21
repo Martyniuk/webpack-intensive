@@ -17,7 +17,7 @@ module.exports = () => {
         mode: 'none',
         devtool: false,
         plugins: [
-            new CleanWebpackPlugin(['build', 'dist'], {
+            new CleanWebpackPlugin(['build'], {
                 root: resolve(__dirname, '../../'),
             }),
             new HtmlWebpackPlugin({
