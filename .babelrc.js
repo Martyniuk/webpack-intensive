@@ -1,8 +1,8 @@
 module.exports = api => {
     const env = api.env();
-    console.log('→ env', env);
 
-    api.cache.never(); // TODO: обсудить
+    // api.cache.never(); 
+    api.cache(() => env === 'development');
 
     return {
         presets: [
