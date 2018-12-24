@@ -16,14 +16,6 @@ module.exports = () => {
         mode:  'development',
 
         devtool: false, // TODO: настроить source map
-        module:  {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
-            ],
-        },
         plugins: [
             new CleanWebpackPlugin([ 'build' ], {
                 root: PROJECT_ROOT,
