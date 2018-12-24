@@ -8,7 +8,7 @@ const merge = require('webpack-merge');
 const getCommonConfig = require('./webpack.common');
 
 // Constants
-const { jPROJECT_ROOT } = require('../constants');
+const { PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return merge(getCommonConfig(), {
