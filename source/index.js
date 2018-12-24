@@ -13,4 +13,5 @@
 //     });
 // }
 
-import './javascript';
+// import './javascript';
+import './react-component';
