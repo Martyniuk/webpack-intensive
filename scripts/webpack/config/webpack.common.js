@@ -22,9 +22,6 @@ module.exports = () => {
             ],
         },
         plugins: [
-            new CleanWebpackPlugin([ 'build' ], {
-                root: PROJECT_ROOT,
-            }),
             new HtmlWebpackPlugin({
                 title:    'Learn webpack',
                 template: './static/template.html',
