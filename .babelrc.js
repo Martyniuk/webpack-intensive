@@ -9,7 +9,7 @@ module.exports = api => {
                     debug: true,
                     useBuiltIns: 'usage', // более прокачаный транспайлинг
                     spec: true, // более строгие проверки, более медленный код, более стабильный код
-                    loose: false,
+                    loose: false, // противоположность loose ↑
                 },
             ],
         ],
