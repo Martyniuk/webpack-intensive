@@ -22,24 +22,24 @@ compiler.run((error, stats) => {
     }
 
     const info = stats.toString({
-        colors: true,
-        hash: true,
-        version: true,
-        timings: true,
-        env: true,
-        chunks: false,
-        modules: false,
-        children: false,
+        colors:     true,
+        hash:       true,
+        version:    true,
+        timings:    true,
+        env:        true,
+        chunks:     false,
+        modules:    false,
+        children:   false,
         publicPath: true,
-        reasons: true,
-        source: false,
+        reasons:    true,
+        source:     false,
     });
 
     console.log(chalk.greenBright('✓ Build completed.'));
     console.log(info);
 
     if (stats.hasErrors()) {
-        // ошибка во время компляции  (битый импорт, ошибка синтаксиса, etc)
+        // ошибка во время компляции (битый импорт, ошибка синтаксиса, etc)
         console.log(chalk.redBright('→ Error!'));
         console.error(info);
     }

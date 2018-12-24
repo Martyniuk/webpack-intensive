@@ -11,27 +11,27 @@ module.exports = () => {
             resolve(__dirname, '../../source'),
         ],
         output: {
-            path: resolve(__dirname, '../../build'),
+            path:     resolve(__dirname, '../../build'),
             filename: 'bundle.js',
         },
-        mode: 'none',
+        mode:    'none',
         devtool: false,
-        module: {
+        module:  {
             rules: [
                 {
                     test: /\.css$/,
-                    use: ['style-loader', 'css-loader'],
+                    use:  [ 'style-loader', 'css-loader' ],
                 },
             ],
         },
         plugins: [
-            new CleanWebpackPlugin(['build'], {
+            new CleanWebpackPlugin([ 'build' ], {
                 root: resolve(__dirname, '../../'),
             }),
             new HtmlWebpackPlugin({
-                title: 'Learn webpack',
+                title:    'Learn webpack',
                 template: './static/template.html',
-                favicon: './static/favicon.ico',
+                favicon:  './static/favicon.ico',
             }),
             new HotModuleReplacementPlugin(),
         ],
