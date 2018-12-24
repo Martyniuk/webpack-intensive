@@ -12,7 +12,7 @@ const { BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return merge(getCommonConfig(), {
-        mode:    'none',
+        mode:    'none', // production
         devtool: false,
         module:  {
             rules: [
