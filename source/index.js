@@ -12,3 +12,5 @@
 //         document.body.appendChild(element);
 //     });
 // }
+
+import './javascript';
