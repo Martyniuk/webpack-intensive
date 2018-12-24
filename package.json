@@ -30,6 +30,7 @@
         "html-webpack-plugin": "3.2.0",
         "moment": "2.22.2",
         "nodegit": "0.23.0",
+        "react-hot-loader": "4.6.3",
         "serve": "10.1.1",
         "style-loader": "0.23.1",
         "webpack": "4.27.1",
