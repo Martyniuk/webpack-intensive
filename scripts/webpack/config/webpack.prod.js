@@ -1,6 +1,5 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { HotModuleReplacementPlugin } = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const merge = require('webpack-merge');
 
@@ -18,12 +17,6 @@ module.exports = () => {
             new CleanWebpackPlugin([ 'build' ], {
                 root: PROJECT_ROOT,
             }),
-            new HtmlWebpackPlugin({
-                title:    'Learn webpack',
-                template: './static/template.html',
-                favicon:  './static/favicon.ico',
-            }),
-            new HotModuleReplacementPlugin(),
         ],
     });
 };
