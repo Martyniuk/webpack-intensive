@@ -2,13 +2,16 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { HotModuleReplacementPlugin } = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const merge = require('webpack-merge');
+
+// Config
+const getCommonConfig = require('./webpack.common');
 
 // Constants
 const { SOURCE, BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
-    return {
-        entry:  [ 'webpack-hot-middleware/client?reload=true&quiet=true', SOURCE ],
+    return merge(getCommonConfig(), {
         output: {
             path:     BUILD,
             filename: 'bundle.js',
@@ -34,5 +37,5 @@ module.exports = () => {
             }),
             new HotModuleReplacementPlugin(),
         ],
-    };
+    });
 };
