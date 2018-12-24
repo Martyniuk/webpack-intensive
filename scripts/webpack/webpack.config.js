@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { resolve } = require('path');
 
 // Constants
-const { SOURCE, BUILD } = require('./constants');
+const { SOURCE, BUILD, PROJECT_ROOT } = require('./constants');
 
 module.exports = () => {
     return {
@@ -26,7 +26,7 @@ module.exports = () => {
         },
         plugins: [
             new CleanWebpackPlugin([ 'build' ], {
-                root: resolve(__dirname, '../../'),
+                root: PROJECT_ROOT,
             }),
             new HtmlWebpackPlugin({
                 title:    'Learn webpack',
