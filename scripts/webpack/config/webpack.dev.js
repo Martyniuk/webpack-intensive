@@ -15,10 +15,6 @@ module.exports = () => {
         entry: [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         mode:  'development',
 
-        output: {
-            path:     BUILD,
-            filename: 'bundle.js',
-        },
         devtool: false,
         module:  {
             rules: [
