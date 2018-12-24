@@ -3,8 +3,6 @@ module.exports = api => {
 
     return {
         presets: [
-            // preset1,
-            // preset2,
             [
                 '@babel/preset-env',
                 {
