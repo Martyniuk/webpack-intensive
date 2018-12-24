@@ -13,7 +13,7 @@
     "devDependencies": {
         "@babel/core": "7.2.2",
         "@babel/plugin-syntax-async-generators": "7.2.0",
-        "@babel/preset-env": "7.2.0",
+        "@babel/preset-env": "7.2.3",
         "@babel/register": "7.0.0",
         "@lectrum/eslint-config-core": "1.1.15",
         "@webpack-cli/init": "0.1.2",
