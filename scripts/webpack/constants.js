@@ -7,5 +7,5 @@ exports.HOST = 'localhost';
 exports.PORT = 3000;
 
 // Paths
-exports.SOURCE = resolve(PROJECT_ROOT, '../../source');
-exports.BUILD = resolve(PROJECT_ROOT, '../../build');
+exports.SOURCE = resolve(PROJECT_ROOT, './source');
+exports.BUILD = resolve(PROJECT_ROOT, './build');
