@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const chalk = require('chalk');
 
 // Config
-const getConfig = require('./config/webpack.prodf');
+const getConfig = require('./config/webpack.prod');
 
 const compiler = webpack(getConfig());
 
