@@ -14,14 +14,6 @@ module.exports = () => {
     return merge(getCommonConfig(), {
         mode:    'none', // production
         devtool: false,
-        module:  {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
-            ],
-        },
         plugins: [
             new CleanWebpackPlugin([ 'build' ], {
                 root: PROJECT_ROOT,
