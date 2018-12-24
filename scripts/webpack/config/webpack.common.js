@@ -34,6 +34,7 @@ module.exports = () => {
                             loader:  'postcss-loader',
                             options: {
                                 plugins: [
+                                    // postcss-font-magician
                                     // первый плагин
                                     // второй плагин
                                     env({
