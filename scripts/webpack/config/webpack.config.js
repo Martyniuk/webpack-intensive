@@ -4,7 +4,7 @@ const { HotModuleReplacementPlugin } = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Constants
-const { SOURCE, BUILD, PROJECT_ROOT } = require('./constants');
+const { SOURCE, BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return {
