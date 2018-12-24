@@ -26,7 +26,6 @@ module.exports = () => {
                 template: './static/template.html',
                 favicon:  './static/favicon.ico',
             }),
-            new HotModuleReplacementPlugin(),
         ],
     };
 };
