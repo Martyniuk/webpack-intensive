@@ -15,7 +15,7 @@ module.exports = () => {
         entry: [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         mode:  'development',
 
-        devtool: false,
+        devtool: false, // TODO: настроить source map
         module:  {
             rules: [
                 {
