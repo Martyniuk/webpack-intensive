@@ -1,5 +1,4 @@
 // Core
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { HotModuleReplacementPlugin } = require('webpack');
 const merge = require('webpack-merge');
 
@@ -12,13 +11,6 @@ module.exports = () => {
         mode:  'development',
 
         devtool: false, // TODO: настроить source map
-        plugins: [
-            new HtmlWebpackPlugin({
-                title:    'Learn webpack',
-                template: './static/template.html',
-                favicon:  './static/favicon.ico',
-            }),
-            new HotModuleReplacementPlugin(),
-        ],
+        plugins: [ new HotModuleReplacementPlugin() ],
     });
 };
