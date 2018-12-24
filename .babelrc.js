@@ -1,4 +1,7 @@
 module.exports = api => {
+    const env = api.env();
+    console.log('→ env', env);
+
     api.cache.never(); // TODO: обсудить
 
     return {
