@@ -13,7 +13,7 @@ module.exports = () => {
             path:     BUILD,
             filename: 'bundle.js',
         },
-        module:  {
+        module: {
             rules: [
                 {
                     test: /\.css$/,
