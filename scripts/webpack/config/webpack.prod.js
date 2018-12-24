@@ -12,10 +12,6 @@ const { BUILD, PROJECT_ROOT } = require('../constants');
 
 module.exports = () => {
     return merge(getCommonConfig(), {
-        output: {
-            path:     BUILD,
-            filename: 'bundle.js',
-        },
         mode:    'none',
         devtool: false,
         module:  {
