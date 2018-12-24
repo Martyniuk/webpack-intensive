@@ -19,7 +19,6 @@ module.exports = () => {
             path:     BUILD,
             filename: 'bundle.js',
         },
-        mode:    'none',
         devtool: false,
         module:  {
             rules: [
