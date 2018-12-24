@@ -10,7 +10,7 @@ module.exports = api => {
                     useBuiltIns: 'usage', // более прокачаный транспайлинг
                     spec: true, // более строгие проверки, более медленный код, более стабильный код
                     loose: false, // противоположность loose ↑
-                    // modules: 'c', // TODO: обсудить
+                    modules: 'commonjs', // TODO: обсудить
                 },
             ],
         ],
