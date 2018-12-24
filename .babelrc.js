@@ -7,7 +7,7 @@ module.exports = api => {
                 '@babel/preset-env',
                 {
                     debug: true,
-                    useBuiltIns: 'usage',
+                    useBuiltIns: 'usage', // более прокачаный транспайлинг
                 },
             ],
         ],
