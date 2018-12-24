@@ -4,12 +4,12 @@ const { HotModuleReplacementPlugin } = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { resolve } = require('path');
 
+// Constants
+const { SOURCE, BUILD } = require('./constants');
+
 module.exports = () => {
     return {
-        entry: [
-            'webpack-hot-middleware/client?reload=true&quiet=true',
-            resolve(__dirname, '../../source'),
-        ],
+        entry:  [ 'webpack-hot-middleware/client?reload=true&quiet=true', SOURCE ],
         output: {
             path:     resolve(__dirname, '../../build'),
             filename: 'bundle.js',
