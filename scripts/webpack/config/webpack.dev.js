@@ -13,7 +13,7 @@ const { BUILD, PROJECT_ROOT } = require('../constants');
 module.exports = () => {
     return merge(getCommonConfig(), {
         entry: [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
-        mode:  'none', // development
+        mode:  'development',
 
         output: {
             path:     BUILD,
