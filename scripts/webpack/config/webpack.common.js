@@ -1,5 +1,6 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const env = require('postcss-preset-env');
 
 // Constants
 const { SOURCE, BUILD } = require('../constants');
@@ -27,6 +28,16 @@ module.exports = () => {
                                 modules:        true,
                                 localIdentName:
                                     '[path][name]__[local]--[hash:base64:5]',
+                            },
+                        },
+                        {
+                            loader:  'postcss-loader',
+                            options: {
+                                plugins: [
+                                    env({
+                                        stage: 0,
+                                    }),
+                                ],
                             },
                         },
                     ],
