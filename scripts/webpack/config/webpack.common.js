@@ -34,6 +34,8 @@ module.exports = () => {
                             loader:  'postcss-loader',
                             options: {
                                 plugins: [
+                                    // первый плагин
+                                    // второй плагин
                                     env({
                                         stage: 0,
                                     }),
