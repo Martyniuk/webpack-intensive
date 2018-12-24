@@ -8,7 +8,7 @@ module.exports = api => {
                 {
                     debug: true,
                     useBuiltIns: 'usage', // более прокачаный транспайлинг
-                    spec: true,
+                    spec: true, // более строгие проверки, более медленный код
                     loose: false,
                 },
             ],
