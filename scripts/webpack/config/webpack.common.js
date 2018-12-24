@@ -1,6 +1,5 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { HotModuleReplacementPlugin } = require('webpack');
 
 // Constants
 const { SOURCE, BUILD } = require('../constants');
