@@ -49,13 +49,6 @@ export default () => {
                     },
                 ],
             },
-            plugins: [ // setupHtml
-                new HtmlWebpackPlugin({
-                    title:    'Learn webpack',
-                    template: './static/template.html',
-                    favicon:  './static/favicon.ico',
-                }),
-            ],
         },
         loadJavaScript(),
     );
