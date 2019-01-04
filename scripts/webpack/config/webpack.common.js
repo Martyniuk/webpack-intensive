@@ -34,7 +34,8 @@ export default () => {
                             {
                                 loader:  'postcss-loader',
                                 options: {
-                                    plugins: [
+                                    sourceMap: true,
+                                    plugins:   [
                                         // postcss-font-magician
                                         // первый плагин
                                         // второй плагин
