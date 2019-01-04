@@ -6,7 +6,7 @@ import { hot } from 'react-hot-loader';
 // Styles
 import Styles from './styles.css';
 import cat from '../../theme/assets/images/cat.jpg';
-import { ReactComponent as ReactLogoSvg } from '../../theme/assets/images/react.svg';
+// import { ReactComponent as ReactLogoSvg } from '../../theme/assets/images/react.svg';
 
 // Components
 import { Button } from '../Button';
