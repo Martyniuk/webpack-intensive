@@ -6,6 +6,5 @@ body {
     font-size: 33px;
     font-weight: 600;
     text-align: center;
-    font-family: system-ui;
-    font-family: Caveat;
+    font-family: Caveat, system-ui;
 }
