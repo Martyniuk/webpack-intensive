@@ -1,6 +1,6 @@
 {
     "name": "webpack-intensive",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "author": "Dima Vakatsiienko <dvakatsiienko@lectrum.io>",
     "private": true,
     "scripts": {
