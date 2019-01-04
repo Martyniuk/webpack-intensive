@@ -31,7 +31,8 @@ const SkillMeter = hot(module)(
 
             return (
                 <section className = { Styles.skillMeter }>
-                    <h1>{skill}</h1>
+                    <h1>Привет!</h1>
+                    <h1>My Webpack skill: {skill}</h1>
                     <img src = { cat } />
                     <img src = { react } />
                     <div>
