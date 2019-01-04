@@ -6,7 +6,7 @@ import env from 'postcss-preset-env';
 import { SOURCE, BUILD } from '../constants';
 
 // Webpack Modules
-import { loadJavaScript } from '../modules';
+import * as modules from '../modules';
 
 export default () => {
     return merge(
@@ -49,6 +49,7 @@ export default () => {
                 ],
             },
         },
-        loadJavaScript(),
+        modules.setupHtml(),
+        modules.loadJavaScript(),
     );
 };
