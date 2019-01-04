@@ -5,7 +5,7 @@ const merge = require('webpack-merge');
 // Config
 const getCommonConfig = require('./webpack.common');
 
-module.exports = () => {
+export default () => {
     return merge(getCommonConfig(), {
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         mode:    'development',
