@@ -46,6 +46,8 @@ export default () => {
                                     ],
                                 },
                             },
+                            // sass-loader
+                            // sourceMap: true,
                         ],
                     },
                 ],
