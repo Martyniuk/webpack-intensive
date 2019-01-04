@@ -6,9 +6,9 @@ module.exports = api => {
 
     return {
         presets: [
-            '@babel/preset-react',
+            '@babel/react',
             [
-                '@babel/preset-env',
+                '@babel/env',
                 {
                     debug: false,
                     useBuiltIns: 'usage', // более прокачаный транспайлинг
