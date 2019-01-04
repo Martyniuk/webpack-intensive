@@ -49,7 +49,7 @@ export default () => {
                     },
                 ],
             },
-            plugins: [
+            plugins: [ // setupHtml
                 new HtmlWebpackPlugin({
                     title:    'Learn webpack',
                     template: './static/template.html',
