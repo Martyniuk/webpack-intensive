@@ -1,9 +1,9 @@
 // Core
-const { HotModuleReplacementPlugin } = require('webpack');
-const merge = require('webpack-merge');
+import { HotModuleReplacementPlugin } from 'webpack';
+import merge from 'webpack-merge';
 
 // Config
-const getCommonConfig = require('./webpack.common');
+import getCommonConfig from './webpack.common';
 
 export default () => {
     return merge(getCommonConfig(), {
