@@ -42,7 +42,7 @@ const SkillMeter = hot(module)(
                             onClick = { this.dec }
                         />
                     </div>
-                    <ReactLogoSvg width = { 50 } />
+                    <ReactLogoSvg width = { 150 } />
                 </section>
             );
         }
