@@ -1,5 +1,5 @@
 module.exports = api => {
-    const env = api.env();
+    const env = api.env(); // process.env.BABEL_ENV || process.env.NODE_ENV || 'development'
 
     api.cache.never();
     // api.cache(() => env === 'development');
