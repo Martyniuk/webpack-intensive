@@ -1,6 +1,5 @@
 // Core
 import merge from 'webpack-merge';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import env from 'postcss-preset-env';
 
 // Constants

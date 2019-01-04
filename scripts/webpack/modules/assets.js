@@ -1,15 +1,9 @@
-export const loadJavaScript = () => ({
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                use:  {
-                    loader:  'babel-loader',
-                    options: {
-                        compact: false, // 'auto' === true
-                    },
-                },
-            },
-        ],
-    },
+export const setupHtml = () => ({
+    plugins: [
+        new HtmlWebpackPlugin({
+            title:    'Learn webpack',
+            template: './static/template.html',
+            favicon:  './static/favicon.ico',
+        }),
+    ],
 });
