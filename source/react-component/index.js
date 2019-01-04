@@ -23,6 +23,8 @@ const Clicker = hot(module)(
         render() {
             const { count } = this.state;
 
+            console.log('→ count', count);
+
             return (
                 <section className = { Styles.clicker }>
                     <h1>Счётчик: {count}</h1>
