@@ -57,5 +57,6 @@ export default () => {
         modules.loadJavaScript(),
         modules.loadImages(),
         modules.loadSvg(),
+        modules.loadFonts(),
     );
 };
