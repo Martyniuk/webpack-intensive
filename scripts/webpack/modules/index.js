@@ -1,0 +1,1 @@
+import { loadJavaScript } from './javascript';
