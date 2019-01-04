@@ -15,6 +15,7 @@ module.exports = api => {
                     spec: true,
                     loose: false,
                     debug: false,
+                    modules: 'cjs',
                     targets: {
                         node: 'current',
                     },
