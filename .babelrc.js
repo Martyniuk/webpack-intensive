@@ -4,6 +4,9 @@ module.exports = api => {
     api.cache.never();
     // api.cache(() => env === 'development');
 
+
+    console.log('→ env', env);
+
     return {
         presets: [
             '@babel/react',
