@@ -9,7 +9,7 @@ export default () => {
     return merge(getCommonConfig(), {
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         mode:    'development',
-        devtool: false, // TODO: настроить source map
+        devtool: 'cheap-module-eval-source-map', // TODO: настроить source map
         plugins: [ new HotModuleReplacementPlugin() ],
     });
 };
