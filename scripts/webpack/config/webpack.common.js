@@ -19,7 +19,7 @@ export default () => {
                     use:  {
                         loader:  'babel-loader',
                         options: {
-                            compact: false,
+                            compact: false, // 'auto' === true
                         },
                     },
                 },
