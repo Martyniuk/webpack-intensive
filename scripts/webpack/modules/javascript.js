@@ -1,9 +1,15 @@
 export const loadJavaScript = () => ({
-    test: /\.js$/,
-    use:  {
-        loader:  'babel-loader',
-        options: {
-            compact: false, // 'auto' === true
-        },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use:  {
+                    loader:  'babel-loader',
+                    options: {
+                        compact: false, // 'auto' === true
+                    },
+                },
+            },
+        ],
     },
 });
