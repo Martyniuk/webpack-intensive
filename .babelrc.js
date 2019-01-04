@@ -19,7 +19,7 @@ module.exports = api => {
             ],
         ],
         plugins: [
-            '@babel/plugin-proposal-class-properties',
+            '@babel/proposal-class-properties',
             'react-hot-loader/babel',
         ],
     };
