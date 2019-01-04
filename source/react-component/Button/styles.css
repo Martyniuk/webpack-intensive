@@ -1,0 +1,16 @@
+.button {
+    height: 50px;
+    width: 180px;
+    margin-right: 5px;
+    border: 1px solid red;
+    border-radius: 7px;
+    background-color: var(--color2);
+    background-image: url('../../theme/assets/images/pointer-icon.png');
+    background-size: 30px;
+    background-position: 5px 50%;
+    background-repeat: no-repeat;
+    color: var(--color1);
+    font-size: 20px;
+    cursor: pointer;
+    outline: 0;
+}

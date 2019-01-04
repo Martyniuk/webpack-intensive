@@ -1,0 +1,24 @@
+.skillMeter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color1);
+
+    & img {
+        border-radius: 50%;
+        border: 2px solid var(--color1);
+        width: 150px;
+        height: 150px;
+        margin-bottom: 25px;
+    }
+
+    & h1 {
+        /* background-image: url('../../theme/assets/images/react.svg'); */
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 40px 50%;
+        text-align: left;
+        padding-left: 100px;
+        width: max-content;
+    }
+}
