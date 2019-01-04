@@ -18,9 +18,9 @@ export default () => {
                     test: /\.js$/,
                     use:  {
                         loader:  'babel-loader',
-                        // options: {
-                        //     compact: true,
-                        // },
+                        options: {
+                            compact: false,
+                        },
                     },
                 },
                 {
