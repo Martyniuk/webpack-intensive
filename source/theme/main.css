@@ -3,8 +3,8 @@ body {
     background-color: var(--color1);
     background-size: 100%;
     color: var(--color2);
-    /* font-size: 33px;
-    font-weight: 400; */
+    font-size: 33px;
+    font-weight: 400;
     text-align: center;
     font-family: 'Caveat';
     font-style: normal;
