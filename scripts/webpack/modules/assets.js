@@ -74,7 +74,7 @@ export const loadFonts = () => ({
                     {
                         loader:  'file-loader',
                         options: {
-                            name: './assets/fonts/[name].[ext]',
+                            name: './fonts/[name].[ext]',
                         },
                     },
                 ],
