@@ -56,5 +56,6 @@ export default () => {
         modules.setupHtml(),
         modules.loadJavaScript(),
         modules.loadImages(),
+        modules.loadSvg(),
     );
 };
