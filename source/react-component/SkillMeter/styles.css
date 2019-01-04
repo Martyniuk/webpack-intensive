@@ -13,7 +13,7 @@
     }
 
     & h1 {
-        /* background-image: url('../../theme/assets/images/react.svg'); */
+        background-image: url('../../theme/assets/images/react.svg');
         width: 100%;
         background-repeat: no-repeat;
         background-position: 40px 50%;
