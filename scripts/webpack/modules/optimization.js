@@ -33,6 +33,18 @@ export const optimizeBuild = () => {
             // production: собирает зависимости более эффективно, если в package.json зависимости тоже стоит этот флаг.
             // ? эта настройка зависит от providedExports и usedExports
             sideEffects:     true,
+
+            // development: вместо числовых идентификаторов даёт модулям более понятные имена
+            // TODO webpack 5 add `moduleIds: "named"` default for development
+            // TODO webpack 5 add `moduleIds: "size"` default for production
+            // TODO webpack 5 remove optimization.namedModules
+            namedModules: false,
+
+            // development: вместо числовых идентификаторов даёт чанкам более понятные имена
+            // TODO webpack 5 add `chunkIds: "named"` default for development
+            // TODO webpack 5 add `chunkIds: "size"` default for production
+            // TODO webpack 5 remove optimization.namedChunks
+            namedChunks: false,
         },
     };
 };
