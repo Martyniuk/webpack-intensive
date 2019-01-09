@@ -13,6 +13,10 @@
 //     });
 // }
 
+import { debounce } from 'lodash-es';
+
+console.log('→ debounce', debounce);
+
 if (__DEV__) { // false
     console.log('__DEV__');
 }
