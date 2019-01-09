@@ -30,6 +30,9 @@ export const optimizeBuild = () => {
             // production: определяет только использованные экспорты.
             // Помогает DCE минифификаторов удалять неиспользованные экспорты.
             usedExports:     true,
+            // production: собирает зависимости более эффективно, если в package.json зависимости тоже стоит этот флаг.
+            // ? эта настройка зависит от providedExports и usedExports
+            sideEffects:     true,
         },
     };
 };
