@@ -5,7 +5,7 @@ export const optimizeBuild = () => {
     return {
         optimization: {
             // production: минификация JavaScript
-            minimize:  true,
+            minimize:  false,
             minimizer: [ new TerserPlugin() ],
 
             // production: останавливает эмит сборки при возникновении ошибки во время компиляции
