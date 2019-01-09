@@ -32,7 +32,7 @@ export const optimizeBuild = () => {
             usedExports:     true,
             // production: собирает зависимости более эффективно, если в package.json зависимости тоже стоит этот флаг.
             // ? эта настройка зависит от providedExports и usedExports
-            sideEffects:     false,
+            sideEffects:     true,
         },
     };
 };
