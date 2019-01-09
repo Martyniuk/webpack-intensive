@@ -20,7 +20,10 @@ export const optimizeBuild = () => {
 
             // production: определяет более часто-используемые модули, и формирует сборку наиболее меньшего размера
             // TODO webpack 5 remove optimization.occurrenceOrder
-            occurrenceOrder: true,
+            occurrenceOrder:    true,
+            // production: анализирует dependency graph и пытается найти доступные для объединения модули
+            // ? эта настройка зависит от providedExports и usedExports
+            concatenateModules: true,
         },
     };
 };
