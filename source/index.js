@@ -13,7 +13,7 @@
 //     });
 // }
 
-if (__DEV__) {
+if (__DEV__) { // false
     console.log('__DEV__');
 }
 
