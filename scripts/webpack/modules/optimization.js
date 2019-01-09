@@ -24,6 +24,12 @@ export const optimizeBuild = () => {
             // production: анализирует dependency graph и пытается найти доступные для объединения модули
             // ? эта настройка зависит от providedExports и usedExports
             concatenateModules: true, // scope hoisting, module concatenation
+
+            // ✓ определяет экспорты для каждого модуля, в результате сгенерировать более эффективный код
+            providedExports: true,
+            // production: определяет только использованные экспорты.
+            // Помогает DCE минифификаторов удалять неиспользованные экспорты.
+            usedExports:     true,
         },
     };
 };
