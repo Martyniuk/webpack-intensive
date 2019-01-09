@@ -12,6 +12,8 @@ import * as modules from '../modules';
 import { PROJECT_ROOT } from '../constants';
 
 export default () => {
+    const { ANALYZE } = process.env;
+
     return merge(
         getCommonConfig(),
         {
@@ -23,6 +25,6 @@ export default () => {
                 }),
             ],
         },
-        modules.setupBuildAnalysis(),
+        ANALYZE && modules.setupBuildAnalysis(),
     );
 };
