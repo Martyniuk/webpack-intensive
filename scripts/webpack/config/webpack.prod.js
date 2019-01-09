@@ -25,6 +25,7 @@ export default () => {
                 }),
             ],
         },
+        modules.optimizeBuild(),
         ANALYZE && modules.setupBuildAnalysis(),
     );
 };
