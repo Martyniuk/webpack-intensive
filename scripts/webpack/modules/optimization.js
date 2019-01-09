@@ -7,6 +7,9 @@ export const optimizeBuild = () => {
             // production: минификация JavaScript
             minimize:  true,
             minimizer: [ new TerserPlugin() ],
+
+            // production: останавливает эмит сборки при возникновении ошибки во время компиляции
+            noEmitOnErrors: true,
         },
     };
 };
