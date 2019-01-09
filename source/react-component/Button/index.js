@@ -12,7 +12,7 @@ export class Button extends Component {
             <button
                 onClick = { onClick }
                 className = { Styles.button }>
-                {text}
+                {text}xxxxxxxxxxxx
             </button>
         );
     }

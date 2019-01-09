@@ -1,0 +1,6 @@
+{
+    "name": "webpack-intensive",
+    "version": 2,
+    "alias": "learn-webpack",
+    "public": true
+}
