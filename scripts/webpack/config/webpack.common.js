@@ -61,10 +61,9 @@ export default () => {
         modules.loadSvg(),
         modules.loadFonts(),
         modules.defineEnvVariables({
-            __ENV__:   JSON.stringify(NODE_ENV),
-            __DEV__:   NODE_ENV === 'development',
-            __STAGE__: NODE_ENV === 'development',
-            __PROD__:  NODE_ENV === 'production',
+            __ENV__:  JSON.stringify(NODE_ENV),
+            __DEV__:  NODE_ENV === 'development', // development, запросы dev
+            __PROD__: NODE_ENV === 'production', // production, заросы prod
         }),
     );
 };
