@@ -3,8 +3,6 @@ export const optimizeBuild = () => {
         optimization: {
             // production: минификация JavaScript
             minimize: true,
-
-            //
         },
     };
 };
