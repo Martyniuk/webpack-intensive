@@ -17,6 +17,10 @@ export const optimizeBuild = () => {
             mergeDuplicateChunks:   true,
             // ✓ Удаляет модуль из чанка, если этот модуль присутствует в родительском чанке (то есть уже доступен).
             removeAvailableModules: true,
+
+            // production: определяет более часто-используемые модули, и формирует сборку наиболее меньшего размера
+            // TODO webpack 5 remove optimization.occurrenceOrder
+            occurrenceOrder: true,
         },
     };
 };
