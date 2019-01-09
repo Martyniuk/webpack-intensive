@@ -23,7 +23,7 @@ export const optimizeBuild = () => {
             occurrenceOrder:    true,
             // production: анализирует dependency graph и пытается найти доступные для объединения модули
             // ? эта настройка зависит от providedExports и usedExports
-            concatenateModules: true, // scope hoisting, module concatenation
+            concatenateModules: false, // scope hoisting, module concatenation
 
             // ✓ определяет экспорты для каждого модуля, в результате сгенерировать более эффективный код
             providedExports: true,
