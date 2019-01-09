@@ -13,5 +13,5 @@
 //     });
 // }
 
-// import './javascript';
-import './react-component/SkillMeter';
+import './javascript';
+// import './react-component/SkillMeter';
