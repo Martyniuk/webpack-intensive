@@ -23,7 +23,7 @@ export const optimizeBuild = () => {
             occurrenceOrder:    true,
             // production: анализирует dependency graph и пытается найти доступные для объединения модули
             // ? эта настройка зависит от providedExports и usedExports
-            concatenateModules: true,
+            concatenateModules: true, // scope hoisting, module concatenation
         },
     };
 };
