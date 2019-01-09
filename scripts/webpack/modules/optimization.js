@@ -46,8 +46,8 @@ export const optimizeBuild = () => {
             // TODO webpack 5 remove optimization.namedChunks
             namedChunks: true,
 
-            // TODO: splitChunks
-            // TODO: runtimeChunk
+            // TODO: для нас splitChunks
+            // TODO: для нас runtimeChunk
         },
     };
 };
