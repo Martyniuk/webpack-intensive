@@ -3,6 +3,9 @@ import { DefinePlugin } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
+// Instruments
+import { PROJECT_ROOT, STATIC, BUILD } from '../constants';
+
 export const defineEnvVariables = (variables = {}) => ({
     plugins: [ new DefinePlugin(variables) ],
 });
