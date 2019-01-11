@@ -1,6 +1,6 @@
 // Core
 import TerserPlugin from 'terser-webpack-plugin';
-import { ImageminWebpackPlugin } from 'imagemin-webpack';
+import ImageminWebpackPlugin from 'imagemin-webpack';
 import imageminMozjpeg from 'imagemin-mozjpeg';
 import imageminPngquant from 'imagemin-pngquant';
 import imageminSvgo from 'imagemin-svgo';
