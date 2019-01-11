@@ -15,9 +15,9 @@ const loadPostCss = (
         }),
     ];
 
-    if (minimize) {
-        plugins.push(cssnano);
-    }
+    // if (minimize) {
+    //     plugins.push(cssnano);
+    // }
 
     return {
         loader:  'postcss-loader',
