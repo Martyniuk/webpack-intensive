@@ -36,8 +36,6 @@ export const loadDevCss = () => ({
                     'style-loader',
                     loadCss({ sourceMap: true }),
                     loadPostCss({ sourceMap: true }),
-                    // sass-loader
-                    // sourceMap: true,
                 ],
             },
         ],
