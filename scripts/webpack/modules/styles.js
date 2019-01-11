@@ -42,4 +42,17 @@ export const loadDevCss = () => ({
     },
 });
 
-const loadProdCss = () => {};
+export const loadProdCss = () => ({
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use:  [
+                    'style-loader',
+                    loadCss({ sourceMap: true }),
+                    loadPostCss({ sourceMap: true }),
+                ],
+            },
+        ],
+    },
+});
