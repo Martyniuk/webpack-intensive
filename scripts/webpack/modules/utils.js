@@ -16,3 +16,14 @@ export const setupBuildAnalysis = () => ({
         }),
     ],
 });
+
+export const setupStaticServing = () => ({
+    plugins: [
+        new CopyWebpackPlugin([
+            {
+                from: `${STATIC}/CI/now.json`,
+                to:   `${BUILD}/package.json`,
+            },
+        ]),
+    ],
+});
