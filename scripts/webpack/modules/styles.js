@@ -58,7 +58,7 @@ export const loadProdCss = () => ({
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename:      'css/[name].css',
+            filename:      'css/[name].[contenthash].css',
             chunkFilename: 'css/[chunkname].[contenthash].[id].css',
         }),
     ],
