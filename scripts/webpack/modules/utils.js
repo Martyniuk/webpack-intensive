@@ -1,6 +1,7 @@
 // Core
 import { DefinePlugin } from 'webpack';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export const defineEnvVariables = (variables = {}) => ({
     plugins: [ new DefinePlugin(variables) ],
