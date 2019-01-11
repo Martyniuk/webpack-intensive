@@ -61,7 +61,7 @@ export const loadProdCss = () => ({
                 use:  [
                     MiniCssExtractPlugin.loader,
                     loadCss({ sourceMap: false }),
-                    loadPostCss({ sourceMap: false }),
+                    loadPostCss({ sourceMap: false, minimize: true }),
                 ],
             },
         ],
