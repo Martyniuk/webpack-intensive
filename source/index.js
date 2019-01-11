@@ -22,4 +22,4 @@ if (__DEV__) { // false
 }
 
 import './javascript';
-// import './react-component/SkillMeter';
+import './react-component/SkillMeter';
