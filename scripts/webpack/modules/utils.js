@@ -34,7 +34,7 @@ export const setupStaticServing = () => ({
         new CopyWebpackPlugin([
             {
                 from: `${STATIC}/CI/now.json`,
-                to:   `${BUILD}/package.json`,
+                to:   `${BUILD}/now.json`,
                 },
         ]),
     ],
