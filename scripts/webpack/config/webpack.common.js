@@ -14,8 +14,9 @@ export default () => {
         {
             entry:  [ SOURCE ],
             output: {
-                path:     BUILD,
-                filename: 'js/[name].[hash:5].js',
+                path:       BUILD,
+                filename:   'js/[name].[hash:5].js',
+                publicPath: '/',
             },
         },
         modules.setupHtml(),
