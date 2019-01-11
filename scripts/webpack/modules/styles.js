@@ -1,6 +1,7 @@
 // Core
 import env from 'postcss-preset-env';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import cssnano from 'cssnano';
 
 const loadPostCss = (
     { sourceMap = false, minimize = false } = {
@@ -13,6 +14,10 @@ const loadPostCss = (
             stage: 0,
         }),
     ];
+
+    if (minimize) {
+        plugins.push(cssnano);
+    }
 
     return {
         loader:  'postcss-loader',
