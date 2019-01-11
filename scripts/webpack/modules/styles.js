@@ -48,9 +48,9 @@ export const loadProdCss = () => ({
             {
                 test: /\.css$/,
                 use:  [
-                    'style-loader',
-                    loadCss({ sourceMap: true }),
-                    loadPostCss({ sourceMap: true }),
+                    // 'style-loader',
+                    loadCss({ sourceMap: false }),
+                    loadPostCss({ sourceMap: false }),
                 ],
             },
         ],
