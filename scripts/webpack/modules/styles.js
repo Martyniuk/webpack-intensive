@@ -1,5 +1,6 @@
 // Core
 import env from 'postcss-preset-env';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const loadPostCss = ({ sourceMap = false } = { sourceMap: false }) => {
     const plugins = [
@@ -42,20 +43,23 @@ export const loadDevCss = () => ({
     },
 });
 
-// ExtractTextWebpackPlugin
-// MiniCssExtractPlugin
-
 export const loadProdCss = () => ({
     module: {
         rules: [
             {
                 test: /\.css$/,
                 use:  [
-                    // 'style-loader',
+                    MiniCssExtractPlugin.loader,
                     loadCss({ sourceMap: false }),
                     loadPostCss({ sourceMap: false }),
                 ],
             },
         ],
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename:      'css/[name].css',
+            chunkFilename: 'css/[chunkname].[id].css',
+        }),
+    ],
 });
