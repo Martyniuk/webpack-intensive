@@ -43,6 +43,7 @@ export const loadDevCss = () => ({
 });
 
 // ExtractTextWebpackPlugin
+// MiniCssExtractPlugin
 
 export const loadProdCss = () => ({
     module: {
