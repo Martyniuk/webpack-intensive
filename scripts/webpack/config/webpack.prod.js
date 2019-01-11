@@ -8,9 +8,6 @@ import getCommonConfig from './webpack.common';
 // Webpack Modules
 import * as modules from '../modules';
 
-// Constants
-import { PROJECT_ROOT } from '../constants';
-
 export default () => {
     const { ANALYZE } = process.env;
 
