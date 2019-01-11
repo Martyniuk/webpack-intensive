@@ -15,7 +15,7 @@ export default () => {
             entry:  [ SOURCE ],
             output: {
                 path:     BUILD,
-                filename: 'bundle.js',
+                filename: 'js/bundle.js',
             },
         },
         modules.setupHtml(),
