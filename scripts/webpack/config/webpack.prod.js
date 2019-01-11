@@ -25,7 +25,7 @@ export default () => {
                 }),
             ],
         },
-        modules.optimizeImages(),
+        // modules.optimizeImages(),
         modules.optimizeBuild(),
         modules.loadProdCss(),
         ANALYZE && modules.setupBuildAnalysis(),
