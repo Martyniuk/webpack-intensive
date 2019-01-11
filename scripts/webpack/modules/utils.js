@@ -35,7 +35,7 @@ export const setupStaticServing = () => ({
             {
                 from: `${STATIC}/CI/now.json`,
                 to:   `${BUILD}/now.json`,
-                },
+            },
         ]),
     ],
 });
