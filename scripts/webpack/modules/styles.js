@@ -2,7 +2,12 @@
 import env from 'postcss-preset-env';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-const loadPostCss = ({ sourceMap = false } = { sourceMap: false }) => {
+const loadPostCss = (
+    { sourceMap = false, minimize = false } = {
+        sourceMap: false,
+        minimize:  false,
+    },
+) => {
     const plugins = [
         env({
             stage: 0,
