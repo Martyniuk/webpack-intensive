@@ -42,6 +42,8 @@ export const loadDevCss = () => ({
     },
 });
 
+// ExtractTextWebpackPlugin
+
 export const loadProdCss = () => ({
     module: {
         rules: [
