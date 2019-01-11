@@ -1,5 +1,4 @@
 // Core
-import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
 
 // Config
