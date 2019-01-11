@@ -19,15 +19,12 @@ export default () => {
         {
             mode:    'none', // production
             devtool: false,
-            plugins: [
-                new CleanWebpackPlugin([ 'build' ], {
-                    root: PROJECT_ROOT,
-                }),
-            ],
         },
         // modules.optimizeImages(),
         modules.optimizeBuild(),
         modules.loadProdCss(),
+        modules.cleanBuildDirectory(),
+        modules.setupStaticServing(),
         ANALYZE && modules.setupBuildAnalysis(),
     );
 };
