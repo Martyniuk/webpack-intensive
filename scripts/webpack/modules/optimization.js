@@ -71,7 +71,7 @@ export const optimizeBuild = () => {
                 // Символ-разделитель имени сплит-чанка (напр. vendors~main.js).
                 automaticNameDelimiter: '~',
                 // Определяет имя нового чанка
-                name:                   true,
+                name:                   '[name].[chunkname]',
             },
             // TODO: для нас runtimeChunk
         },
