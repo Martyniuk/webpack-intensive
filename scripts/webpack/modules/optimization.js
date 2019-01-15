@@ -53,7 +53,7 @@ export const optimizeBuild = () => {
             // Эта опция включена всегда. Когфигурируется в SplitChunksPlugin.
             splitChunks: {
                 // Режим разделения кода. По-умолчанию — async.
-                chunks: 'initial', // 'async' (on demand, normal chunk), 'initial' (initial chunk), 'all'
+                chunks: 'all', // 'async' (on demand, normal chunk), 'initial' (initial chunk), 'all'
             },
             // TODO: для нас runtimeChunk
         },
