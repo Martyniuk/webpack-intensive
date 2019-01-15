@@ -99,7 +99,7 @@ export const optimizeBuild = () => {
                     },
                 },
             },
-            // TODO: для нас runtimeChunk
+            runtimeChunk: true,
         },
     };
 };
