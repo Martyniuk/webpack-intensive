@@ -53,11 +53,14 @@ export const optimizeBuild = () => {
             // Эта опция включена всегда. Когфигурируется в SplitChunksPlugin.
             splitChunks: {
                 // Режим разделения кода. По-умолчанию — async.
-                chunks:  'all', // 'async' (on demand, normal chunk), 'initial' (initial chunk), 'all' ('async' + 'initial')
+                chunks:    'all', // 'async' (on demand, normal chunk), 'initial' (initial chunk), 'all' ('async' + 'initial')
                 // Минимальный размер нового чанка для отделения.
-                minSize: 30000,
+                minSize:   30000,
                 // Максимальный размер нового чанка для отделения.
-                maxSize: 0,
+                maxSize:   0,
+                // Минимальное количество чанков, которые зависят от модуля
+                // перед отделением этого модуля в отдельный чанк.
+                minChunks: 1,
             },
             // TODO: для нас runtimeChunk
         },
