@@ -7,11 +7,9 @@ import { SOURCE, BUILD } from '../constants';
 // Webpack Modules
 import * as modules from '../modules';
 
-console.log('→ 1 ', );
 export default () => {
     const { NODE_ENV } = process.env;
 
-console.log('→ 2 ', );
     const DEV = NODE_ENV === 'development';
 
     return merge(
