@@ -10,7 +10,7 @@ export default (text = 'Хеллоу гайз!!! 🎉🎉🎉 🔥🔥🔥') => 
         await (() => new Promise((resolve) => setTimeout(resolve, 2000)))(); // ждём 2 секунды
         element.innerHTML = 'Загружаю....';
 
-        const { default: lazyLoadedText } = await import('./lazyLoadedText');
+        const { lazyLoadedText } = await import('./lazyLoadedText');
 
         console.log('→ ', lazyLoadedText);
 
