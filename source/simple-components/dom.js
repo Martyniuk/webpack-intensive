@@ -12,7 +12,7 @@ export default (text = 'Хеллоу гайз!!! 🎉🎉🎉 🔥🔥🔥') => 
 
         const { default: lazyLoadedText } = await import('./lazyLoadedText');
 
-        console.log('→ ', lazyLoadedText );
+        console.log('→ ', lazyLoadedText);
 
         // 2. загрузить split point
         // 3. добавить в элемент загруженный текст
