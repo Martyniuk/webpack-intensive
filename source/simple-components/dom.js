@@ -11,7 +11,9 @@ export default (text = 'Хеллоу гайз!!! 🎉🎉🎉 🔥🔥🔥') => 
         element.innerHTML = 'Загружаю....';
 
         // 2. загрузить split point
-        const { lazyLoadedText } = await import('./lazyLoadedText');
+        const {
+            lazyLoadedText,
+        } = await import(/* webpackChunkName: "lazyLoadedText" */ './lazyLoadedText');
 
         // 3. добавить в элемент загруженный текст
         element.innerHTML = lazyLoadedText;
