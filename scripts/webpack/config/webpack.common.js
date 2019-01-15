@@ -7,6 +7,7 @@ import { SOURCE, BUILD } from '../constants';
 // Webpack Modules
 import * as modules from '../modules';
 
+console.log('→ ', );
 export default () => {
     const { NODE_ENV } = process.env;
 
