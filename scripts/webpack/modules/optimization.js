@@ -51,10 +51,10 @@ export const optimizeBuild = () => {
             namedChunks: true,
 
             // Эта опция включена всегда. Когфигурируется в SplitChunksPlugin.
-            // splitChunks: {
-            //     // Режим разделения кода. По-умолчанию — async.
-            //     chunks: 'async', // 'async' (on demand), initial', 'all'
-            // },
+            splitChunks: {
+                // Режим разделения кода. По-умолчанию — async.
+                chunks: 'async', // 'async' (on demand), initial', 'all'
+            },
             // TODO: для нас runtimeChunk
         },
     };
