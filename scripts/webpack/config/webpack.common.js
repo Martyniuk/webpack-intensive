@@ -7,9 +7,15 @@ import { SOURCE, BUILD } from '../constants';
 // Webpack Modules
 import * as modules from '../modules';
 
+const a = 2;
+
+debugger;
+
 export default () => {
     const { NODE_ENV } = process.env;
+    const b = 3;
 
+    debugger;
     const DEV = NODE_ENV === 'development';
 
     return merge(
