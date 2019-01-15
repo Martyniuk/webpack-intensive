@@ -79,8 +79,7 @@ export const optimizeBuild = () => {
                 cacheGroups:            {
                     // Дефолтная кеш-группа. Выносит все зависимости из node_nodules в чанк vendors.
                     vendors: {
-                        // Перезаписанная опция
-                        chunks:   'initial', // TODO: чекнуть исходный код webpack
+                        // TODO: чекнуть исходный код webpack
                         // Выбирает модули, внесённые в данную кеш-группу. Если не указать будут выбраны все модули.
                         test:     /[\\/]node_modules[\\/]/,
                         priority: -10,
