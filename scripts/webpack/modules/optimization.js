@@ -60,7 +60,7 @@ export const optimizeBuild = () => {
                 maxSize:   0,
                 // Минимальное количество чанков, которые зависят от модуля
                 // перед отделением этого модуля в отдельный чанк.
-                minChunks: 2,
+                minChunks: 1,
             },
             // TODO: для нас runtimeChunk
         },
