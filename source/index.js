@@ -1,3 +1,4 @@
+import React from 'react';
 import './theme/init.css';
 import component from './simple-components/dom';
 
