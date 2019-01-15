@@ -5,8 +5,11 @@ export default (text = 'Хеллоу гайз!!! 🎉🎉🎉 🔥🔥🔥') => 
 
     /* Code splitting */
     element.addEventListener('click', async () => {
-        element.innerHTML = 'Загружаю....';
         // 1. индикатор загрузки
+        element.innerHTML = 'Загружаю....';
+
+        await (() => new Promise((resolve) => setTimeout(resolve, 2000)))();
+
         // 2. загрузить split point
         // 3. добавить в элемент загруженный текст
     });
