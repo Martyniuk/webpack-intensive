@@ -50,7 +50,11 @@ export const optimizeBuild = () => {
             // TODO webpack 5 remove optimization.namedChunks
             namedChunks: true,
 
-            // TODO: для нас splitChunks
+            // Эта опция включена всегда. Когфигурируется в SplitChunksPlugin.
+            splitChunks: {
+                // Режим разделения кода. По-умолчанию — async.
+                chunks: 'async',
+            },
             // TODO: для нас runtimeChunk
         },
     };
