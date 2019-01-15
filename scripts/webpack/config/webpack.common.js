@@ -15,7 +15,6 @@ export default () => {
     return merge(
         {
             entry:  [ SOURCE ],
-            test: 'test',
             output: {
                 path:          BUILD,
                 filename:      DEV ? 'js/[name].js' : 'js/[name].[contenthash:5].js',
