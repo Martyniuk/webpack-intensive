@@ -56,6 +56,8 @@ export const optimizeBuild = () => {
                 chunks:  'all', // 'async' (on demand, normal chunk), 'initial' (initial chunk), 'all' ('async' + 'initial')
                 // Минимальный размер нового чанка для отделения.
                 minSize: 30000,
+                // Максимальный размер нового чанка для отделения.
+                maxSize: 0,
             },
             // TODO: для нас runtimeChunk
         },
