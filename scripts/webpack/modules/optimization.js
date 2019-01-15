@@ -72,6 +72,20 @@ export const optimizeBuild = () => {
                 automaticNameDelimiter: '~',
                 // Определяет имя нового чанка
                 name:                   true,
+                // Мо-умолчанию cacheGroups наследует от остальных опций splitChunks ↑.
+                // Уникальные для cacheGroups только test, priority и reuseExistingChunk.
+                // Ключ каждой кеш-группы определяет её имя.
+                // По-умолчанию вебпак устанавливает две кеш-группы:
+                cacheGroups:            {
+                    // Дефолтная кеш-группа. Выносит все зависимости из node_nodules в чанк vendors.
+                    vendors: {
+                        // Перезаписанная опция
+                        chunks:   'initial',
+                        // Выбирает модули, внесённые в данную кеш-группу. Если не указать будут выбраны все модули.
+                        test:     /[\\/]node_modules[\\/]/,
+                        priority: -10,
+                    },
+                },
             },
             // TODO: для нас runtimeChunk
         },
