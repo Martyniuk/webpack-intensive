@@ -1,1 +1,1 @@
-export default 'Меня загрузили on demand!';
+export const lazyLoadedText = 'Меня загрузили on demand!';
