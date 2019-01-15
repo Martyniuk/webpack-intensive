@@ -6,6 +6,7 @@
     "scripts": {
         "start": "cross-env-shell NODE_ENV=development node --require @babel/register \"./scripts/webpack/start.js\"",
         "build": "cross-env-shell NODE_ENV=production node --require @babel/register \"./scripts/webpack/build.js\"",
+        "build:debug": "cross-env-shell NODE_ENV=production node --inspect-brk --require @babel/register \"./scripts/webpack/build.js\"",
         "build:analyze": "cross-env-shell ANALYZE=true run-s build analyze",
         "serve": "serve \"./build\" --single",
         "analyze": "webpack-bundle-analyzer \"./build/stats.json\"",
