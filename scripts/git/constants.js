@@ -16,7 +16,7 @@ export const GIT_HTTPS_URL = `https://github.com/Lectrum/${
     PACKAGE_JSON.name
 }.git`;
 export const GIT_SSH_URL = `git@github.com:Lectrum/${PACKAGE_JSON.name}.git`;
-export const COMMIT_PHRASE_START = '→ Lesson 6, checkpoint at';
+export const COMMIT_PHRASE_START = '→ Lesson 7, checkpoint at';
 
 // Paths
 export const GIT_ROOT = resolve(PROJECT_ROOT, './.git');
