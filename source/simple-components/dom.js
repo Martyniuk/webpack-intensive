@@ -10,12 +10,11 @@ export default (text = 'Хеллоу гайз!!! 🎉🎉🎉 🔥🔥🔥') => 
         await (() => new Promise((resolve) => setTimeout(resolve, 2000)))(); // ждём 2 секунды
         element.innerHTML = 'Загружаю....';
 
+        // 2. загрузить split point
         const { lazyLoadedText } = await import('./lazyLoadedText');
 
-        console.log('→ ', lazyLoadedText);
-
-        // 2. загрузить split point
         // 3. добавить в элемент загруженный текст
+        element.innerHTML = lazyLoadedText;
     });
 
     return element;
