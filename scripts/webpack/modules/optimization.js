@@ -97,9 +97,6 @@ export const optimizeBuild = () => {
                         // то используется этот уже существующий отделённый чанк вместо создания нового
                         reuseExistingChunk: true,
                     },
-                    helpers: {
-                        priority: 0, // default
-                    },
                 },
             },
             // TODO: для нас runtimeChunk
