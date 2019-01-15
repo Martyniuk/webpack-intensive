@@ -13,7 +13,7 @@ export default (text = 'Хеллоу гайз!!! 🎉🎉🎉 🔥🔥🔥') => 
         // 2. загрузить split point
         const {
             lazyLoadedText,
-        } = await import(/* webpackChunkName: "hello" */ './lazyLoadedText');
+        } = await import(/* webpackChunkName: "lazyLoadedText" */ './lazyLoadedText');
 
         // 3. добавить в элемент загруженный текст
         element.innerHTML = lazyLoadedText;
