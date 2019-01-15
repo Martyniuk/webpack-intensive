@@ -70,6 +70,8 @@ export const optimizeBuild = () => {
                 maxInitialRequests:     3,
                 // Символ-разделитель имени сплит-чанка (напр. vendors~main.js).
                 automaticNameDelimiter: '~',
+                // Определяет имя нового чанка
+                name:                   'test',
             },
             // TODO: для нас runtimeChunk
         },
