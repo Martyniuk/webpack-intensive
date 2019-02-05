@@ -12,3 +12,8 @@ module.exports = () => {
         devtool: false,
     };
 };
+
+module.exports = Promise.resolve({
+    mode: 'none',
+    devtool: false,
+});
