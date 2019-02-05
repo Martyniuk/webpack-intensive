@@ -11,7 +11,9 @@ const delay = (timeout = 1000) =>
 module.exports = async () => {
     // Что угодно
 
+    // pause 1000 ms
     await delay();
+    // continue
 
     return {
         mode: 'none',
