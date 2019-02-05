@@ -10,7 +10,6 @@ const delay = (timeout = 1000) =>
 
 module.exports = async () => {
 
-
     return {
         mode: 'none',
         devtool: false,
