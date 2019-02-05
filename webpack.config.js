@@ -17,10 +17,8 @@ module.exports = () => {
         plugins: [
             // Каждый плагин — это конструктор
             new HtmlWebpackPlugin({
-                template: './static/template.html'
-
-            })
-
-        ]
+                template: './static/template.html',
+            }),
+        ],
     };
 };
