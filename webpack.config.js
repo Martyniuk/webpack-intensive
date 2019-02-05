@@ -8,8 +8,10 @@
 const delay = (timeout = 1000) =>
     new Promise(resolve => setTimeout(resolve, timeout));
 
-module.exports = () => {
+module.exports = async () => {
     // Что угодно
+
+    await delay();
 
     return {
         mode: 'none',
