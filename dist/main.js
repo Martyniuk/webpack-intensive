@@ -63,6 +63,8 @@
     function(e, t, n) {
         'use strict';
         n.r(t);
+        // Modules concatenation
+        // scope hoisting
         const r = ((e = 'Hello 🎉🎉🎉') => {
             const t = document.createElement('div');
             return (t.innerHTML = e), t;
