@@ -1,19 +1,14 @@
 /**
  * Типы конфигов вебпак:
- * Object
  * Function
+ * Object
  * Promise
  */
-// module.exports = () => {
-//     // Что угодно
+module.exports = () => {
+    // Что угодно
 
-//     return {
-//         mode: 'none',
-//         devtool: false,
-//     };
-// };
-
-module.exports = Promise.resolve({
-    mode: 'none',
-    devtool: false,
-});
+    return {
+        mode: 'none',
+        devtool: false,
+    };
+};
