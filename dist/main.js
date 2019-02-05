@@ -103,7 +103,7 @@ document.body.appendChild(element);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ((text = 'Hello 🎉🎉🎉') => {
+/* harmony default export */ __webpack_exports__["default"] = ((text = 'Привет 🎉🎉🎉') => {
     const element = document.createElement('div');
 
     element.innerHTML = text;
