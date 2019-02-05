@@ -17,6 +17,7 @@
         "cross-env": "5.2.0",
         "moment": "2.22.2",
         "nodegit": "0.23.0",
-        "webpack": "4.29.1"
+        "webpack": "4.29.1",
+        "webpack-cli": "3.2.3"
     }
 }
