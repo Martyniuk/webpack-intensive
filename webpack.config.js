@@ -18,6 +18,7 @@ module.exports = () => {
             // Каждый плагин — это конструктор
             new HtmlWebpackPlugin({
                 template: './static/template.html',
+                title: 'Изучаем вебпак! 🚀'
             }),
         ],
     };
