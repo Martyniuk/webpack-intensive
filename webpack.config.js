@@ -14,5 +14,13 @@ module.exports = () => {
     return {
         mode: 'none',
         devtool: false,
+        plugins: [
+            // Каждый плагин — это конструктор
+            new HtmlWebpackPlugin({
+                template: './static/template.html'
+
+            })
+
+        ]
     };
 };
