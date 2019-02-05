@@ -4,7 +4,10 @@
  * Function
  * Promise
  */
-module.exports = {
-    mode: 'none',
-    devtool: false,
+module.exports = () => {
+
+    return {
+        mode: 'none',
+        devtool: false,
+    };
 };
