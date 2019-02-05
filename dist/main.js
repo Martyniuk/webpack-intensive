@@ -1,4 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap || webpack runtime
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
