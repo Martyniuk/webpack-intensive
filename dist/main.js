@@ -81,21 +81,16 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
+/******/ ([
+/* 0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ "./src/simple-components/dom.js");
+/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 
 const element = Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__["default"])();
@@ -103,12 +98,7 @@ document.body.appendChild(element);
 
 
 /***/ }),
-
-/***/ "./src/simple-components/dom.js":
-/*!**************************************!*\
-  !*** ./src/simple-components/dom.js ***!
-  \**************************************/
-/*! exports provided: default */
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -123,5 +113,4 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ })
-
-/******/ });
+/******/ ]);
