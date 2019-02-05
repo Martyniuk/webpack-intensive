@@ -1,4 +1,4 @@
-/******/ (function(modules) { // webpackBootstrap || webpack runtime
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -94,7 +94,13 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ \"./src/simple-components/dom.js\");\n\n\nconst element = Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\ndocument.body.appendChild(element);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _simple_components_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./simple-components/dom */ "./src/simple-components/dom.js");
+
+
+const element = Object(_simple_components_dom__WEBPACK_IMPORTED_MODULE_0__["default"])();
+document.body.appendChild(element);
+
 
 /***/ }),
 
@@ -106,7 +112,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sim
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ((text = 'Hello 🎉🎉🎉') => {\n    const element = document.createElement('div');\n\n    element.innerHTML = text;\n\n    return element;\n});\n\n\n//# sourceURL=webpack:///./src/simple-components/dom.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ((text = 'Hello 🎉🎉🎉') => {
+    const element = document.createElement('div');
+
+    element.innerHTML = text;
+
+    return element;
+});
+
 
 /***/ })
 
