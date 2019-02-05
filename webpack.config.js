@@ -9,7 +9,7 @@ const delay = (timeout = 1000) =>
     new Promise(resolve => setTimeout(resolve, timeout));
 
 module.exports = (env) => {
-    console.log('→ test', test);
+    console.log('→ test', env);
 
     return {
         mode: 'none',
