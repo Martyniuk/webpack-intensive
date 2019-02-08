@@ -10,7 +10,7 @@ const chalk = require('chalk'); // Раскрашивает консоль
 // Config
 const config = require('./webpack.config');
 
-const compiler = webpack(config);
+const compiler = webpack(config());
 
 compiler.run((error, stats) => {
     if (error) {
