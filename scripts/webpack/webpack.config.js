@@ -25,7 +25,8 @@ module.exports = () => {
     return {
         entry:  SOURCE_DIRECTORY,
         output: {
-            path: BUILD_DIRECTORY,
+            path:     BUILD_DIRECTORY,
+            filename: 'bundle.js',
         },
         mode:    'none',
         devtool: false,
