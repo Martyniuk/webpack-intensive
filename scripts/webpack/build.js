@@ -12,7 +12,7 @@ const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
 
-compiler.run((error, stats) => {
+compiler.watch((error, stats) => {
     if (error) {
         // ошибка конфигурации
         console.error(error.stack || error);
