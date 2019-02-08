@@ -1,5 +1,5 @@
 import component from './simple-components/dom';
-import './theme/main.css';
+import 'style-loader!css-loader!./theme/main.css';
 
 const element = component();
 document.body.appendChild(element);
