@@ -30,6 +30,14 @@ module.exports = () => {
             path:     BUILD_DIRECTORY,
             filename: 'bundle.js',
         },
+        module: {
+            rules: [
+                {
+                    test: /\.css$/,
+                    use:  [ 'style-loader', 'css-loader' ],
+                },
+            ],
+        },
         plugins: [
             // Каждый плагин — это конструктор
             new HtmlWebpackPlugin({
