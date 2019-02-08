@@ -23,13 +23,13 @@ const cleanOptions = {
  */
 module.exports = () => {
     return {
-        entry:  SOURCE_DIRECTORY,
-        output: {
+        mode:    'none',
+        devtool: false,
+        entry:   SOURCE_DIRECTORY,
+        output:  {
             path:     BUILD_DIRECTORY,
             filename: 'bundle.js',
         },
-        mode:    'none',
-        devtool: false,
         plugins: [
             // Каждый плагин — это конструктор
             new HtmlWebpackPlugin({
