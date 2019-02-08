@@ -21,6 +21,18 @@ compiler.run((error, stats) => {
             console.error(error.details);
         }
 
-        return
+        return null;
+    }
+
+    console.log(chalk.greenBright('✓ Build completed'));
+
+    if (stats.hasErrors()) { // ошибка во время компиляции (битый импорт, ошибка синтаксиса, etc)
+        console.log(chalk.redBright('→ Error!'));
+        // console.error(info);
+    }
+
+    if (stats.hasWarnings()) { // ворнинг во время компиляции
+        console.log(chalk.yellowBright('→ Warning!'));
+        // console.warn(info);
     }
 });
