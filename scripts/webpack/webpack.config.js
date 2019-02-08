@@ -2,8 +2,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-// the path(s) that should be cleaned
-const pathsToClean = [ 'dist' ];
+// Constants
+const { BUILD_DIRECTORY } = require('./constants');
 
 // the clean options to use
 const cleanOptions = {
@@ -27,7 +27,7 @@ module.exports = () => {
                 title:    'Изучаем вебпак! 🚀',
                 favicon:  './static/favicon.ico',
             }),
-            new CleanWebpackPlugin(pathsToClean, cleanOptions),
+            new CleanWebpackPlugin([ BUILD_DIRECTORY ], cleanOptions),
         ],
     };
 };
