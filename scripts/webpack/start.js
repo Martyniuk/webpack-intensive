@@ -16,7 +16,7 @@ const getConfig = require('./webpack.config');
 
 // Hot reloading:
 // 1. ✓ настроить на сервере
-// 2. настроить на клиенте
+// 2. ✓ настроить на клиенте
 // 3. настроить в исходном коде
 
 // Constants
