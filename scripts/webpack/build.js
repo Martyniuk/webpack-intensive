@@ -28,6 +28,7 @@ compiler.run((error, stats) => {
         hash:        true,
         colors:      true,
         version:     true,
+        env:         true,
         modules:     false,
         entrypoints: false,
     });
