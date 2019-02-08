@@ -35,3 +35,11 @@ const server = new DevServer(compiler, {
         );
     },
 });
+
+server.listen(PORT, HOST, () => {
+    console.log(
+        `${chalk.greenBright('→ Server listening on')} ${chalk.blueBright(
+            `http://${HOST}:${PORT}`,
+        )}`,
+    );
+});
