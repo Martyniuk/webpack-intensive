@@ -4,7 +4,11 @@ import './theme/main.css';
 let element = component();
 document.body.appendChild(element);
 
-// hot(module)(component);
+// TODO: hot reloading на React
+// 1. react-hot-loader: babel-плагин
+// 2. react-hot-loader: исходный код
+
+hot(module)(component);
 
 if (module.hot) {
     module.hot.accept('./simple-components/dom', function() {
