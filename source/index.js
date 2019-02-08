@@ -1,7 +1,7 @@
 import component from './simple-components/dom';
 import './theme/main.css';
 
-const element = component();
+let element = component();
 document.body.appendChild(element);
 
 // hot(module)(component);
