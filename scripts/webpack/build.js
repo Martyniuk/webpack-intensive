@@ -25,7 +25,8 @@ compiler.run((error, stats) => {
     }
 
     const info = stats.toString({
-        hash: true,
+        hash:    true,
+        modules: false,
     });
 
     console.log(chalk.greenBright('✓ Build completed'));
