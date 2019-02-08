@@ -1,6 +1,6 @@
 // 1. ✓ webpack
-// 2. webpack-dev-server (express + webpack-dev-middleware + много хелперов)
-// 3. webpack-hot-middleware
+// 2. ✓ webpack-dev-server (express + webpack-dev-middleware + много хелперов)
+// 3. ✓ webpack-hot-middleware
 // 4. ✓ конфигурация ⚙️
 // 5. ✓ создать компайлер webpack
 // 6. ✓ запуск 🚀
