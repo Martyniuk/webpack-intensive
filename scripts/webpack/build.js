@@ -12,6 +12,10 @@ const getConfig = require('./webpack.config');
 
 const compiler = webpack(getConfig());
 
+compiler.hooks.beforeRun.tap({ name: 'start' }, () => {
+    console.log('→ compilation started');
+});
+
 compiler.run((error, stats) => {
     if (error) {
         // ошибка конфигурации
