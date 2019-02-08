@@ -27,6 +27,7 @@ compiler.run((error, stats) => {
     const info = stats.toString({
         hash:        true,
         colors:      true,
+        version:     true,
         modules:     false,
         entrypoints: false,
     });
