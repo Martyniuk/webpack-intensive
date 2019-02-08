@@ -1,0 +1,7 @@
+---
+extends:
+    - '@lectrum/eslint-config-core'
+
+rules:
+    no-console: 0
+    valid-jsdoc: 0

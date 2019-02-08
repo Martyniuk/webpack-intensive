@@ -1,8 +1,14 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const delay = (timeout = 1000) =>
-    new Promise(resolve => setTimeout(resolve, timeout));
+// the path(s) that should be cleaned
+const pathsToClean = [ 'dist' ];
+
+// the clean options to use
+const cleanOptions = {
+    verbose: true,
+};
 
 /**
  * Типы конфигов вебпак:
@@ -12,15 +18,16 @@ const delay = (timeout = 1000) =>
  */
 module.exports = () => {
     return {
-        mode: 'none',
+        mode:    'none',
         devtool: false,
         plugins: [
             // Каждый плагин — это конструктор
             new HtmlWebpackPlugin({
                 template: './static/template.html',
-                title: 'Изучаем вебпак! 🚀',
-                favicon: './static/favicon.ico',
+                title:    'Изучаем вебпак! 🚀',
+                favicon:  './static/favicon.ico',
             }),
+            new CleanWebpackPlugin(pathsToClean, cleanOptions),
         ],
     };
 };

@@ -1,6 +1,6 @@
 {
     "name": "webpack-intensive",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "author": "Dima Vakatsiienko <dvakatsiienko@lectrum.io>",
     "private": true,
     "scripts": {
@@ -14,9 +14,13 @@
         "@babel/plugin-syntax-async-generators": "7.2.0",
         "@babel/preset-env": "7.2.0",
         "@babel/register": "7.0.0",
+        "@lectrum/eslint-config-core": "1.1.15",
         "app-root-path": "2.1.0",
+        "babel-eslint": "10.0.1",
         "babel-plugin-dynamic-import-node": "2.2.0",
+        "clean-webpack-plugin": "1.0.1",
         "cross-env": "5.2.0",
+        "eslint": "5.13.0",
         "html-webpack-plugin": "3.2.0",
         "moment": "2.22.2",
         "nodegit": "0.23.0",
