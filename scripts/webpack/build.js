@@ -26,12 +26,14 @@ compiler.run((error, stats) => {
 
     console.log(chalk.greenBright('✓ Build completed'));
 
-    if (stats.hasErrors()) { // ошибка во время компиляции (битый импорт, ошибка синтаксиса, etc)
+    if (stats.hasErrors()) {
+        // ошибка во время компиляции (битый импорт, ошибка синтаксиса, etc)
         console.log(chalk.redBright('→ Error!'));
         // console.error(info);
     }
 
-    if (stats.hasWarnings()) { // ворнинг во время компиляции
+    if (stats.hasWarnings()) {
+        // ворнинг во время компиляции
         console.log(chalk.yellowBright('→ Warning!'));
         // console.warn(info);
     }
