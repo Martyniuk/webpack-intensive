@@ -1,0 +1,17 @@
+body {
+    min-height: 100vh;
+    /* background-color: var(--color1); */
+    background-image: url('./assets/images/leaves-pattern.png');
+    /* background-image: url('./assets/images/1-jellyfish-original.jpg'); */
+    background-size: 100%;
+    color: black;
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Roboto Condensed';
+}
+
+:global(.welcome) {
+    user-select: none;
+    cursor: pointer;
+}
