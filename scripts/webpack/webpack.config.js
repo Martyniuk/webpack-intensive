@@ -3,11 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Constants
-const { BUILD_DIRECTORY } = require('./constants');
+const { BUILD_DIRECTORY, PROJECT_ROOT } = require('./constants');
 
 // the clean options to use
 const cleanOptions = {
     verbose: true,
+    root:    PROJECT_ROOT,
 };
 
 /**
