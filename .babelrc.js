@@ -1,5 +1,5 @@
 module.exports = (api) => {
-    // const env = api.env();
+    // const env = api.env(); // process.env.NODE_ENV
 
     // api.cache.using(() => env === 'development');
 
