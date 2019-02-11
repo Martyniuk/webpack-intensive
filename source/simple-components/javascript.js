@@ -1,7 +1,4 @@
-console.clear();
 class Human {
-    KIND = 'HUMAN';
-
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -14,10 +11,6 @@ class Human {
     sayAge() {
         console.log('Age', this.age);
     }
-
-    sayKind = () => {
-        console.log('Kind', this.KIND);
-    };
 }
 
 const gendalf = new Human('Gendalf', 666);
