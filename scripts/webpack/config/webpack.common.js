@@ -20,6 +20,12 @@ module.exports = () => {
         module: {
             rules: [
                 {
+                    test: /\.js$/,
+                    use:  {
+                        loader: 'babel-loader',
+                    },
+                },
+                {
                     // TODO: прокачать загрузку стилей
                     test: /\.css$/,
                     use:  [ 'style-loader', 'css-loader' ],
