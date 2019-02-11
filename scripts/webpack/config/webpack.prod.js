@@ -1,5 +1,6 @@
 // Core
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const merge = require('webpack-merge');
 
 // Constants
 const { PROJECT_ROOT, BUILD_DIRECTORY } = require('../constants');
