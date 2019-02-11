@@ -28,7 +28,7 @@ const Clicker = hot(module)(
                     className = { Styles.clicker }
                     style = {{
                         '--mainColor':       'rebeccapurple',
-                        '--headingFontSize': this.state.count,
+                        '--headingFontSize': this.state.count + 'px',
                     }}>
                     <h1>Test: {count}</h1>
                     <button onClick = { this.inc }>Increment</button>
