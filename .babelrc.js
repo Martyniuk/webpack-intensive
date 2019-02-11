@@ -13,7 +13,7 @@ module.exports = api => {
                     debug: true,
                     spec: true, // specification, делает код более медленным, но более надёжным
                     loose: false, // делает код более быстрым, но отходит от стандарта
-                    modules: false,
+                    modules: 'cjs'
                 },
             ],
         ],
