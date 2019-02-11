@@ -5,7 +5,7 @@ module.exports = api => {
 
     api.cache.never();
 
-    const plugins = [];
+    const plugins = ['@babel/proposal-class-properties'];
 
     if (env === 'development') {
         plugins.push('react-hot-loader/babel');
@@ -24,7 +24,7 @@ module.exports = api => {
                 },
             ],
         ],
-        plugins: ['@babel/proposal-class-properties'],
+        plugins,
         // dev (react-hot-loader нужен)
         // или
         // prod (react-hot-loader не нужен)
