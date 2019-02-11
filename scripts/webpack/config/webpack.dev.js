@@ -25,7 +25,7 @@ const getCommonConfig = require('./webpack.common');
 module.exports = () => {
     return merge(getCommonConfig(), {
         mode:    'none',
-        devtool: false,
+        devtool: false, // TODO: настроить source maps
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         module:  {
             rules: [
