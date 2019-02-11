@@ -37,6 +37,7 @@
         "moment": "2.22.2",
         "nodegit": "0.23.0",
         "postcss-loader": "3.0.0",
+        "postcss-preset-env": "6.5.0",
         "react-hot-loader": "4.6.5",
         "serve": "10.1.1",
         "style-loader": "0.23.1",
