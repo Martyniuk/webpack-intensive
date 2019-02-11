@@ -4,17 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // Constants
-const {
-    PROJECT_ROOT,
-    SOURCE_DIRECTORY,
-    BUILD_DIRECTORY,
-} = require('../constants');
-
-// the clean options to use
-const cleanOptions = {
-    verbose: true,
-    root:    PROJECT_ROOT,
-};
+const { SOURCE_DIRECTORY, BUILD_DIRECTORY } = require('../constants');
 
 /**
  * Типы конфигов вебпак:
