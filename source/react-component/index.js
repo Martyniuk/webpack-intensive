@@ -12,24 +12,22 @@ const Clicker = hot(module)(
             count: 0,
         };
 
-        inc = () =>
-            void this.setState(({ count }) => ({
-                count: count + 1,
-            }));
+        inc = () => void this.setState(({ count }) => ({
+            count: count + 1,
+        }));
 
-        dec = () =>
-            void this.setState(({ count }) => ({
-                count: count - 1,
-            }));
+        dec = () => void this.setState(({ count }) => ({
+            count: count - 1,
+        }));
 
         render() {
             const { count } = this.state;
 
             return (
-                <section className={Styles.clicker}>
+                <section className = { Styles.clicker }>
                     <h1>Count: {count}</h1>
-                    <button onClick={this.inc}>Increment</button>
-                    <button onClick={this.dec}>Decrement</button>
+                    <button onClick = { this.inc }>Increment</button>
+                    <button onClick = { this.dec }>Decrement</button>
                 </section>
             );
         }
