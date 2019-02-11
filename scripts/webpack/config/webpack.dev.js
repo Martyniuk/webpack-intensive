@@ -23,7 +23,7 @@ const getConfig = require('./webpack.common');
  * Promise
  */
 module.exports = () => {
-    return merge({
+    return merge(getConfig(), {
         mode:    'none',
         devtool: false,
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
