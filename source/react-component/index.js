@@ -25,7 +25,7 @@ const Clicker = hot(module)(
 
             return (
                 <section className = { Styles.clicker }>
-                    <h1>Счётчик: {count}</h1>
+                    <h1>Count: {count}</h1>
                     <button onClick = { this.inc }>Increment</button>
                     <button onClick = { this.dec }>Decrement</button>
                 </section>
