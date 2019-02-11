@@ -1,5 +1,6 @@
 // Core
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const env = require('postcss-preset-env');
 
 // Constants
 const { SOURCE_DIRECTORY, BUILD_DIRECTORY } = require('../constants');
