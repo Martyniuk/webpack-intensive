@@ -2,8 +2,8 @@ module.exports = (api) => {
     api.cache.never();
 
     return {
-        // dev (react-hot-loader)
+        // dev (react-hot-loader нужен)
         // или
-        // prod
+        // prod (react-hot-loader не нужен)
     }
 }
