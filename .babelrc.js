@@ -6,7 +6,7 @@ module.exports = api => {
     api.cache.never();
 
     return {
-        presets: ['@babel/preset-env'],
+        presets: ['@babel/env'],
         // dev (react-hot-loader нужен)
         // или
         // prod (react-hot-loader не нужен)
