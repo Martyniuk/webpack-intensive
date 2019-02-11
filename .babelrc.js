@@ -14,6 +14,7 @@ module.exports = api => {
                 },
             ],
         ],
+        plugins: ['@babel/plugin-proposal-class-properties'],
         // dev (react-hot-loader нужен)
         // или
         // prod (react-hot-loader не нужен)
