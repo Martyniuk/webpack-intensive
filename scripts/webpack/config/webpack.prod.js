@@ -26,14 +26,6 @@ module.exports = () => {
     return {
         mode:    'none',
         devtool: false,
-        module:  {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
-            ],
-        },
         plugins: [ new CleanWebpackPlugin([ BUILD_DIRECTORY ], cleanOptions) ],
     };
 };
