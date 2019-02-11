@@ -21,9 +21,9 @@ const cleanOptions = {
  * Promise
  */
 module.exports = () => {
-    return {
+    return merge(getCommonConfig(), {
         mode:    'none',
         devtool: false,
         plugins: [ new CleanWebpackPlugin([ BUILD_DIRECTORY ], cleanOptions) ],
-    };
+    });
 };
