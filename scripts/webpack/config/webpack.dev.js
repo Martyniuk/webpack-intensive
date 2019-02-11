@@ -15,7 +15,7 @@ module.exports = () => {
     return merge(getCommonConfig(), {
         mode:    'none',
         devtool: false, // TODO: настроить source maps
-        // entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
+        entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
         plugins: [
             // Каждый плагин — это конструктор
             new HotModuleReplacementPlugin(),
