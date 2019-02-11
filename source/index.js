@@ -17,4 +17,5 @@
 //     });
 // }
 
-import './simple-components/javascript';
+// import './simple-components/javascript';
+import './react-component';
