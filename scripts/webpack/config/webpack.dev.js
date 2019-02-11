@@ -2,9 +2,6 @@
 const { HotModuleReplacementPlugin } = require('webpack');
 const merge = require('webpack-merge');
 
-// Constants
-const { PROJECT_ROOT } = require('../constants');
-
 // Configurations
 const getCommonConfig = require('./webpack.common');
 
