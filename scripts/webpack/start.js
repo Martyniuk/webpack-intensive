@@ -1,4 +1,4 @@
-// Node webpack dev server
+// Node webpack dev server:
 // 1. ✓ webpack
 // 2. ✓ webpack-dev-server (express + webpack-dev-middleware + много хелперов)
 // 3. ✓ webpack-hot-middleware
