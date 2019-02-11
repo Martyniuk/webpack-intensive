@@ -26,11 +26,7 @@ module.exports = () => {
     return {
         mode:    'none',
         devtool: false,
-        output:  {
-            path:     BUILD_DIRECTORY,
-            filename: 'bundle.js',
-        },
-        module: {
+        module:  {
             rules: [
                 {
                     test: /\.css$/,
