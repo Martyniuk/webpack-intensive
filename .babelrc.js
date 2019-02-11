@@ -7,13 +7,14 @@ module.exports = api => {
 
     return {
         presets: [
+            '@babel/env',
             [
                 '@babel/env',
                 {
                     debug: false,
                     spec: true, // specification, делает код более медленным, но более надёжным
                     loose: false, // делает код более быстрым, но отходит от стандарта
-                    modules: false // webpack хорошо работает только с ES2015 модулями
+                    modules: false, // webpack хорошо работает только с ES2015 модулями
                 },
             ],
         ],
