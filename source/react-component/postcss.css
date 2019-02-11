@@ -1,6 +1,6 @@
 .clicker {
     --mainColor: wheat;
-    --headingFontSize: 24px;
+    --headingFontSize: 34px;
 
     color: var(--mainColor);
 
