@@ -2,7 +2,7 @@ module.exports = (api) => {
     api.cache.never();
 
     return {
-        // dev
+        // dev (react-hot-loader)
         // или
         // prod
     }
