@@ -44,6 +44,10 @@ module.exports = () => {
                             options: {
                                 plugins: [
                                     // цепочка плагинов postcss
+
+                                    env({
+                                        stage: 0, // default: stage 2
+                                    }),
                                 ],
                             },
                         },
