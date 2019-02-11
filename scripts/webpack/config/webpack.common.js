@@ -25,7 +25,6 @@ const cleanOptions = {
 module.exports = () => {
     return {
         mode:    'none',
-        devtool: false,
         entry:   [
             'webpack-hot-middleware/client?reload=true&quiet=true',
             SOURCE_DIRECTORY,
