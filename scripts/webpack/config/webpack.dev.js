@@ -1,17 +1,9 @@
 // Core
 const { HotModuleReplacementPlugin } = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const merge = require('webpack-merge');
 
 // Constants
-const { PROJECT_ROOT, BUILD_DIRECTORY } = require('../constants');
-
-// the clean options to use
-const cleanOptions = {
-    verbose: true,
-    root:    PROJECT_ROOT,
-};
+const { PROJECT_ROOT } = require('../constants');
 
 // Configurations
 const getCommonConfig = require('./webpack.common');
