@@ -13,7 +13,7 @@ module.exports = api => {
                     debug: true,
                     spec: true, // specification, делает код более медленным, но более надёжным
                     loose: false, // делает код более быстрым, но отходит от стандарта
-                    modules: 'cjs'
+                    modules: 'cjs' // webpack хорошо работает только с ES2015 модулями
                 },
             ],
         ],
