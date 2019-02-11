@@ -11,13 +11,14 @@
         "serve": "serve \"./build\" -s"
     },
     "devDependencies": {
-        "@babel/core": "7.2.0",
+        "@babel/core": "7.2.2",
         "@babel/plugin-syntax-async-generators": "7.2.0",
         "@babel/preset-env": "7.2.0",
         "@babel/register": "7.0.0",
         "@lectrum/eslint-config-core": "1.1.15",
         "app-root-path": "2.1.0",
         "babel-eslint": "10.0.1",
+        "babel-loader": "8.0.5",
         "babel-plugin-dynamic-import-node": "2.2.0",
         "clean-webpack-plugin": "1.0.1",
         "cross-env": "5.2.0",
