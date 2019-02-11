@@ -1,0 +1,15 @@
+.clicker {
+    --mainColor: wheat;
+    color: var(--mainColor);
+
+    & button {
+        height: 30px;
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 7px;
+        background-color: var(--mainColor);
+        font-size: 20px;
+        cursor: pointer;
+        outline: 0;
+    }
+}
