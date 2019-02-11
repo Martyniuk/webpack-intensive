@@ -7,10 +7,12 @@ module.exports = api => {
 
     return {
         presets: [
-            '@babel/env',
-            {
-                debug: true,
-            },
+            [
+                '@babel/env',
+                {
+                    debug: true,
+                },
+            ],
         ],
         // dev (react-hot-loader нужен)
         // или
