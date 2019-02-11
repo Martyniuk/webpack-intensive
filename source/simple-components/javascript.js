@@ -14,8 +14,8 @@ class Human {
         console.log('Age', this.age);
     }
 
-    sayAge = () => {
-        console.log('Age', this.age);
+    sayKind = () => {
+        console.log('Kind', this.kind);
     };
 }
 
