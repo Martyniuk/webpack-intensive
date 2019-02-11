@@ -14,7 +14,7 @@ const cleanOptions = {
 };
 
 // Configurations
-const getConfig = require('./webpack.common');
+const getCommonConfig = require('./webpack.common');
 
 /**
  * Типы конфигов вебпак:
@@ -23,7 +23,7 @@ const getConfig = require('./webpack.common');
  * Promise
  */
 module.exports = () => {
-    return merge(getConfig(), {
+    return merge(getCommonConfig(), {
         mode:    'none',
         devtool: false,
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
