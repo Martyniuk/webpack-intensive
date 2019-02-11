@@ -1,4 +1,6 @@
 class Human {
+    kind = 'homo sapiens';
+
     constructor(name, age) {
         this.name = name;
         this.age = age;
