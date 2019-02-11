@@ -16,14 +16,6 @@ module.exports = () => {
         mode:    'none',
         devtool: false, // TODO: настроить source maps
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
-        module:  {
-            rules: [
-                {
-                    test: /\.css$/,
-                    use:  [ 'style-loader', 'css-loader' ],
-                },
-            ],
-        },
         plugins: [
             // Каждый плагин — это конструктор
             new HotModuleReplacementPlugin(),
