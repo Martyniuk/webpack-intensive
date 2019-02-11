@@ -45,8 +45,6 @@ module.exports = () => {
                 title:    'Изучаем вебпак! 🚀',
                 favicon:  './static/favicon.ico',
             }),
-            new CleanWebpackPlugin([ BUILD_DIRECTORY ], cleanOptions),
-            new HotModuleReplacementPlugin(),
         ],
     };
 };
