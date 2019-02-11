@@ -1,4 +1,4 @@
-module.exports = (api) => {
+module.exports = api => {
     // const env = api.env(); // process.env.BABEL_ENV || process.env.NODE_ENV
 
     // api.cache.using(() => env === 'development'); // TODO: прорисёрчить
@@ -6,8 +6,9 @@ module.exports = (api) => {
     api.cache.never();
 
     return {
+        presets: ['@babel/preset-env'],
         // dev (react-hot-loader нужен)
         // или
         // prod (react-hot-loader не нужен)
-    }
-}
+    };
+};
