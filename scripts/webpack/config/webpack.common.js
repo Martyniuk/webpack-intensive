@@ -38,6 +38,14 @@ module.exports = () => {
                                     '[path][name]__[local]--[hash:base64:5]',
                             },
                         },
+                        {
+                            loader:  'postcss-loader',
+                            options: {
+                                plugins: [
+                                    // цепочка плагинов postcss
+                                ],
+                            },
+                        },
                     ],
                 },
             ],
