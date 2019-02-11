@@ -37,12 +37,6 @@ module.exports = () => {
         },
         plugins: [
             // Каждый плагин — это конструктор
-            new HtmlWebpackPlugin({
-                template: './static/template.html',
-                title:    'Изучаем вебпак! 🚀',
-                favicon:  './static/favicon.ico',
-            }),
-            new CleanWebpackPlugin([ BUILD_DIRECTORY ], cleanOptions),
             new HotModuleReplacementPlugin(),
         ],
     });
