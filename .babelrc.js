@@ -5,6 +5,12 @@ module.exports = api => {
 
     api.cache.never();
 
+    const plugins = [];
+
+    if (env === 'development') {
+        plugins.push('react-hot-loader/babel');
+    }
+
     return {
         presets: [
             '@babel/react',
