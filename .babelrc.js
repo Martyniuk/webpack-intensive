@@ -11,7 +11,7 @@ module.exports = api => {
                 '@babel/env',
                 {
                     debug: true,
-                    spec: true,
+                    spec: true, // specification, делаем код более медленным, но более надёжным
                     loose: false,
                 },
             ],
