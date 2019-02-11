@@ -24,10 +24,7 @@ const cleanOptions = {
  */
 module.exports = () => {
     return {
-        entry: [
-            'webpack-hot-middleware/client?reload=true&quiet=true',
-            SOURCE_DIRECTORY,
-        ],
+        entry:  [ SOURCE_DIRECTORY ],
         output: {
             path:     BUILD_DIRECTORY,
             filename: 'bundle.js',
