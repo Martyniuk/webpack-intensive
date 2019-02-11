@@ -32,6 +32,7 @@ module.exports = () => {
         module: {
             rules: [
                 {
+                    // TODO: прокачать загрузку стилей
                     test: /\.css$/,
                     use:  [ 'style-loader', 'css-loader' ],
                 },
