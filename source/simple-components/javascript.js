@@ -13,6 +13,10 @@ class Human {
     sayAge() {
         console.log('Age', this.age);
     }
+
+    sayAge = () => {
+        console.log('Age', this.age);
+    };
 }
 
 const gendalf = new Human('Gendalf', 666);
