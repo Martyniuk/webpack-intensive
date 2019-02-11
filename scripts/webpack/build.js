@@ -8,7 +8,7 @@ const webpack = require('webpack');
 const chalk = require('chalk'); // Раскрашивает консоль
 
 // Config
-const getConfig = require('./config/webpack.config');
+const getConfig = require('./config/webpack.common');
 
 const compiler = webpack(getConfig());
 
