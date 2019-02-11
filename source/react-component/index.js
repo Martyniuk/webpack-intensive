@@ -24,7 +24,11 @@ const Clicker = hot(module)(
             const { count } = this.state;
 
             return (
-                <section className = { Styles.clicker }>
+                <section
+                    className = { Styles.clicker }
+                    style = {{
+                        '--mainColor': 'rebeccapurple',
+                    }}>
                     <h1>Test: {count}</h1>
                     <button onClick = { this.inc }>Increment</button>
                     <button onClick = { this.dec }>Decrement</button>
