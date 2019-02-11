@@ -1,6 +1,12 @@
 .clicker {
     --mainColor: wheat;
+    --headingFontSize: 24px;
+
     color: var(--mainColor);
+
+    & h1 {
+        font-size: var(--headingFontSize);
+    }
 
     & button {
         height: 30px;
