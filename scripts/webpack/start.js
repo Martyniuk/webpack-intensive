@@ -19,7 +19,7 @@ const hot = require('webpack-hot-middleware');
 const chalk = require('chalk'); // Раскрашивает консоль
 
 // Config
-const getConfig = require('./webpack.config');
+const getConfig = require('./config/webpack.config');
 
 // Utils
 const { choosePort } = require('./utils');

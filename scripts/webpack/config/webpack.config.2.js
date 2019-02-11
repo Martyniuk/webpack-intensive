@@ -8,7 +8,7 @@ const {
     PROJECT_ROOT,
     SOURCE_DIRECTORY,
     BUILD_DIRECTORY,
-} = require('./constants');
+} = require('../constants');
 
 // the clean options to use
 const cleanOptions = {
