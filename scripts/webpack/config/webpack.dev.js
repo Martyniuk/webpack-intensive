@@ -27,11 +27,7 @@ module.exports = () => {
         mode:    'none',
         devtool: false,
         entry:   [ 'webpack-hot-middleware/client?reload=true&quiet=true' ],
-        output:  {
-            path:     BUILD_DIRECTORY,
-            filename: 'bundle.js',
-        },
-        module: {
+        module:  {
             rules: [
                 {
                     test: /\.css$/,
